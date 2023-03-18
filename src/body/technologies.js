@@ -1,7 +1,9 @@
 const Technologies = (props) => {
 
     return (
-        <div>Technologies</div>
+        <div className="container">
+            <h2>Technologies</h2>
+        </div>
     )
 }
 
