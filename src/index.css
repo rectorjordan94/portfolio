@@ -24,6 +24,7 @@ code {
   margin: 0 auto;
   border-radius: 5px;
   border: 1px solid #4c5158;
+  box-shadow: 3px 3px 14px -4px #000000;
 }
 
 #about-name {
@@ -50,7 +51,7 @@ code {
   /* font-style: italic; */
 }
 
-#about-paragraph {
+.paragraph {
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   text-align: center;
@@ -63,6 +64,7 @@ code {
   border-radius: 5px;
   border: 1px solid #888b90;
   padding: .85rem;
+  box-shadow: inset 0px 0px 15px 0px #000000;
 }
 
 .line {
@@ -70,4 +72,31 @@ code {
   border-width: 1px;
   opacity: 1;
   /* border-radius: 5px; */
+}
+
+.technologies {
+  background-color: #393E46;
+  margin: 2rem auto;
+  border-radius: 5px;
+  border: 1px solid #4c5158;
+  box-shadow: 3px 3px 14px -4px #000000;
+}
+
+.section-header {
+  font-family: 'Exo 2', sans-serif;
+  font-style: italic;
+  color: #EEEEEE;
+  font-size: 2.5rem;
+}
+
+.slash {
+  color: #FD7014;
+}
+
+.projects {
+  background-color: #393E46;
+  margin: 2rem auto;
+  border-radius: 5px;
+  border: 1px solid #4c5158;
+  box-shadow: 3px 3px 14px -4px #000000;
 }
