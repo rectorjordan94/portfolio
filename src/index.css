@@ -100,3 +100,12 @@ code {
   border: 1px solid #4c5158;
   box-shadow: 3px 3px 14px -4px #000000;
 }
+
+.project-header {
+  font-family: 'Exo', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-style: italic;
+}
+

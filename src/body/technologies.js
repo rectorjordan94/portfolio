@@ -2,7 +2,7 @@ const Technologies = (props) => {
 
     return (
         <div className="technologies container">
-            <h2 className="section-header pt-2">Technologies</h2>
+            <h2 className="section-header pt-3 pb-1">Technologies</h2>
             <hr className="line" />
             <div className="d-flex justify-content-center mt-3 pb-3">
                 <p className="paragraph">
