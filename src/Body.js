@@ -1,17 +1,17 @@
-import About from "./body/about"
-import Technologies from "./body/technologies"
-import Projects from "./body/projects"
-import Contact from "./body/contact"
+import About from "./body/About"
+import Technologies from "./body/Technologies"
+import Projects from "./body/Projects"
+import Contact from "./body/Contact"
 
 const Body = (props) => {
 
     return (
-        <body className="body container-fluid">
+        <div className="body container-fluid">
             <About />
             <Technologies />
             <Projects />
             <Contact />
-        </body>
+        </div>
     )
 }
 

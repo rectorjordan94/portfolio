@@ -106,14 +106,6 @@ code {
   box-shadow: 3px 3px 14px -4px #000000;
 }
 
-.project-header {
-  font-family: 'Exo', sans-serif;
-  font-weight: 200;
-  font-size: 1.5rem;
-  color: #ffffff;
-  /* font-style: italic; */
-}
-
 #header {
   background-color: #FD7014;
   padding: 0;
@@ -121,17 +113,19 @@ code {
 
 #logo {
   font-family: 'Exo 2', sans-serif;
-  font-size: 2rem;
-  padding: 0;
+  /* font-size: 2rem; */
+  /* padding: 0; */
   font-style: italic;
   color: #ffffff;
   text-shadow: 3px 3px 3px #000000;
+  line-height: 2rem;
 }
 
 .nav-link {
   font-family: 'Exo', sans-serif;
   color: #ffffff;
   font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 .contact {
@@ -184,4 +178,75 @@ code {
 
 .image {
   border-radius: 5px;
+}
+
+.project-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#project-modal-header {
+  background-color: #393E46;
+  border: 1px solid #FD7014;
+  font-size: 1.5rem;
+}
+
+#project-modal-title {
+  font-family: 'Exo 2', sans-serif;
+  font-style: italic;
+  color: #EEEEEE;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #FD7014, 3px 3px 2px #000000;
+  font-size: 2rem;
+  padding: 0;
+}
+
+#project-modal-body {
+  background-color: #393E46;
+  border: 1px solid #FD7014;
+  border-top: none;
+  border-bottom: none;
+  color: #EEEEEE;
+  box-shadow: inset 0px 0px 15px 0px #000000;
+}
+
+#project-modal-footer {
+  background-color: #393E46;
+  border: 1px solid #FD7014;
+}
+
+#project-description {
+  margin: 0;
+  margin-top: 1rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  text-indent: 1.5rem;
+  font-size: 1rem;
+  color: #EEEEEE;
+}
+
+.carousel-img {
+  border-radius: 5px!important;
+}
+
+#project-modal-carousel {
+  border-radius: 5px!important;
+  /* box-shadow: inset 0px 0px 5px 2px #888b90!important; */
+  border: 1px solid #888b90;
+  background-color: #222831;
+  /* box-shadow: inset 0px 0px 15px 0px #000000; */
+  /* padding: .85rem; */
+}
+
+.modal-link {
+  font-family: 'Exo', sans-serif;
+  color: #ffffff;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.modal-link:hover {
+  color: #FD7014;
 }
