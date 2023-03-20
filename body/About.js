@@ -1,5 +1,8 @@
 const About = (props) => {
 
+    //this is a comment
+
+
     return (
         <div className="about container">
             <h1 id="about-name">Jordan Rector</h1>
