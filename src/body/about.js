@@ -13,23 +13,3 @@ const About = (props) => {
 }
 
 export default About
-
-// exo 2 800 oblique
-// nixie one normal
-// hind 300
-
-// montserrat 900 oblique
-// montserrat alternates 100
-// droid sans normal
-
-// raleway 700
-// khand normal
-// ek mukta 300
-
-// khand 300
-// overpass 100 oblique
-// proza libre normal
-
-// exo 2 800
-// exo 100
-// kanit 300
