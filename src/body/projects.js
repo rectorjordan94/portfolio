@@ -1,4 +1,5 @@
-import { Modal } from "react-bootstrap/Modal"
+import { useState, useEffect } from 'react'
+import ShowProjectModal from "../projects/ShowProjectModal"
 
 const Projects = (props) => {
     
@@ -20,7 +21,7 @@ const Projects = (props) => {
         {
             name: 'hoist{m}',
             description: "Full-stack MERN app and Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload. Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed to a significant portion of the backend development as well. Bulit with React, CSS, JavaScript, Express, Node.js, MongoDB, Mongoose, Axios, & Bootstrap.",
-            thumbnail: 'https://github.com/rectorjordan94/everdell-wiki/raw/main/images/CARDS1.png',
+            thumbnail: 'https://github.com/rectorjordan94/hoistm-client/raw/main/images_readme/label-filter.png',
             frontendGitHub: 'https://github.com/rectorjordan94/hoistm-client',
             backendGitHub: 'https://github.com/rectorjordan94/hoistm-api',
             deployed: 'https://hoistm.netlify.app/'
@@ -28,40 +29,69 @@ const Projects = (props) => {
         {
             name: 'BLINK',
             description: "Full-stack Slack clone where users can create and join different channels and chat with other users in real-time. Built with the MERN stack using the MVC system for organizing the code. Utilizes socket.io for bidirectional event-based communication between clients and server for chat functionality. Created with HTML, CSS, JavaScript, React, MongoDB, Mongoose, Express, and Node.js.",
-            thumbnail: 'https://github.com/rectorjordan94/everdell-wiki/raw/main/images/CARDS1.png',
+            thumbnail: 'https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png',
             frontendGitHub: 'https://github.com/rectorjordan94/hoistm-client',
             backendGitHub: 'https://github.com/rectorjordan94/hoistm-api',
             deployed: 'https://hoistm.netlify.app/'
         }
     ]
 
+    const [projectString, setProjectString] = useState("")
+    const [currentProject, setCurrentProject] = useState(null)
+    const [modalShow, setModalShow] = useState(false)
+    // const [triggerRefresh, setTriggerRefresh] = useState(false)
 
+    const onClick = (e) => {
+        e.preventDefault()
+        console.log(e.target.value)
+        setProjectString(e.target.value)
+    }
+
+    useEffect(() => {
+        if (projectString) {
+            setCurrentProject(JSON.parse(projectString))
+        }
+    }, [projectString])
+
+    useEffect(() => {
+        if (currentProject) {
+            setModalShow(true)
+        }
+    }, [currentProject])
 
     return (
-        <div className="projects container">
-            <h2 className="pt-3 pb-1 section-header">Projects</h2>
-            <hr className="line" />
-            <div className="row mx-1">
-                <div className="col paragraph me-3">
-                    <h4 className="project-header">Centipede</h4>
-                    <a href="https://github.com/rectorjordan94/Centipede"><img src="https://github.com/rectorjordan94/Centipede/raw/main/images/centipede_score.png" alt="" className="w-100 image"/></a>
+        <>
+            <div className="projects container">
+                <h2 className="pt-3 pb-1 section-header">Projects</h2>
+                <hr className="line" />
+                <div className="row mx-1">
+                    <div className="col paragraph me-3">
+                        <h4 className="project-header">Centipede</h4>
+                        <button className='project-button' value={JSON.stringify(myProjects[0])} onClick={onClick}><img src={myProjects[0].thumbnail} alt="centipede thumbnail" className="w-100 image" style={{pointerEvents: 'none'}}/></button>
+                    </div>
+                    <div className="col paragraph">
+                        <h4 className="project-header">Everdell-Wiki</h4>
+                        <a href="https://github.com/rectorjordan94/everdell-wiki"><img src={myProjects[1].thumbnail} alt="" className="w-100 image"/></a>
+                    </div>
                 </div>
-                <div className="col paragraph">
-                    <h4 className="project-header">Everdell-Wiki</h4>
-                    <a href="https://github.com/rectorjordan94/everdell-wiki"><img src="https://github.com/rectorjordan94/everdell-wiki/raw/main/images/CARDS1.png" alt="" className="w-100 image"/></a>
+                <div className="row mx-1 my-3">
+                    <div className="col paragraph me-3">
+                        <h4 className="project-header">hoist&#123;m&#125;</h4>
+                        <a href="https://github.com/rectorjordan94/hoistm-client"><img src={myProjects[2].thumbnail} alt="" className="w-100 image"/></a>
+                    </div>
+                    <div className="col paragraph">
+                        <h4 className="project-header">BLINK</h4>
+                        <a href="https://github.com/rectorjordan94/blink-api"><img src={myProjects[3].thumbnail} alt="" className="w-100 image"/></a>
+                    </div>
                 </div>
             </div>
-            <div className="row mx-1 my-3">
-                <div className="col paragraph me-3">
-                    <h4 className="project-header">hoist&#123;m&#125;</h4>
-                    <a href="https://github.com/rectorjordan94/hoistm-client"><img src="https://github.com/rectorjordan94/hoistm-client/raw/main/images_readme/label-filter.png" alt="" className="w-100 image"/></a>
-                </div>
-                <div className="col paragraph">
-                    <h4 className="project-header">BLINK</h4>
-                    <a href="https://github.com/rectorjordan94/blink-api"><img src="https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png" alt="" className="w-100 image"/></a>
-                </div>
-            </div>
-        </div>
+            <ShowProjectModal
+                project={currentProject}
+                show={modalShow}
+                handleClose={() => setModalShow(false)}
+            />
+        </>
+        
     )
 }
 

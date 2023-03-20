@@ -185,3 +185,9 @@ code {
 .image {
   border-radius: 5px;
 }
+
+.project-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
