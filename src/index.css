@@ -68,6 +68,10 @@ code {
   box-shadow: inset 0px 0px 15px 0px #000000;
 }
 
+.paragraph:hover {
+  border: 1px solid #FD7014;
+}
+
 .line {
   border-color: #FD7014;
   border-width: 1px;
@@ -127,4 +131,48 @@ code {
   font-family: 'Exo', sans-serif;
   color: #ffffff;
   font-size: 1.25rem;
+}
+
+.contact {
+  background-color: #393E46;
+  margin: 2rem auto;
+  border-radius: 5px;
+  border: 1px solid #4c5158;
+  box-shadow: 3px 3px 14px -4px #000000;
+}
+
+.contact-info {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin: 0;
+  color: #EEEEEE;
+  background-color: #222831;
+  border-radius: 5px;
+  border: 1px solid #888b90;
+  padding: .85rem;
+  box-shadow: inset 0px 0px 15px 0px #000000;
+}
+
+.contact-info:hover {
+  border: 1px solid #FD7014;
+}
+
+.link-contact {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link-contact:hover {
+  color: #FD7014;
+}
+
+::-webkit-scrollbar {
+  background-color: #171c22;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FD7014;
 }
