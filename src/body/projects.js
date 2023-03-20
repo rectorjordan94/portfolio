@@ -7,21 +7,21 @@ const Projects = (props) => {
             <div className="row mx-1">
                 <div className="col paragraph me-3">
                     <h4 className="project-header">Centipede</h4>
-                    <img src="https://github.com/rectorjordan94/Centipede/raw/main/images/centipede_score.png" alt="" className="w-100"/>
+                    <a href="https://github.com/rectorjordan94/Centipede"><img src="https://github.com/rectorjordan94/Centipede/raw/main/images/centipede_score.png" alt="" className="w-100 image"/></a>
                 </div>
                 <div className="col paragraph">
                     <h4 className="project-header">Everdell-Wiki</h4>
-                    <img src="https://github.com/rectorjordan94/everdell-wiki/raw/main/images/CARDS1.png" alt="" className="w-100"/>
+                    <a href="https://github.com/rectorjordan94/everdell-wiki"><img src="https://github.com/rectorjordan94/everdell-wiki/raw/main/images/CARDS1.png" alt="" className="w-100 image"/></a>
                 </div>
             </div>
             <div className="row mx-1 my-3">
                 <div className="col paragraph me-3">
                     <h4 className="project-header">hoist&#123;m&#125;</h4>
-                    <img src="https://github.com/rectorjordan94/hoistm-client/raw/main/images_readme/label-filter.png" alt="" className="w-100"/>
+                    <a href="https://github.com/rectorjordan94/hoistm-client"><img src="https://github.com/rectorjordan94/hoistm-client/raw/main/images_readme/label-filter.png" alt="" className="w-100 image"/></a>
                 </div>
                 <div className="col paragraph">
                     <h4 className="project-header">BLINK</h4>
-                    <img src="https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png" alt="" className="w-100"/>
+                    <a href="https://github.com/rectorjordan94/blink-api"><img src="https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png" alt="" className="w-100 image"/></a>
                 </div>
             </div>
         </div>

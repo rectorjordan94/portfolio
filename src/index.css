@@ -36,6 +36,7 @@ code {
   font-style: italic;
   padding: 2rem 2rem 0 2rem;
   color: #EEEEEE;
+  text-shadow: 2px 2px 2px #FD7014, 4px 4px 2px #000000;
 }
 
 #about-title {
@@ -48,8 +49,6 @@ code {
   padding-right: 3.5rem;
   color: #888b90;
   padding-bottom: .25rem;
-  /* margin-right: 7rem; */
-  /* font-style: italic; */
 }
 
 .paragraph {
@@ -92,6 +91,7 @@ code {
   font-style: italic;
   color: #EEEEEE;
   font-size: 2.5rem;
+  text-shadow: 1px 1px 1px #FD7014, 3px 3px 2px #000000;
 }
 
 .slash {
@@ -111,7 +111,7 @@ code {
   font-weight: 200;
   font-size: 1.5rem;
   color: #ffffff;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 #header {
@@ -125,6 +125,7 @@ code {
   padding: 0;
   font-style: italic;
   color: #ffffff;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 .nav-link {
@@ -175,4 +176,12 @@ code {
 
 ::-webkit-scrollbar-thumb {
   background-color: #FD7014;
+}
+
+.container {
+  max-width: 720px;
+}
+
+.image {
+  border-radius: 5px;
 }
