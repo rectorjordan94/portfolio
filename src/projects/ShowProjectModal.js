@@ -45,7 +45,7 @@ const ShowProjectModal = (props) => {
                     {project.github ? <a className="modal-link" href={project.github} target="_blank">GitHub</a> : null}
                     {project.frontendGitHub ? <a className="modal-link" href={project.frontendGitHub} target="_blank">Client GitHub</a> : null}
                     {project.backendGitHub ? <a className="modal-link" href={project.backendGitHub} target="_blank">Api GitHub</a> : null}
-                    <a className="modal-link" href={project.deployed} target="_blank">Deployed</a>
+                    <a className="modal-link" href={project.deployed} target="_blank">Deployed Link</a>
                 </Modal.Footer>
             </Modal>
         )

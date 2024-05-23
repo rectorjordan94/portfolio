@@ -22,7 +22,7 @@ const Projects = (props) => {
         },
         {
             name: 'hoist{m}',
-            description: "Full-stack MERN app and Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload. Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed to a significant portion of the backend development as well. Bulit with React, CSS, JavaScript, Express, Node.js, MongoDB, Mongoose, Axios, & Bootstrap.",
+            description: "Full-stack MERN app and Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload. Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed to a significant portion of the backend development. Bulit with React, CSS, JavaScript, Express, Node.js, MongoDB, Mongoose, Axios, & Bootstrap.",
             thumbnail: 'https://github.com/rectorjordan94/hoistm-client/raw/main/images_readme/label-filter.png',
             frontendGitHub: 'https://github.com/rectorjordan94/hoistm-client',
             backendGitHub: 'https://github.com/rectorjordan94/hoistm-api',
@@ -36,7 +36,7 @@ const Projects = (props) => {
             frontendGitHub: 'https://github.com/rectorjordan94/blink-client',
             backendGitHub: 'https://github.com/rectorjordan94/blink-api',
             deployed: 'https://main--gorgeous-cranachan-8bbf33.netlify.app/',
-            images: ['https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png']
+            images: ['https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png', 'https://github.com/rectorjordan94/blink-api/blob/main/images/CHANNEL_SEARCH.png?raw=true', 'https://github.com/rectorjordan94/blink-api/blob/main/images/THREAD.png?raw=true', 'https://github.com/rectorjordan94/blink-api/blob/main/images/AUTH.png?raw=true']
         }
     ]
 
