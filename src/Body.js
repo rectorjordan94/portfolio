@@ -1,7 +1,8 @@
-import About from "./body/About"
+// import About from "./body/Abou
 import Technologies from "./body/Technologies"
 import Projects from "./body/Projects"
 import Contact from "./body/Contact"
+import About from './body/About'
 
 const Body = (props) => {
 
