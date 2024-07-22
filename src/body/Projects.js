@@ -35,7 +35,7 @@ const Projects = (props) => {
             thumbnail: 'https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png',
             frontendGitHub: 'https://github.com/rectorjordan94/blink-client',
             backendGitHub: 'https://github.com/rectorjordan94/blink-api',
-            deployed: 'https://main--gorgeous-cranachan-8bbf33.netlify.app/',
+            deployed: 'https://blinkchat.netlify.app/sign-up',
             images: ['https://github.com/rectorjordan94/blink-api/raw/main/images/channel.png', 'https://github.com/rectorjordan94/blink-api/blob/main/images/CHANNEL_SEARCH.png?raw=true', 'https://github.com/rectorjordan94/blink-api/blob/main/images/THREAD.png?raw=true', 'https://github.com/rectorjordan94/blink-api/blob/main/images/AUTH.png?raw=true']
         }
     ]
