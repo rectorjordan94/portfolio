@@ -27,25 +27,22 @@
     max-width: 450px;
   }
 
+  #navigation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   #logo {
-    width: 30%;
+    max-width: 40px;
   }
 
-  #about-title {
-    color: #f0e5ff;
-    
+  #menu-icon {
+    max-width: 30px;
   }
 
-  #about-paragraph {
-
+  .offcanvas {
+    background-color: rgba(255, 87, 51, .5);
   }
-
-  #R {
-    position: absolute;
-    left: 49.125%;
-    top: -10px;
-  }
-
 }
 
 @media (min-width: 400px) {
