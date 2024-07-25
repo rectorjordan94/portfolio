@@ -7,7 +7,7 @@ const Body = (props) => {
 
     return (
         <div id="body">
-            <About />
+            {/* <About /> */}
             {/* <Technologies />
             <Projects />
             <Contact /> */}
