@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Exo:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 #root {
-  background-color: #171c22;
+  /* background-color: #ff6400;  */
+  background-color: #ff5733; 
+  /* background-color: #90ff00;  */
+  /* background-color: #8c00ff;  */
+  /* background: linear-gradient(0deg, #6f00ff 70%, #0d00ff 100%); */
+  /* background: linear-gradient(0deg, #0d00ff 0%, #6f00ff 25%, #6f00ff 50%, #6f00ff 75%, #0d00ff 100%); */
+  color: #f0e5ff;
   color: #fff;
 }
 
@@ -15,16 +27,23 @@
     max-width: 450px;
   }
 
-  #about-name {
-    font-size: 40px;
+  #logo {
+    width: 30%;
   }
 
   #about-title {
+    color: #f0e5ff;
     
   }
 
   #about-paragraph {
 
+  }
+
+  #R {
+    position: absolute;
+    left: 49.125%;
+    top: -10px;
   }
 
 }
