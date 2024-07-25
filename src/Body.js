@@ -8,9 +8,9 @@ const Body = (props) => {
     return (
         <div id="body">
             {/* <About /> */}
-            {/* <Technologies />
-            <Projects />
-            <Contact /> */}
+            {/* <Technologies /> */}
+            {/* <Projects />
+            <Contact />  */}
         </div>
     )
 }
