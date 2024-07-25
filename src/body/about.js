@@ -1,7 +1,7 @@
 const About = (props) => {
 
     //this is a comment
-    
+
 
     return (
         <div className="about container">

@@ -6,7 +6,7 @@ import Contact from "./body/Contact"
 const Body = (props) => {
 
     return (
-        <div id="body">
+        <div>
             {/* <About /> */}
             {/* <Technologies /> */}
             {/* <Projects />
