@@ -6,11 +6,11 @@ import Contact from "./body/Contact"
 const Body = (props) => {
 
     return (
-        <div className="body container-fluid">
+        <div id="body">
             <About />
-            <Technologies />
+            {/* <Technologies />
             <Projects />
-            <Contact />
+            <Contact /> */}
         </div>
     )
 }
