@@ -7,7 +7,7 @@ import Technologies from './body/Technologies';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App pt-3">
       <Header />
       {/* <Body /> */}
       <About />
