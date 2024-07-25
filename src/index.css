@@ -5,7 +5,39 @@
   color: #fff;
 }
 
+@media (min-width: 320px) {
 
+  .container {
+    padding: 0 10px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  
+
+}
+
+@media (min-width: 400px) {
+  
+}
+
+@media (min-width: 568px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1300px) {
+
+}
 
 /* 
 body {
