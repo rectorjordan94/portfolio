@@ -24,6 +24,7 @@ function App() {
       const lis = document.querySelectorAll('.main-li')
       const mainH2s = document.querySelectorAll('.main-h2')
       const navMenuContainer = document.querySelector('.navmenu-container')
+      const body = document.body
 
         if (navBar) {
             navBar.addEventListener('hide.bs.collapse', (e) => {
@@ -31,7 +32,8 @@ function App() {
               // root.style.color = '#00000078'
             })
           navBar.addEventListener('hidden.bs.collapse', (e) => {
-            navMenuContainer.classList.remove('navOpenOnMobile')
+              navMenuContainer.classList.remove('navOpenOnMobile')
+              body.classList.remove('fixed-position')
               // console.log('hidden')
               root.style.color = '#000000'
               lis.forEach(li => {
@@ -45,6 +47,7 @@ function App() {
             })
           navBar.addEventListener('show.bs.collapse', (e) => {
               navMenuContainer.classList.add('navOpenOnMobile')
+              body.classList.add('fixed-position')
               // console.log('show')
               // setShowNavBar(true)
               root.style.color = 'rgba(0,0,0,0.055)'
