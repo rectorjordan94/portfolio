@@ -114,7 +114,7 @@ body {
 
   .main-li {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     line-height: .95;
     padding-bottom: 7.5px;
     /* padding-right: 15px; */
@@ -134,7 +134,7 @@ body {
   }
 
   .megasenet {
-    transform: translateX(-30px) skew(.015turn, 7.5deg);
+    /* transform: translateX(-30px) skew(.015turn, 7.5deg); */
   }
 
   .nav-link {
@@ -200,7 +200,7 @@ body {
   }
 
   .navOpenOnMobile {
-    height: calc(100vh - 130px) !important;
+    height: calc(100vh - 250px) !important;
     overflow-y: hidden;
     /* justify-content: space-between!important; */
     align-content: space-between;

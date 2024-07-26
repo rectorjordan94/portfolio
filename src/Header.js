@@ -19,19 +19,16 @@ const Header = (props) => {
                             <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">01 </span>about</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">02 </span>technologies</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">02 </span>linkedin</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">03 </span>linkedin</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">03 </span>github</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">04 </span>github</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">04 </span>fortnite creator</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">05 </span>fortnite creator</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">06 </span>resume</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">05 </span>resume</a>
                         </li>
                     </ul>
                     <div className="nav-container">
