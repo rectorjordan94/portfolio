@@ -18,6 +18,9 @@ function App() {
     useEffect(() => {
       setNavBar(document.querySelector('.collapse'))
       const root = document.querySelector('#root')
+      const lis = document.querySelectorAll('.main-li')
+      const mainH2s = document.querySelectorAll('.main-h2')
+      console.log(lis)
 
         if (navBar) {
             navBar.addEventListener('hide.bs.collapse', (e) => {
@@ -27,11 +30,28 @@ function App() {
             navBar.addEventListener('hidden.bs.collapse', (e) => {
               console.log('hidden')
               root.style.color = '#000000'
+              lis.forEach(li => {
+                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.06)'
+                li.classList.remove('noHover')
+              });
+              mainH2s.forEach(h2 => {
+                h2.style.textShadow = '-20px 20px 0px rgba(255,255,255,0.1)'
+                h2.style.color = '#fff'
+              });
             })
             navBar.addEventListener('show.bs.collapse', (e) => {
                 console.log('show')
               // setShowNavBar(true)
-              root.style.color = '#0000001a'
+              root.style.color = 'rgba(0,0,0,0.06)'
+              lis.forEach(li => {
+                li.style.textShadow = 'none'
+                li.classList.add('noHover')
+              });
+              mainH2s.forEach(h2 => {
+                h2.style.textShadow = 'none'
+                h2.style.color = 'rgba(255,255,255,0.1)'
+                
+              });
             })
             navBar.addEventListener('shown.bs.collapse', (e) => {
               console.log('shown')

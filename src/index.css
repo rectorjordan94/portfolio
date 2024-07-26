@@ -6,7 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
+  height: 100%;
+  background-color: #ff6600;
+}
+
+body {
   height: 100%;
   background-color: #ff6600;
 }
@@ -94,7 +101,10 @@ html {
     /* padding-right: 15px; */
     display: block;
     /* transform: rotateZ(10deg); */
-    transform: skew(.025turn, 7.5deg)
+    transform: skew(.015turn, 7.5deg);
+    text-shadow: -20px 20px 0px rgba(255,255,255,0.1);
+    transition: text-shadow .5s ease-in-out;
+    transition: color .5s ease-in-out;
   }
 
   .main-ul {
@@ -109,13 +119,82 @@ html {
     /* padding-right: 15px; */
     display: block;
     /* transform: rotateZ(10deg); */
-    transform: skew(.025turn, 7.5deg);
+    transform: skew(.015turn, 7.5deg);
+    text-shadow: -20px 20px 0px rgba(0,0,0,0.06);
+    transition: text-shadow .3s ease-in-out;
+  }
+
+  .main-li:hover {
+    color: #fff;
+  }
+
+  .noHover {
+    pointer-events: none!important;
   }
 
   .megasenet {
-    transform: translateX(-30px) skew(.025turn, 7.5deg);
+    transform: translateX(-30px) skew(.015turn, 7.5deg);
   }
 
+  .nav-link {
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    color: #fff!important;
+  }
+  
+  .nav-nums {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: 1px;
+  }
+
+  .nav-descript {
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .nav-email {
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .navbar-text {
+    padding: 0!important;
+    margin: 0!important;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .navbar-text:nth-child(2) {
+    margin-bottom: 15px!important;
+    color: black;
+  }
+  .navbar-text:nth-child(3) {
+    /* color: black; */
+  }
+  .navbar-text:nth-child(4) {
+    color: black;
+  }
+
+  .nav-container {
+    margin-top: 25px;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between!important;
+  }
   
 
 }
