@@ -1,4 +1,3 @@
-import About from "./body/About"
 import Technologies from "./body/Technologies"
 import Projects from "./body/Projects"
 import Contact from "./body/Contact"

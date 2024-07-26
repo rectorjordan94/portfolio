@@ -1,16 +1,19 @@
 import './App.css';
 import Header from './Header';
 import Body from './Body';
-import About from './body/About';
 import Technologies from './body/Technologies';
 import { useEffect, useState } from 'react';
 import Main from './body/Main';
 
 function App() {
 
-  const html = document.getElementsByTagName('html')
+  const html = document.querySelector('html')
+  const body = document.querySelector('body')
 
-  console.log(html)
+  // shift color off array and push it on to the end
+  const colors = ['ff6600', '00ff66', '6600ff']
+
+  // might need to do the above with various classes that get added to the html & body elements instead, assign a background color to each class
 
   const [navBar, setNavBar] = useState(null)
     // const [showNavBar, setShowNavBar] = useState(false)
