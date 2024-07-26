@@ -68,11 +68,12 @@ body {
     color: #fff!important;
     padding: 0!important;
     border-radius: none!important;
+    margin-bottom: 20px;
   }
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    font-size: 25px!important;
+    font-size: 30px!important;
     pointer-events: none;
     /* margin-bottom: 15px!important; */
   }
@@ -185,15 +186,24 @@ body {
     color: black;
   }
 
-  .nav-container {
-    margin-top: 25px;
-  }
-
   .navbar-collapse {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between!important;
+  }
+  
+  .navmenu-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 65px;
+  }
+
+  .navOpenOnMobile {
+    height: calc(100vh - 130px) !important;
+    overflow-y: hidden;
+    /* justify-content: space-between!important; */
+    align-content: space-between;
   }
   
 

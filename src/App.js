@@ -20,15 +20,16 @@ function App() {
       const root = document.querySelector('#root')
       const lis = document.querySelectorAll('.main-li')
       const mainH2s = document.querySelectorAll('.main-h2')
-      console.log(lis)
+      const navMenuContainer = document.querySelector('.navmenu-container')
 
         if (navBar) {
             navBar.addEventListener('hide.bs.collapse', (e) => {
               console.log('hide')
               // root.style.color = '#00000078'
             })
-            navBar.addEventListener('hidden.bs.collapse', (e) => {
-              console.log('hidden')
+          navBar.addEventListener('hidden.bs.collapse', (e) => {
+            navMenuContainer.classList.remove('navOpenOnMobile')
+              // console.log('hidden')
               root.style.color = '#000000'
               lis.forEach(li => {
                 li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.05)'
@@ -39,8 +40,9 @@ function App() {
                 h2.style.color = '#fff'
               });
             })
-            navBar.addEventListener('show.bs.collapse', (e) => {
-                console.log('show')
+          navBar.addEventListener('show.bs.collapse', (e) => {
+              navMenuContainer.classList.add('navOpenOnMobile')
+              // console.log('show')
               // setShowNavBar(true)
               root.style.color = 'rgba(0,0,0,0.05)'
               lis.forEach(li => {
@@ -54,7 +56,7 @@ function App() {
               });
             })
             navBar.addEventListener('shown.bs.collapse', (e) => {
-              console.log('shown')
+              // console.log('shown')
               // root.style.color = '#0000001a'
             })
         }
