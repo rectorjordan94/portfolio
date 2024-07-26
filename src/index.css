@@ -45,7 +45,11 @@ body {
 
   #logo {
     max-width: 60px;
+    transform: perspective(120px) rotateX(25deg) rotateY(20deg) translateX(12px) translateY(-1px) scale(1.5);
+    /* filter: invert(); */
+    /* z-index: 2; */
   }
+
 
   .offcanvas {
     /* background-color: rgba(255, 87, 51, .5); */
@@ -133,10 +137,6 @@ body {
     pointer-events: none!important;
   }
 
-  .megasenet {
-    /* transform: translateX(-30px) skew(.015turn, 7.5deg); */
-  }
-
   .nav-link {
     font-family: 'Archivo', sans-serif;
     font-size: 18px;
@@ -197,6 +197,7 @@ body {
     display: flex;
     justify-content: space-between;
     max-height: 65px;
+    position: relative;
   }
 
   .navOpenOnMobile {

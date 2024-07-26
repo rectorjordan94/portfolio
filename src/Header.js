@@ -8,7 +8,7 @@ const Header = (props) => {
         <nav className="navbar position-absolute position-fixed navbar-expand-lg bg-body-tertiary container-fluid" id="navbar">
             <div className="container-fluid navmenu-container">
                 <div className="navmenu-header">
-                    <a className="navbar-brand" href="#"><img src="/images/1.png" alt="logo" id="logo" /></a>
+                    <a className="navbar-brand" href="#"><img src="/images/logo_shadow.png" alt="logo" id="logo" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="navToggle" >
                         <span className="navbar-toggler-icon"></span>
                     </button>
