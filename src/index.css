@@ -107,7 +107,7 @@ body {
     display: block;
     /* transform: rotateZ(10deg); */
     transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(255,255,255,0.1);
+    text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
@@ -125,7 +125,7 @@ body {
     display: block;
     /* transform: rotateZ(10deg); */
     transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(0,0,0,0.05);
+    text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
     transition: text-shadow .3s ease-in-out;
   }
 

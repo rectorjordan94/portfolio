@@ -35,11 +35,11 @@ function App() {
               // console.log('hidden')
               root.style.color = '#000000'
               lis.forEach(li => {
-                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.05)'
+                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.055)'
                 li.classList.remove('noHover')
               });
               mainH2s.forEach(h2 => {
-                h2.style.textShadow = '-20px 20px 0px rgba(255,255,255,0.1)'
+                h2.style.textShadow = '-20px 20px 0px rgba(255,255,255,0.115)'
                 h2.style.color = '#fff'
               });
             })
@@ -47,14 +47,14 @@ function App() {
               navMenuContainer.classList.add('navOpenOnMobile')
               // console.log('show')
               // setShowNavBar(true)
-              root.style.color = 'rgba(0,0,0,0.05)'
+              root.style.color = 'rgba(0,0,0,0.055)'
               lis.forEach(li => {
                 li.style.textShadow = 'none'
                 li.classList.add('noHover')
               });
               mainH2s.forEach(h2 => {
                 h2.style.textShadow = 'none'
-                h2.style.color = 'rgba(255,255,255,0.1)'
+                h2.style.color = 'rgba(255,255,255,0.115)'
                 
               });
             })
