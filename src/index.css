@@ -45,7 +45,7 @@ body {
 
   #logo {
     max-width: 60px;
-    transform: perspective(120px) rotateX(25deg) rotateY(20deg) translateX(12px) translateY(-1px) scale(1.5);
+    transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(12px) translateY(-1px) scale(1.5);
     /* filter: invert(); */
     /* z-index: 2; */
   }
