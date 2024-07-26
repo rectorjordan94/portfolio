@@ -45,7 +45,8 @@ body {
 
   #logo {
     max-width: 60px;
-    transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(12px) translateY(-1px) scale(1.5);
+    /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
+    transform: scale(2) translateX(12px) translateY(14px);
     /* filter: invert(); */
     /* z-index: 2; */
   }
@@ -144,21 +145,12 @@ body {
     font-weight: 600;
     color: #fff!important;
   }
-  
-  .nav-nums {
-    color: #000;
-    font-weight: 400;
-    font-size: 12px;
-    margin-right: 5px;
-    vertical-align: 2px;
-  }
 
   .nav-symbols {
     color: #000;
-    font-weight: 900;
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 18px;
     margin-right: 5px;
-    vertical-align: 2px;
   }
 
   .nav-descript {

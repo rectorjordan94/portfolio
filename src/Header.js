@@ -8,7 +8,7 @@ const Header = (props) => {
         <nav className="navbar position-absolute position-fixed navbar-expand-lg bg-body-tertiary container-fluid" id="navbar">
             <div className="container-fluid navmenu-container">
                 <div className="navmenu-header">
-                    <a className="navbar-brand" href="#"><img src="/images/logo_shadow.png" alt="logo" id="logo" /></a>
+                    <a className="navbar-brand" href="#"><img src="/images/Logo_Transparent.png" alt="logo" id="logo" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="navToggle" >
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -16,19 +16,19 @@ const Header = (props) => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">01</span><span className="nav-symbols">&#183;</span>about</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>about</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">02</span><span className="nav-symbols">&#183;</span>linkedin</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>linkedin</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">03</span><span className="nav-symbols">&#183;</span>github</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>github</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">04</span><span className="nav-symbols">&#183;</span>fortnite creator</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>fortnite creator</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-nums">05</span><span className="nav-symbols">&#183;</span>resume</a>
+                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>resume</a>
                         </li>
                     </ul>
                     <div className="nav-container">
