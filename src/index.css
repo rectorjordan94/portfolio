@@ -120,7 +120,7 @@ body {
     display: block;
     /* transform: rotateZ(10deg); */
     transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(0,0,0,0.06);
+    text-shadow: -20px 20px 0px rgba(0,0,0,0.05);
     transition: text-shadow .3s ease-in-out;
   }
 
@@ -140,16 +140,16 @@ body {
     font-family: 'Archivo', sans-serif;
     font-size: 18px;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff!important;
   }
   
   .nav-nums {
     color: #000;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 5px;
-    vertical-align: 1px;
+    vertical-align: 2px;
   }
 
   .nav-descript {

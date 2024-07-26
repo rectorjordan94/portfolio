@@ -31,7 +31,7 @@ function App() {
               console.log('hidden')
               root.style.color = '#000000'
               lis.forEach(li => {
-                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.06)'
+                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.05)'
                 li.classList.remove('noHover')
               });
               mainH2s.forEach(h2 => {
@@ -42,7 +42,7 @@ function App() {
             navBar.addEventListener('show.bs.collapse', (e) => {
                 console.log('show')
               // setShowNavBar(true)
-              root.style.color = 'rgba(0,0,0,0.06)'
+              root.style.color = 'rgba(0,0,0,0.05)'
               lis.forEach(li => {
                 li.style.textShadow = 'none'
                 li.classList.add('noHover')
