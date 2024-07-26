@@ -4,8 +4,13 @@ import Body from './Body';
 import About from './body/About';
 import Technologies from './body/Technologies';
 import { useEffect, useState } from 'react';
+import Main from './body/Main';
 
 function App() {
+
+  const html = document.getElementsByTagName('html')
+
+  console.log(html)
 
   const [navBar, setNavBar] = useState(null)
     // const [showNavBar, setShowNavBar] = useState(false)
@@ -50,7 +55,8 @@ function App() {
     <div className="App">
       <Header />
       {/* <Body /> */}
-      <About />
+      {/* <About /> */}
+      <Main />
       {/* <Technologies /> */}
       {/* <Footer /> */}
     </div>
