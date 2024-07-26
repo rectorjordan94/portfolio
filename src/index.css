@@ -46,7 +46,7 @@ body {
   #logo {
     max-width: 60px;
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
-    transform: scale(2) translateX(12px) translateY(14px);
+    transform: scale(2) translateX(10px) translateY(12px);
     /* filter: invert(); */
     /* z-index: 2; */
   }
@@ -132,6 +132,7 @@ body {
 
   .main-li:hover {
     color: #fff;
+    color: #feff00;
   }
 
   .noHover {
