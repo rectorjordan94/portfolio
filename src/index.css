@@ -8,11 +8,11 @@
 
 #root {
   /*? neon orange */
-  background-color: hsl(17, 100%, 55%);
+  background-color: #ff6600;
   /*? neon green */
-  /* background-color: hsl(65, 100%, 55%); */
+  /* background-color: #00ff66; */
   /*? neon indigo */
-  /* background-color: hsl(269, 100%, 55%); */
+  /* background-color: #6600ff; */
   color: #000;
   transition: color .5s ease-in-out;
 }

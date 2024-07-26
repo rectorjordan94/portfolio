@@ -4,7 +4,7 @@ const About = (props) => {
 
 
     return (
-        <div className="about container">
+        <div className="about container pt-5">
             <h1 id="about-name">Jordan Rector</h1>
             <h3 id="about-title">software engineer // web developer</h3>
             <hr className="line"/>
