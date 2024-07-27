@@ -250,6 +250,10 @@ body {
     transform: none;
   }
 
+  .fade { 
+    transition: opacity .25s linear;
+  }
+
   .modal {
     --bs-modal-zindex: 2;
     --bs-modal-header-border-color: none;
@@ -266,11 +270,11 @@ body {
     top: 70px;
     left: 120px;
     z-index: 3;
-    color: #000;
+    color: #fff;
     font-family: 'Archivo Black', sans-serif;
     font-size: 45px;
     transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
+    text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
   }
 
   .btn-close {
@@ -291,10 +295,38 @@ body {
     background-color: #ff6600;
   }
 
-  .modal {
-    background-color: none!important;
+  .bio-paragraph {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
   }
 
+  .bio-paragraph:nth-child(even) {
+    text-align: right;
+    color: #fff;
+  }
+
+  .bio-paragraph:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600px;
+  }
+
+  .bio-img {
+    height: 300px;
+    object-fit: cover;
+    /* height: 298px; */
+    /* background-color: #fff; */
+    /* padding: 10px 0px; */
+    /* width: 175px!important; */
+  }
+
+  .carousel-item {
+    /* left: 57px; */
+  }
+
+  .carousel {
+    margin-bottom: 16px;
+  }
 }
 
   
