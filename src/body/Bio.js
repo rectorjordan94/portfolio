@@ -29,7 +29,7 @@ const Bio = (props) => {
     			<div class="modal-content">
       				<div class="modal-header" id="about-modal-header">
         				<h5 class="modal-title" id="about-modal-title">ABOUT</h5>
-        				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        				<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       				</div>
       				<div class="modal-body text-dark">
         				This is where I'm gonna type some stuff and things for sure
