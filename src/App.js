@@ -1,14 +1,12 @@
 import './App.css';
 import Header from './Header';
-import Body from './Body';
-import Technologies from './body/Technologies';
 import { useEffect, useState } from 'react';
 import Main from './body/Main';
 
 function App() {
 
   const html = document.querySelector('html')
-  const body = document.querySelector('body')
+  const body = document.body
 
   // shift color off array and push it on to the end
   const colors = ['ff6600', '00ff66', '6600ff']
@@ -17,14 +15,14 @@ function App() {
 
   const [navBar, setNavBar] = useState(null)
     // const [showNavBar, setShowNavBar] = useState(false)
-
+    const root = document.querySelector('#root')
+    const lis = document.querySelectorAll('.main-li')
+    const mainH2s = document.querySelectorAll('.main-h2')
+    const navMenuContainer = document.querySelector('.navmenu-container')
+  
     useEffect(() => {
       setNavBar(document.querySelector('.collapse'))
-      const root = document.querySelector('#root')
-      const lis = document.querySelectorAll('.main-li')
-      const mainH2s = document.querySelectorAll('.main-h2')
-      const navMenuContainer = document.querySelector('.navmenu-container')
-      const body = document.body
+      
 
         if (navBar) {
             navBar.addEventListener('hide.bs.collapse', (e) => {
@@ -81,10 +79,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header mainH2s={mainH2s} />
       {/* <Body /> */}
       {/* <About /> */}
-      <Main />
+      <Main  />
       {/* <Technologies /> */}
       {/* <Footer /> */}
     </div>

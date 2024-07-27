@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
+import Bio from "./body/Bio"
 
 const Header = (props) => {
 
-    
+    const { mainH2s } = props
 
     return (
         <nav className="navbar position-absolute position-fixed navbar-expand-lg bg-body-tertiary container-fluid" id="navbar">
@@ -16,7 +17,8 @@ const Header = (props) => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>about</a>
+                            {/* <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>about</a> */}
+                            <Bio mainH2s={mainH2s} />
                         </li>
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="https://www.linkedin.com/in/rectorjordan943/" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>linkedin</a>

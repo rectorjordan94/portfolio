@@ -47,6 +47,8 @@ body {
     max-width: 60px;
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
     transform: scale(2) translateX(10px) translateY(12px);
+    position: relative;
+    z-index: 1;
   }
 
   .offcanvas {
@@ -127,7 +129,7 @@ body {
   }
 
   .main-li:hover {
-    color: #fff;
+    /* color: #fff; */
     color: #feff00;
   }
 
@@ -141,6 +143,36 @@ body {
     text-align: left;
     font-weight: 600;
     color: #fff!important;
+  }
+
+  .btn-primary {
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+    --bs-btn-disabled-color: none;
+  }
+
+  .modal-nav-button {
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0px;
+  }
+
+  li.nav-item {
+    text-align: left;
+  }
+
+  .modal-nav-button:hover {
+    color: #feff00;
   }
 
   .nav-symbols {
@@ -208,7 +240,64 @@ body {
     overflow: hidden;
   }
 
+  .modal-backdrop.show {
+    opacity: 0!important;
+    z-index: 0;
+  }
+  
+  .modal.fade .modal-dialog {
+    transition: none;
+    transform: none;
+  }
+
+  .modal {
+    --bs-modal-zindex: 2;
+    --bs-modal-header-border-color: none;
+    --bs-modal-bg: none;
+    --bs-modal-footer-bg: #ff6600;
+  }
+
+  #about-modal-header {
+    padding-bottom: 55px;
+  }
+
+  #about-modal-title {
+    position: relative;
+    top: 70px;
+    left: 120px;
+    z-index: 3;
+    color: #000;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 45px;
+    transform: skew(.015turn, 7.5deg);
+    text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
+  }
+
+  .btn-close {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    position: relative;
+    top: -20px;
+    --bs-btn-close-opacity: 1;
+    background-color: #ff6600;
+  }
+
+  #aboutmodal {
+    
+  }
+
+  .modal-body {
+    background-color: #ff6600;
+  }
+
+  .modal {
+    background-color: none!important;
+  }
+
 }
+
+  
 
 @media (min-width: 400px) {
   
