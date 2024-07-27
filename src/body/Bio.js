@@ -47,6 +47,36 @@ const Bio = (props) => {
 									<div class="carousel-item">
 										<img src="/bio_photos/364260916_829877328745583_4285141526066776034_n.jpg" class="d-block w-100 bio-img" alt="..."></img>
 									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/atitlan3.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/chiapas.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/ice7.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/ice.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/st_louis.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/ice4.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/switz.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/sequoia.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/sanfran.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
+									<div class="carousel-item">
+										<img src="/bio_photos/ice3.jpeg" class="d-block w-100 bio-img" alt="..."></img>
+									</div>
 								</div>
 								<button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
 									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
