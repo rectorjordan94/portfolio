@@ -1,4 +1,23 @@
+import { useEffect } from "react"
+
 const Bio = (props) => {
+
+	const modal = document.querySelector('.modal')
+	const { mainH2s } = props
+
+	if (modal) {
+		modal.addEventListener('show.bs.modal', () => {
+			mainH2s.forEach(h2 => {
+				h2.style.color = 'rgba(0,0,0,0)'
+			});
+			
+		})
+		modal.addEventListener('hidden.bs.modal', () => {
+			mainH2s.forEach(h2 => {
+				h2.style.color = 'rgba(255,255,255,0.115)'
+			})
+		})
+	}
 
 	return (
 		<>
