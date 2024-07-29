@@ -34,7 +34,7 @@ const Bio = (props) => {
 						<div class="modal-body text-dark">
 							<p className="bio-paragraph">Hi, I'm Jordan!</p>
 							<p className="bio-paragraph">As a full-stack software engineer and web developer, I bring a unique blend of experience from hospitality and game design. My professional journey has equipped me with a versatile skill set, making me a bit of a jack-of-all-trades.</p>
-							<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography, and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
+							<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
 							<p className="bio-paragraph">I am deeply passionate about finding efficient and elegant solutions to modern challenges and am committed to continuous learning to stay at the forefront of this ever-evolving field.</p>
 							<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 								<div class="carousel-inner">
