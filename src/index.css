@@ -439,11 +439,38 @@ body {
     font-size: 20px;
   }
 
-  #built-cont {
+  /* #built-cont {
     height: 60px;
     padding: 10px;
     margin-bottom: 10px;
     padding-left: 0;
+  } */
+
+  #built-cont {
+    padding: 10px 10px 8px 10px;
+  }
+
+  #tech-cont {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .tech {
+    display: block;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    transform: scaleY(1.1);
+    transition: all .5s ease-in-out;
+  }
+
+  #built-title {
+    margin: 0;
+    /* padding-top: 10px; */
+    font-family: 'Archivo Black', sans-serif;
   }
 
   /* replace scrolling animation, causes the page to scroll horizontally, which I don't want */

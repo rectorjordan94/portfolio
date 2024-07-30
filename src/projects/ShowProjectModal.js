@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 
 const ShowProjectModal = (props) => {
@@ -8,7 +9,11 @@ const ShowProjectModal = (props) => {
 
     if (project) {
 
-        console.log(project.builtWith)
+        let technologies = project.builtWith.map((elem, i) => {
+            return (
+                <span className="tech" key={i}>{elem}</span>
+            )
+        })
 
         return (
             <Modal show={show} fullscreen={true} onHide={handleClose} id="project-modal">
@@ -31,7 +36,10 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="built-cont">
                         <h3 id="built-title">BUILT WITH:</h3>
-                            {/* {skills} */}
+                        <div id="tech-cont" className="container">
+                            {technologies}
+                        </div>
+                            
                     </div>
                     <div className="container" id="github-cont">
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
