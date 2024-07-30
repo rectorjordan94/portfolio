@@ -19,7 +19,7 @@ const Main = (props) => {
             name: 'HOIST{M}',
             deployed: 'https://hoistm.netlify.app',
             description1: "Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload.",
-            video: '',
+            video: '/videos/Hoist_Walkthrough.mp4',
             description2: 'Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed significantly to the backend development.',
             builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT ', 'AXIOS'],
             github: 'https://github.com/rectorjordan94/hoistm-client',
