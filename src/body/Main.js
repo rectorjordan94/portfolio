@@ -36,8 +36,8 @@ const Main = (props) => {
         {
             name: 'CENTIPEDE',
             deployed: 'https://rectorjordan94.github.io/Centipede',
-            description1: 'Remake of one of my favorite classic arcade games, playable directly in the browser.',
-            video: '',
+            description1: 'Remake of one of my favorite arcade games, playable directly in the browser.',
+            video: '/videos/Centipede_Walkthrough.mp4',
             description2: 'Features both keyboard and button inputs for player movement and firing projectiles, randomly generated environmental obstacles, level progression, game reset, scoring, and custom pixel art.',
             builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'CANVAS'],
             github: 'https://github.com/rectorjordan94/Centipede',
