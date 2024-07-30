@@ -34,16 +34,16 @@ const Header = (props) => {
                         </li>
                     </ul>
                     <div className="nav-container">
-                        <p class="navbar-text nav-descript">
+                        <p className="navbar-text nav-descript">
                         Jordan Rector
                         </p>
-                        <p class="navbar-text nav-descript">
+                        <p className="navbar-text nav-descript">
                             Software, Web, & Game Developer
                         </p>
-                        <p class="navbar-text nav-descript">
+                        <p className="navbar-text nav-descript">
                             Sacramento California
                         </p>
-                        <p class="navbar-text nav-descript nav-email">
+                        <p className="navbar-text nav-descript nav-email">
                             rectorjordan94@gmail.com
                         </p>
                     </div>

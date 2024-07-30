@@ -1,11 +1,44 @@
-// import { NavItem } from "react-bootstrap"
+import { Modal } from "react-bootstrap";
+
+const ShowProjectModal = (props) => {
+
+    let show = props.show
+    let project = JSON.parse(props.currentProject)
+    let handleClose = props.handleClose
+
+    if (project) {
+
+        // console.log(show)
+        // console.log(project.name)
+        console.log('**************************')
+        console.log('project in if statement: ' + project)
+        console.log('**************************')
+
+        return (
+            <Modal show={show} fullscreen={true} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{project.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{project.name}</Modal.Body>
+            </Modal>
+        )
+    } else {
+        return (
+            <></>
+        )
+    }
+    
+}
+
+export default ShowProjectModal
+
 // import Modal from "react-bootstrap/Modal" 
 
 // const ShowProjectModal = (props) => {
 //     const { show, project, handleClose } = props
 
 //     if (project) {
-
+        
 //         const carouselImages = []
 
 //         project.images.forEach((element, i) => {
