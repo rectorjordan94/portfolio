@@ -12,7 +12,7 @@ const Main = (props) => {
             description1: "Slack clone where users can create and join different channels and chat with other users in real-time. ",
             video: '/videos/Blink_Walkthrough.mp4',
             description2: 'Utilizes socket.io for bidirectional event-based communication between clients and server for live chat functionality.',
-            builtWith: 'HTML << CSS << JAVASCRIPT << NODE.JS << EXPRESS << MONGODB << MONGOOSE << BOOTSTRAP << REACT << AXIOS <<',
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT', 'AXIOS'],
             github: 'https://github.com/rectorjordan94/blink-client'
         },
         {
@@ -21,7 +21,7 @@ const Main = (props) => {
             description1: "Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload.",
             video: '',
             description2: 'Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed significantly to the backend development.',
-            builtWith: ['HTML', 'CSS,', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT', 'AXIOS'],
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT ', 'AXIOS'],
             github: 'https://github.com/rectorjordan94/hoistm-client',
         },
         {
@@ -30,16 +30,16 @@ const Main = (props) => {
             description1: "Collaborative wiki app based on the board game Everdell.",
             video: '',
             description2: `Made in the MVC system with authentication, authorization, and full CRUD on the app's main resource.`,
-            builtWith: ['HTML', 'CSS,', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'LIQUIDJS'],
-            github: 'https://github.com/rectorjordan94/everdell-wiki',
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'LIQUIDJS'],
+            github: 'https://github.com/rectorjordan94/everdell-wiki'
         },
         {
             name: 'CENTIPEDE',
             deployed: 'https://rectorjordan94.github.io/Centipede',
             description1: 'Remake of one of my favorite classic arcade games, playable directly in the browser.',
             video: '',
-            description2: 'Features both keyboard & button inputs for player movement & firing projectiles, randomly generated environmental obstacles, level progression, game reset, scoring, and custom pixel art.',
-            builtWith: 'HTML, CSS, JAVASCRIPT, CANVAS',
+            description2: 'Features both keyboard and button inputs for player movement and firing projectiles, randomly generated environmental obstacles, level progression, game reset, scoring, and custom pixel art.',
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'CANVAS'],
             github: 'https://github.com/rectorjordan94/Centipede',
         }
     ]

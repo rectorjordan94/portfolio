@@ -11,11 +11,15 @@
 html {
   height: 100%;
   background-color: #ff6600;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   height: 100%;
   background-color: #ff6600;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
@@ -392,7 +396,7 @@ body {
   #deployed-link {
     font-family: 'Archivo', sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0;
     font-weight: 400;
   }
@@ -442,7 +446,9 @@ body {
     padding-left: 0;
   }
 
-  .scroll {
+  /* replace scrolling animation, causes the page to scroll horizontally, which I don't want */
+
+  /* .scroll {
     white-space: nowrap;
     position: absolute;
     overflow: hidden;
@@ -478,7 +484,7 @@ body {
     100% {
       transform: translateX(-100%);
     }
-  }
+  } */
 }
 
   

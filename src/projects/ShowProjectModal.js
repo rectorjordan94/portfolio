@@ -8,11 +8,7 @@ const ShowProjectModal = (props) => {
 
     if (project) {
 
-        // console.log(show)
-        // console.log(project.name)
-        console.log('**************************')
-        console.log('project in if statement: ' + project)
-        console.log('**************************')
+        console.log(project.builtWith)
 
         return (
             <Modal show={show} fullscreen={true} onHide={handleClose} id="project-modal">
@@ -28,19 +24,14 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="video-cont">
                         {/* still need to add video files and properly link to them */}
-                        <video src={project.video} id="project-video" autoPlay="true" controls="true" loop="true"></video>
+                        <video src={project.video} id="project-video" autoPlay={true} controls={true} loop={true}></video>
                     </div>
                     <div className="container" id="descript2-cont">
                         <p id="descript2">{project.description2}</p>
                     </div>
                     <div className="container" id="built-cont">
                         <h3 id="built-title">BUILT WITH:</h3>
-                        <div className="scroll">
-                            <span class="built-with">{project.builtWith}</span>
-                        </div>
-                        <div className="scroll scroll2">
-                            <span class="built-with">{project.builtWith}</span>
-                        </div>
+                            {/* {skills} */}
                     </div>
                     <div className="container" id="github-cont">
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
