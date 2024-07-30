@@ -282,9 +282,9 @@ body {
     height: 35px;
     font-size: 35px;
     position: relative;
-    top: -20px;
+    /* top: -20px; */
     --bs-btn-close-opacity: 1;
-    background-color: #ff6600;
+    /* background-color: #ff6600; */
   }
 
   #aboutmodal {
@@ -359,6 +359,77 @@ body {
 
   .project-button:hover {
     color: #feff00;
+  }
+
+  #project-modal {
+    background-color: #fff;
+  }
+
+  #project-header {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  #project-name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 45px;
+  }
+
+  #project-body {
+    background-color: #fff;
+    padding: 0;
+  }
+
+  #deployed-cont {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #deployed-link {
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
+  #descript1-cont, #descript2-cont {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  #descript2-cont {
+    padding-top: 5px;
+  }
+
+  #descript1, #descript2 {
+    margin-bottom: 0;
+  }
+
+  #project-video {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #github-cont {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #github-link {
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
   }
 }
 
