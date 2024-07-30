@@ -27,8 +27,8 @@ const Main = (props) => {
         {
             name: 'EVERDELL-WIKI',
             deployed: 'https://everdellwiki.fly.dev',
-            description1: "Collaborative wiki app based on the board game Everdell.",
-            video: '',
+            description1: "Collaborative wiki app based on the board game Everdell, a card drafting and worker placement game, and a personal favorite of mine.",
+            video: '/videos/Everdell_Walkthrough.mp4',
             description2: `Made in the MVC system with authentication, authorization, and full CRUD on the app's main resource.`,
             builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'LIQUIDJS'],
             github: 'https://github.com/rectorjordan94/everdell-wiki'
