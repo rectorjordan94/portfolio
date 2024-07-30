@@ -1,5 +1,5 @@
 import ShowProjectModal from "../projects/ShowProjectModal"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 const Main = (props) => {
 
     const [currentProject, setCurrentProject] = useState(null)
@@ -10,7 +10,7 @@ const Main = (props) => {
             name: 'BLINK',
             deployed: 'https://blinkchat.netlify.app',
             description1: "Full-stack Slack clone where users can create and join different channels and chat with other users in real-time. Built with the MERN stack using the MVC system for organizing the code. Utilizes socket.io for bidirectional event-based communication between clients and server for chat functionality. Created with HTML, CSS, JavaScript, React, MongoDB, Mongoose, Express, and Node.js.",
-            video: '',
+            video: '/videos/Blink_Walkthrough.mp4',
             description2: '',
             builtWith: ['HTML', 'CSS,', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT', 'AXIOS'],
             github: 'https://github.com/rectorjordan94/blink-client'
@@ -44,7 +44,7 @@ const Main = (props) => {
         }
     ]
 
-    // I feel like, when each button is clicked, we set the current project and then set show to true
+    // when each button is clicked, set the current project and then set show to true
     const onClick = (e) => {
         e.preventDefault()
         // set the current project
@@ -63,9 +63,9 @@ const Main = (props) => {
         <section id="main-section">
             <div className="container">
                 <h2 className="main-h2">PROJECTS</h2>
-                <ul className="main-ul">
+                <div className="container project-button-container">
                     {projectLis}
-                </ul>
+                </div>
                 <h2 className="main-h2">UEFN</h2>
                 <ul className="main-ul">
                     <li className="main-li megasenet">MEGASENET_AI</li>
