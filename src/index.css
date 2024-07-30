@@ -350,7 +350,7 @@ body {
     background: none;
     transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0);
     text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
-    transition: text-shadow .3s ease-in-out;
+    transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
   .project-button:nth-child(3) {
