@@ -2,15 +2,8 @@ import ShowProjectModal from "../projects/ShowProjectModal"
 import { useState, useEffect } from "react"
 const Main = (props) => {
 
-    // const [projectString, setProjectString] = useState("")
     const [currentProject, setCurrentProject] = useState(null)
     const [modalShow, setModalShow] = useState(false)
-
-    // useEffect(() => {
-    //     if (projectString) {
-    //         setCurrentProject(JSON.parse(projectString))
-    //     }
-    // }, [projectString])
 
     const projects = [
         {
@@ -24,7 +17,7 @@ const Main = (props) => {
         },
         {
             name: 'HOIST{M}',
-            deployed: 'hoistm.netlify.app/',
+            deployed: 'https://hoistm.netlify.app',
             description1: "Full-stack MERN app and Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload. Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed to a significant portion of the backend development. Bulit with React, CSS, JavaScript, Express, Node.js, MongoDB, Mongoose, Axios, & Bootstrap.",
             video: '',
             description2: '',
@@ -33,7 +26,7 @@ const Main = (props) => {
         },
         {
             name: 'EVERDELL-WIKI',
-            deployed: 'everdellwiki.fly.dev/',
+            deployed: 'https://everdellwiki.fly.dev',
             description1: "Collaborative, full-stack wiki app made in the MVC system with authentication, authorization, and full CRUD on the app's main resource. Built with HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Bootstrap, & LiquidJS.",
             video: '',
             description2: '',
@@ -42,7 +35,7 @@ const Main = (props) => {
         },
         {
             name: 'CENTIPEDE',
-            deployed: 'rectorjordan94.github.io/Centipede/',
+            deployed: 'https://rectorjordan94.github.io/Centipede',
             description1: 'Remake of the classic arcade game, playable directly in the browser. Features keyboard & button inputs for player movement & projectiles, randomly generated environmental obstacles, level progression, player lives, game reset, & scoring.',
             video: '',
             description2: '',
@@ -50,18 +43,6 @@ const Main = (props) => {
             github: 'https://github.com/rectorjordan94/Centipede',
         }
     ]
-
-    // console.log(projects)
-
-    // project object exists as a data attribute on each button, clicking the button sets the project that was clicked on as the current project
-
-    // const onClick = (e) => {
-    //     e.preventDefault()
-    //     // console.log(e.target.dataset.project)
-    //     setCurrentProject(e.target.dataset.project)
-    //     // setCurrentProject(e.target.dataset.project)
-    //     console.log(currentProject)
-    // }
 
     // I feel like, when each button is clicked, we set the current project and then set show to true
     const onClick = (e) => {
@@ -72,26 +53,12 @@ const Main = (props) => {
         setModalShow(true)
     }
 
-    // every time the current project is set (by clicking on its respective button, the modal should show)
-    // useEffect(() => {
-    //     if (currentProject) {
-    //         setModalShow(true)
-    //     }
-    // }, [currentProject])
-
     const projectLis = projects.map((project, i) => {
         return(
             <button className='project-button' data-project={JSON.stringify(project)} onClick={onClick} key={i}>{project.name}</button>
         )
     })
     
-    // 
-
-    // <button className="btn btn-primary project-button" data-project={project} key={i} onClick={onClick}>
-    //             {project.name}
-    //         </button>
-    
-
     return (
         <section id="main-section">
             <div className="container">
