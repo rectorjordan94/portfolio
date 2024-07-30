@@ -27,9 +27,10 @@ const Bio = (props) => {
 			<div className="modal fade" id="aboutmodal" tabIndex="-1" aria-labelledby="aboutModallabel" aria-hidden="true">
 			<div className="modal-dialog modal-fullscreen modal-dialog-scrollable">
     			<div className="modal-content">
-      				<div className="modal-header" id="about-modal-header">
+						<div className="modal-header" id="about-modal-header">
+						<img src="/images/Logo_Transparent.png" alt="logo" id="logo-bio" />
         				<h5 className="modal-title" id="about-modal-title">ABOUT</h5>
-        				<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        				<button type="button" id="about-close" className="btn-close" data-bs-dismiss="modal" data-bs-theme="dark" aria-label="Close"></button>
       				</div>
 						<div className="modal-body text-dark">
 							<p className="bio-paragraph">Hi, I'm Jordan!</p>
