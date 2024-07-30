@@ -34,7 +34,13 @@ const ShowProjectModal = (props) => {
                         <p id="descript2">{project.description2}</p>
                     </div>
                     <div className="container" id="built-cont">
-                        {/* built with goes here */}
+                        <h3 id="built-title">BUILT WITH:</h3>
+                        <div className="scroll">
+                            <span class="built-with">{project.builtWith}</span>
+                        </div>
+                        <div className="scroll scroll2">
+                            <span class="built-with">{project.builtWith}</span>
+                        </div>
                     </div>
                     <div className="container" id="github-cont">
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
