@@ -16,7 +16,7 @@ function App() {
   const [navBar, setNavBar] = useState(null)
     // const [showNavBar, setShowNavBar] = useState(false)
     const root = document.querySelector('#root')
-    const lis = document.querySelectorAll('.main-li')
+    const projectButtons = document.querySelectorAll('.project-button')
     const mainH2s = document.querySelectorAll('.main-h2')
     const navMenuContainer = document.querySelector('.navmenu-container')
   
@@ -33,10 +33,11 @@ function App() {
               navMenuContainer.classList.remove('navOpenOnMobile')
               body.classList.remove('fixed-position')
               // console.log('hidden')
-              root.style.color = '#000000'
-              lis.forEach(li => {
-                li.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.055)'
-                li.classList.remove('noHover')
+              // root.style.color = '#000000'
+              projectButtons.forEach((button) => {
+                button.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.055)'
+                button.classList.remove('noHover')
+                button.style.color = '#000000'
               });
               mainH2s.forEach(h2 => {
                 h2.style.textShadow = '-20px 20px 0px rgba(255,255,255,0.115)'
@@ -48,10 +49,11 @@ function App() {
               body.classList.add('fixed-position')
               // console.log('show')
               // setShowNavBar(true)
-              root.style.color = 'rgba(0,0,0,0.055)'
-              lis.forEach(li => {
-                li.style.textShadow = 'none'
-                li.classList.add('noHover')
+              // root.style.color = 'rgba(0,0,0,0.055)'
+              projectButtons.forEach((button) => {
+                button.style.textShadow = 'none'
+                button.classList.add('noHover')
+                button.style.color = 'rgba(0,0,0,0.055)'
               });
               mainH2s.forEach(h2 => {
                 h2.style.textShadow = 'none'
