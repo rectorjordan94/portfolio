@@ -327,7 +327,7 @@ body {
     padding: 10px;
   }
 
-  .bio-container:nth-child(even) {
+  .bio-container:nth-child(odd) {
     background-color: #fff;
   }
 

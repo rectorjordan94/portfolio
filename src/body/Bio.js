@@ -34,10 +34,7 @@ const Bio = (props) => {
       				</div>
 						<div className="modal-body text-dark" id="bio-modal-body">
 							<div className="bio-container">
-								<p className="bio-paragraph">Hi, I'm Jordan!</p>
-							</div>
-							<div className="bio-container">
-								<p className="bio-paragraph">As a full-stack software engineer and web developer, I bring a unique blend of experience from hospitality and game design. My professional journey has equipped me with a versatile skill set, making me a bit of a jack-of-all-trades.</p>
+								<p className="bio-paragraph">Hi there! I'm Jordan, a software, web, and game developer with an unconventional blend of hospitality and game design experience. My experiences and wide-ranging interests have shaped me into a bit of a jack-of-all-trades, resulting in a highly adaptable skill set.</p>
 							</div>
 							<div className="bio-container">
 								<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
