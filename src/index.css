@@ -323,16 +323,6 @@ body {
     margin: 0;
   }
 
-  /* .bio-paragraph:nth-child(even) {
-    text-align: right;
-    color: #fff;
-  }
-
-  .bio-paragraph:nth-child(1) {
-    font-size: 18px;
-    font-weight: 600px;
-  } */
-
   .bio-container {
     padding: 10px;
   }
@@ -354,14 +344,6 @@ body {
     /* width: 175px!important; */
   }
 
-  .carousel-item {
-    /* left: 57px; */
-  }
-
-  .carousel {
-    /* margin-bottom: 16px; */
-  }
-
   .project-button-container {
     display: flex;
     flex-direction: column;
@@ -369,6 +351,12 @@ body {
     padding: 0;
     /* position: relative; */
     padding-top: 5px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+    scale: 1.25;
+    margin: 5px;
   }
 
   .project-button {
