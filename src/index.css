@@ -327,8 +327,16 @@ body {
     padding: 10px;
   }
 
-  .bio-container:nth-child(odd) {
+  .bio-container:nth-child(even) {
     background-color: #fff;
+  }
+
+  .bio-container:nth-child(odd) {
+    color: #fff;
+  }
+
+  .bio-container:nth-child(1) {
+    margin-top: 35px;
   }
 
   #project-name {

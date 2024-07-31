@@ -34,13 +34,10 @@ const Bio = (props) => {
       				</div>
 						<div className="modal-body text-dark" id="bio-modal-body">
 							<div className="bio-container">
-								<p className="bio-paragraph">Hi there! I'm Jordan, a software, web, and game developer with an unconventional blend of hospitality and game design experience. My experiences and wide-ranging interests have shaped me into a bit of a jack-of-all-trades, resulting in a highly adaptable skill set.</p>
+								<p className="bio-paragraph">Hey, I'm Jordan! I'm a software and game developer with a knack for creative problem-solving and a keen eye for design thanks to my diverse background and wide-ranging interests.</p>
 							</div>
 							<div className="bio-container">
-								<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
-							</div>
-							<div className="bio-container">
-								<p className="bio-paragraph">I am deeply passionate about finding efficient and elegant solutions to modern challenges and am committed to continuous learning to stay at the forefront of this ever-evolving field.</p>
+								<p className="bio-paragraph">I spent ten years in the food and beverage industry. That experience made me highly adaptable and gave me plenty of opportunities to be creative while tackling various challenges. This mix of creativity and problem-solving is what led me to software and game development. Now I'm using those skills to create fun and impactful projects.</p>
 							</div>
 							<div id="bio-img-container">
 							<div id="carouselFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -94,13 +91,13 @@ const Bio = (props) => {
 								</button>
 								</div>
 							</div>
-								
+							
 							</div>
 							<div className="bio-container">
-								<p className="bio-paragraph">Beyond my professional endeavors, I am a bit of a hobby hoarder with a wide range of interests. Whether it's reading fantasy novels, playing video games, hiking, camping, traveling, capturing moments through photography, cooking up new recipes, or drawing, I find joy in diverse activities.</p>
-							</div>
+								<p className="bio-paragraph">Outside of work, I'm a bit of a hobby hoarder. From photography and cooking, to hiking and gaming, I'm always diving into new activities. I love learning new things--whether it's a new recipe, picking up a coding language, or theorycrafting builds for the games I'm playing.</p>
+							</div>	
 							<div className="bio-container">
-								<p className="bio-paragraph">Also, as a neurodivergent individual and a proud member of the LGBTQIA+ community, I bring a unique perspective to my work and life. My eclectic interests and inclusive mindset drive me to create meaningful and innovative solutions that resonate with a broad audience.</p>
+								<p className="bio-paragraph">I'm really passionate about games. I think you can learn a lot about someone by watching them play or playing alongside them. I'm fascinated by how people make decisions and what drives their choices, especially in games.</p>
 							</div>
       				</div>
     			</div>
