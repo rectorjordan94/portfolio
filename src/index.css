@@ -470,6 +470,7 @@ body {
   .project-button {
     /* position: relative; */
     font-family: 'Archivo Black', sans-serif;
+    text-align: right;
     font-size: 30px;
     line-height: .95;
     padding: 0;

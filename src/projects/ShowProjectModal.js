@@ -5,7 +5,10 @@ const ShowProjectModal = (props) => {
 
     let show = props.show
     let project = JSON.parse(props.currentProject)
+    let uefn = JSON.parse(props.currentUEFN)
     let handleClose = props.handleClose
+
+    console.log(uefn)
 
     if (project) {
 
@@ -43,6 +46,33 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="github-cont">
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
+                        {/* maybe add button for next project here */}
+                    </div>
+                </Modal.Body>
+            </Modal>
+        )
+    } else if (uefn) {
+        return (
+            <Modal show={show} fullscreen={true} onHide={handleClose} id="project-modal">
+                <Modal.Header closeButton id="project-header">
+                    <Modal.Title id="project-name">{uefn.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body id="project-body">
+                    <div className="container" id="deployed-cont">
+                        <a href="#" target="_blank" rel="noreferrer" id="deployed-link">{uefn.islandCode}</a>
+                    </div>
+                    <div className="container" id="descript1-cont">
+                        <p id="descript1">{uefn.description1}</p>
+                    </div>
+                    <div className="container" id="video-cont">
+                        {/* still need to add video files and properly link to them */}
+                        <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true}></video>
+                    </div>
+                    <div className="container" id="descript2-cont">
+                        <p id="descript2">{uefn.description2}</p>
+                    </div>
+                    <div className="container" id="github-cont">
+                        <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="github-link">FORTNITE.COM</a>
                         {/* maybe add button for next project here */}
                     </div>
                 </Modal.Body>
