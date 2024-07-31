@@ -266,16 +266,17 @@ body {
   }
 
   #about-modal-header {
-    padding-bottom: 55px;
+    padding-bottom: 8px;
     background-color: #000;
+    align-items: flex-start;
   }
 
   #logo-bio {
     max-width: 60px;
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
-    transform: scale(2) translateX(4px) translateY(4px);
+    transform: scale(2) translateX(6px) translateY(6px);
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     padding: 1px;
     /* background-color: #ff6600; */
     /* border-radius: 50%; */
@@ -285,14 +286,15 @@ body {
 
   #about-modal-title {
     position: relative;
-    top: 70px;
-    left: 120px;
+    top: 40px;
+    left: 115px;
     z-index: 3;
     color: #fff;
+    /* color: #ff6600; */
     font-family: 'Archivo Black', sans-serif;
     font-size: 45px;
-    transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
+    /* transform: skew(.015turn, 7.5deg); */
+    /* text-shadow: -20px 20px 0px rgba(255,255,255,0.115); */
     /* text-shadow: -20px 20px 0px rgba(255, 102, 0, 0.25) */
   }
 
@@ -318,9 +320,10 @@ body {
     font-family: 'Archivo', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    margin: 0;
   }
 
-  .bio-paragraph:nth-child(even) {
+  /* .bio-paragraph:nth-child(even) {
     text-align: right;
     color: #fff;
   }
@@ -328,14 +331,26 @@ body {
   .bio-paragraph:nth-child(1) {
     font-size: 18px;
     font-weight: 600px;
+  } */
+
+  .bio-container {
+    padding: 10px;
+  }
+
+  .bio-container:nth-child(even) {
+    background-color: #fff;
+  }
+
+  #bio-modal-body {
+    padding: 0;
   }
 
   .bio-img {
     height: 300px;
     object-fit: cover;
     /* height: 298px; */
-    /* background-color: #fff; */
-    /* padding: 10px 0px; */
+    background-color: #ff6600;
+    padding: 10px 10px;
     /* width: 175px!important; */
   }
 
@@ -344,7 +359,7 @@ body {
   }
 
   .carousel {
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   .project-button-container {

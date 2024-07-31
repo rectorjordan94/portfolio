@@ -32,11 +32,20 @@ const Bio = (props) => {
         				<h5 className="modal-title" id="about-modal-title">ABOUT</h5>
         				<button type="button" id="about-close" className="btn-close" data-bs-dismiss="modal" data-bs-theme="dark" aria-label="Close"></button>
       				</div>
-						<div className="modal-body text-dark">
-							<p className="bio-paragraph">Hi, I'm Jordan!</p>
-							<p className="bio-paragraph">As a full-stack software engineer and web developer, I bring a unique blend of experience from hospitality and game design. My professional journey has equipped me with a versatile skill set, making me a bit of a jack-of-all-trades.</p>
-							<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
-							<p className="bio-paragraph">I am deeply passionate about finding efficient and elegant solutions to modern challenges and am committed to continuous learning to stay at the forefront of this ever-evolving field.</p>
+						<div className="modal-body text-dark" id="bio-modal-body">
+							<div className="bio-container">
+								<p className="bio-paragraph">Hi, I'm Jordan!</p>
+							</div>
+							<div className="bio-container">
+								<p className="bio-paragraph">As a full-stack software engineer and web developer, I bring a unique blend of experience from hospitality and game design. My professional journey has equipped me with a versatile skill set, making me a bit of a jack-of-all-trades.</p>
+							</div>
+							<div className="bio-container">
+								<p className="bio-paragraph">From software, web, and game development to restaurant management and menu development, UX and graphic design, photography and 3D modeling, I thrive on tackling complex problems and crafting user-friendly experiences.</p>
+							</div>
+							<div className="bio-container">
+								<p className="bio-paragraph">I am deeply passionate about finding efficient and elegant solutions to modern challenges and am committed to continuous learning to stay at the forefront of this ever-evolving field.</p>
+							</div>
+							<div id="bio-img-container">
 							<div id="carouselFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
 								<div className="carousel-inner">
 									<div className="carousel-item active">
@@ -77,9 +86,8 @@ const Bio = (props) => {
 									</div>
 									<div className="carousel-item">
 										<img src="/bio_photos/ice3.jpeg" className="d-block w-100 bio-img" alt="..."></img>
-									</div>
-								</div>
-								<button className="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+										</div>
+										<button className="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
 									<span className="carousel-control-prev-icon" aria-hidden="true"></span>
 									<span className="visually-hidden">Previous</span>
 								</button>
@@ -87,9 +95,16 @@ const Bio = (props) => {
 									<span className="carousel-control-next-icon" aria-hidden="true"></span>
 									<span className="visually-hidden">Next</span>
 								</button>
+								</div>
 							</div>
-							<p className="bio-paragraph">Beyond my professional endeavors, I am a bit of a hobby hoarder with a wide range of interests. Whether it's reading fantasy novels, playing video games, hiking, camping, traveling, capturing moments through photography, cooking up new recipes, or drawing, I find joy in diverse activities.</p>
-							<p className="bio-paragraph">Also, as a neurodivergent individual and a proud member of the LGBTQIA+ community, I bring a unique perspective to my work and life. My eclectic interests and inclusive mindset drive me to create meaningful and innovative solutions that resonate with a broad audience.</p>
+								
+							</div>
+							<div className="bio-container">
+								<p className="bio-paragraph">Beyond my professional endeavors, I am a bit of a hobby hoarder with a wide range of interests. Whether it's reading fantasy novels, playing video games, hiking, camping, traveling, capturing moments through photography, cooking up new recipes, or drawing, I find joy in diverse activities.</p>
+							</div>
+							<div className="bio-container">
+								<p className="bio-paragraph">Also, as a neurodivergent individual and a proud member of the LGBTQIA+ community, I bring a unique perspective to my work and life. My eclectic interests and inclusive mindset drive me to create meaningful and innovative solutions that resonate with a broad audience.</p>
+							</div>
       				</div>
     			</div>
   			</div>
