@@ -331,6 +331,114 @@ body {
     background-color: #fff;
   }
 
+  #project-name {
+    animation: slide-in-left 1s ease 0s 1 normal backwards;
+  }
+
+  #deployed-link {
+    animation: fade-in-center 1s ease 0.25s 1 normal backwards;
+  }
+
+  #deployed-cont {
+    animation: black-to-white 1s ease 0.5s 1 normal backwards;
+  }
+
+  #descript1 {
+    animation: slide-in-right 1s ease .75s 1 normal backwards;
+  }
+
+  #project-video {
+    animation: slide-in-bottom 1s ease 1s 1 normal backwards;
+  }
+
+  #descript2-cont {
+    animation: slide-in-left 1s ease 1.25s 1 normal backwards;
+  }
+
+  #descript2 {
+    animation: slide-in-left 1s ease 1.5s 1 normal backwards;
+  }
+
+  #built-cont {
+    animation: fade-in-center 1s ease 1.75s 1 normal backwards;
+  }
+
+  #github-cont {
+    animation: slide-in-bottom 1s ease 2s 1 normal backwards;
+  }
+
+  #github-link {
+    animation: slide-in-bottom 1s ease 2.25s 1 normal backwards;
+  }
+
+  @keyframes fade-in-center {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes black-to-white {
+    0% {
+      background-color: #fff;
+    }
+    100% {
+      background-color: #000;
+    }
+  }
+
+
+    @keyframes slide-in-top {
+      0% {
+        opacity: 0;
+        transform: translateY(-250px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide-in-left {
+      0% {
+        opacity: 0;
+        transform: translateX(-250px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-in-right {
+      0% {
+        opacity: 0;
+        transform: translateX(250px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-in-bottom {
+      0% {
+        opacity: 0;
+        transform: translateY(250px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
   #bio-modal-body {
     padding: 0;
   }
