@@ -5,7 +5,10 @@ import Main from './body/Main';
 
 function App() {
 
+  const [background, setBackground] = useState('')
+
   const html = document.querySelector('html')
+  const root = document.querySelector('#root')
   const body = document.body
 
   // shift color off array and push it on to the end
@@ -15,7 +18,6 @@ function App() {
 
   const [navBar, setNavBar] = useState(null)
     // const [showNavBar, setShowNavBar] = useState(false)
-    const root = document.querySelector('#root')
     const projectButtons = document.querySelectorAll('.project-button')
     const mainH2s = document.querySelectorAll('.main-h2')
     const navMenuContainer = document.querySelector('.navmenu-container')

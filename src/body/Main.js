@@ -119,7 +119,7 @@ const Main = (props) => {
 
     const uefnLis = uefn.map((uefn, i) => {
         return (
-            <button className='project-button' data-uefn={JSON.stringify(uefn)} onClick={onUEFNClick} key={i}>{uefn.name}</button>
+            <button className='project-button uefn-button' data-uefn={JSON.stringify(uefn)} onClick={onUEFNClick} key={i}>{uefn.name}</button>
         )
     })
     
@@ -130,7 +130,7 @@ const Main = (props) => {
                 <div className="container project-button-container">
                     {projectLis}
                 </div>
-                <h2 className="main-h2">UEFN</h2>
+                <h2 className="main-h2" id="uefn-h2">UEFN</h2>
                 <div className="container project-button-container">
                     {uefnLis}
                 </div>

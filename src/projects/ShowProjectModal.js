@@ -8,8 +8,6 @@ const ShowProjectModal = (props) => {
     let uefn = JSON.parse(props.currentUEFN)
     let handleClose = props.handleClose
 
-    console.log(uefn)
-
     if (project) {
 
         let technologies = project.builtWith.map((elem, i) => {

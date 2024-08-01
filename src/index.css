@@ -13,11 +13,12 @@ html {
   background-color: #ff6600;
   max-width: 100%;
   overflow-x: hidden;
+  --current-background: #ff6600;
 }
 
 body {
   height: 100%;
-  background-color: #ff6600;
+  background-color: var(--current-background);
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -53,6 +54,22 @@ body {
     transform: scale(2) translateX(10px) translateY(12px);
     position: relative;
     z-index: 1;
+    animation: myAnim .75s ease .25s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      transform: scale(2) translateX(10px) translateY(12px);
+    }
+  
+    50% {
+      transform: scale(1.75) translateX(10px) translateY(12px);
+      filter: invert();
+    }
+  
+    100% {
+      transform: scale(2) translateX(10px) translateY(12px);
+    }
   }
 
   .offcanvas {
@@ -113,6 +130,13 @@ body {
     text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
+  }
+
+  .main-h2:nth-child(1) {
+    animation: slide-in-and-pop .75s ease 0s 1 normal backwards;
+  }
+  #uefn-h2 {
+    animation: slide-in-and-pop .75s ease 1.25s 1 normal backwards;
   }
 
   .main-ul {
@@ -336,7 +360,7 @@ body {
   }
 
   .bio-container:nth-child(1) {
-    margin-top: 35px;
+    margin-top: 40px;
   }
 
   #project-name {
@@ -492,6 +516,54 @@ body {
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
+  .project-button:nth-child(1) {
+    animation: slide-in-and-pop .75s ease .25s 1 normal backwards;
+  }
+  .project-button:nth-child(2) {
+    animation: slide-in-and-pop .75s ease .5s 1 normal backwards;
+  }
+  .project-button:nth-child(3) {
+    animation: slide-in-and-pop .75s ease .75s 1 normal backwards;
+  }
+  .project-button:nth-child(4) {
+    animation: slide-in-and-pop .75s ease 1s 1 normal backwards;
+  }
+  .uefn-button:nth-child(1) {
+    animation: slide-in-and-pop .75s ease 1.5s 1 normal backwards;
+  }
+  .uefn-button:nth-child(2) {
+    animation: slide-in-and-pop .75s ease 1.75s 1 normal backwards;
+  }
+  .uefn-button:nth-child(3) {
+    animation: slide-in-and-pop .75s ease 2s 1 normal backwards;
+  }
+  .uefn-button:nth-child(4) {
+    animation: slide-in-and-pop .75s ease 2.25s 1 normal backwards;
+  }
+  .uefn-button:nth-child(5) {
+    animation: slide-in-and-pop .75s ease 2.5s 1 normal backwards;
+  }
+  .uefn-button:nth-child(6) {
+    animation: slide-in-and-pop .75s ease 2.75s 1 normal backwards;
+  }
+
+  @keyframes slide-in-and-pop {
+    0% {
+      opacity: 0;
+      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) translateY(250px);
+    }
+    60% {
+      transform:matrix(1, 0.131652, 0.0945278, 1, 0, 0);
+    }
+    80% {
+      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) translateY(0px) scale(1);
+    }
+  }
+
   .project-button:nth-child(3) {
     padding-bottom: 15px;
   }
