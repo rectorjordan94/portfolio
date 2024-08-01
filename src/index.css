@@ -51,7 +51,6 @@ body {
   #logo {
     max-width: 60px;
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
-    transform: scale(2) translateX(10px) translateY(12px);
     position: relative;
     z-index: 1;
     animation: pulse .75s ease .25s 1 normal forwards, invert .75s ease 3s 1 normal forwards;
@@ -69,7 +68,7 @@ body {
     }
   
     100% {
-      transform: scale(2) translateX(10px) translateY(12px);
+      transform: scale(1.5) translateX(5px) translateY(5px);
     }
   }
   @keyframes invert {
@@ -134,23 +133,25 @@ body {
     color: #fff;
     font-size: 35px;
     /* line-height: 1; */
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 15px;
     line-height: .75;
-    /* padding-right: 15px; */
+    letter-spacing: -3px;
+    padding-right: 4px;
     display: block;
     /* transform: rotateZ(10deg); */
-    transform: skew(.015turn, 7.5deg);
+    transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-30px);
     text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
 
   .main-h2:nth-child(1) {
-    animation: slide-in-and-pop .75s ease 0s 1 normal backwards;
+    animation: h2-slide-and-pop .75s ease 0s 1 normal backwards;
   }
   #uefn-h2 {
-    animation: slide-in-and-pop .75s ease 1.25s 1 normal backwards;
+    margin-top: 20px;
+    animation: h2-slide-and-pop .75s ease 1.25s 1 normal backwards;
   }
 
   .main-ul {
@@ -501,10 +502,10 @@ body {
   .project-button-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     padding: 0;
     /* position: relative; */
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   .carousel-control-prev, .carousel-control-next {
@@ -518,18 +519,28 @@ body {
     font-family: 'Archivo Black', sans-serif;
     text-align: right;
     font-size: 30px;
-    line-height: .95;
+    line-height: .8;
+    /* line-height: .75; */
+    letter-spacing: -3px;
     padding: 0;
-    padding-bottom: 5px;
+    padding-bottom: 11px;
+    padding-right: 27px;
     display: block;
     /* padding-right: 15px; */
     border: none;
     background: none;
-    transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0);
+    /* transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0); */
+    transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25);
+    /* transform: scaleY(1.25) scaleX(1.25); */
     text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
+
+  .uefn-button {
+    padding-bottom: 14px;
+  }
+
   .project-button:nth-child(1) {
     animation: slide-in-and-pop .75s ease .25s 1 normal backwards;
   }
@@ -564,23 +575,40 @@ body {
   @keyframes slide-in-and-pop {
     0% {
       opacity: 0;
-      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) translateY(250px);
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(250px) translateX(-30px);
     }
     60% {
-      transform:matrix(1, 0.131652, 0.0945278, 1, 0, 0);
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-20px);
     }
     80% {
-      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) scale(1.2);
+      transform: skew(.015turn, 7.5deg) scaleY(1.5) scaleX(1.5) translateX(-10px);
     }
     100% {
       opacity: 1;
-      transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0) translateY(0px) scale(1);
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(0px) translateX(0px);
     }
   }
 
-  .project-button:nth-child(3) {
-    padding-bottom: 15px;
+  @keyframes h2-slide-and-pop {
+    0% {
+      opacity: 0;
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(250px) translateX(-30px);
+    }
+    60% {
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-30px);
+    }
+    80% {
+      transform: skew(.015turn, 7.5deg) scaleY(1.5) scaleX(1.5) translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(0px) translateX(-30px);
+    }
   }
+
+  /* .project-button:nth-child(3) {
+    padding-bottom: 15px;
+  } */
 
   .project-button:hover {
     color: #feff00;
