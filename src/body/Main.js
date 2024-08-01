@@ -113,13 +113,13 @@ const Main = (props) => {
 
     const projectLis = projects.map((project, i) => {
         return(
-            <button className='project-button' data-project={JSON.stringify(project)} onClick={onClick} key={i}>{project.name}</button>
+            <a href="#" className='project-button' data-project={JSON.stringify(project)} onClick={onClick} key={i}>{project.name}</a>
         )
     })
 
     const uefnLis = uefn.map((uefn, i) => {
         return (
-            <button className='project-button uefn-button' data-uefn={JSON.stringify(uefn)} onClick={onUEFNClick} key={i}>{uefn.name}</button>
+            <a href="#" className='project-button uefn-button' data-uefn={JSON.stringify(uefn)} onClick={onUEFNClick} key={i}>{uefn.name}</a>
         )
     })
     

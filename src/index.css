@@ -53,35 +53,20 @@ body {
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
     position: relative;
     z-index: 1;
-    animation: pulse .75s ease .25s 1 normal forwards, invert .75s ease 3s 1 normal forwards;
+    animation: pulse 1s ease 0s 1 normal forwards;
   }
 
   @keyframes pulse {
     0% {
-      transform: scale(2) translateX(10px) translateY(12px);
+      transform: scale(1) translateX(6px) translateY(8px);
     }
   
     50% {
-      transform: scale(1.5) translateX(10px) translateY(12px);
-      /* filter: invert(); */
-      filter: blur(1px);
+      transform: scale(1.7) translateX(6px) translateY(8px);
     }
   
     100% {
-      transform: scale(1.5) translateX(5px) translateY(5px);
-    }
-  }
-  @keyframes invert {
-    0% {
-      
-    }
-  
-    50% {
-      filter: invert() blur(1px);
-    }
-  
-    100% {
-      
+      transform: scale(1.5) translateX(6px) translateY(8px);
     }
   }
 
@@ -133,25 +118,25 @@ body {
     color: #fff;
     font-size: 35px;
     /* line-height: 1; */
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 15px;
     line-height: .75;
     letter-spacing: -3px;
     padding-right: 4px;
     display: block;
     /* transform: rotateZ(10deg); */
-    transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-30px);
+    transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) translateX(-24px);
     text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
   }
 
   .main-h2:nth-child(1) {
-    animation: h2-slide-and-pop .75s ease 0s 1 normal backwards;
+    animation: h2-slide-and-pop .5s ease 0s 1 normal backwards;
   }
   #uefn-h2 {
-    margin-top: 20px;
-    animation: h2-slide-and-pop .75s ease 1.25s 1 normal backwards;
+    margin-bottom: 30px;
+    animation: h2-slide-and-pop .5s ease .8s 1 normal backwards;
   }
 
   .main-ul {
@@ -502,10 +487,13 @@ body {
   .project-button-container {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     padding: 0;
     /* position: relative; */
-    padding-top: 3px;
+    padding-top: 6px;
+    /* row-gap: 5px; */
+    transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25);
+    /* padding: 30px; */
   }
 
   .carousel-control-prev, .carousel-control-next {
@@ -515,6 +503,8 @@ body {
   }
 
   .project-button {
+    text-decoration: none;
+    color: #000;
     /* position: relative; */
     font-family: 'Archivo Black', sans-serif;
     text-align: right;
@@ -523,86 +513,87 @@ body {
     /* line-height: .75; */
     letter-spacing: -3px;
     padding: 0;
-    padding-bottom: 11px;
-    padding-right: 27px;
+    padding-bottom: 4px;
+    padding-right: 28px;
     display: block;
     /* padding-right: 15px; */
     border: none;
     background: none;
     /* transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0); */
-    transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25);
+    /* transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25); */
     /* transform: scaleY(1.25) scaleX(1.25); */
     text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
+    /* transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) */
   }
 
   .uefn-button {
-    padding-bottom: 14px;
+    /* padding-bottom: 14px; */
   }
 
   .project-button:nth-child(1) {
-    animation: slide-in-and-pop .75s ease .25s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease .15s 1 normal backwards;
   }
   .project-button:nth-child(2) {
-    animation: slide-in-and-pop .75s ease .5s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease .25s 1 normal backwards;
   }
   .project-button:nth-child(3) {
-    animation: slide-in-and-pop .75s ease .75s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease .35s 1 normal backwards;
   }
   .project-button:nth-child(4) {
-    animation: slide-in-and-pop .75s ease 1s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease .45s 1 normal backwards;
   }
   .uefn-button:nth-child(1) {
-    animation: slide-in-and-pop .75s ease 1.5s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease .95s 1 normal backwards;
   }
   .uefn-button:nth-child(2) {
-    animation: slide-in-and-pop .75s ease 1.75s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease 1.05s 1 normal backwards;
   }
   .uefn-button:nth-child(3) {
-    animation: slide-in-and-pop .75s ease 2s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease 1.15s 1 normal backwards;
   }
   .uefn-button:nth-child(4) {
-    animation: slide-in-and-pop .75s ease 2.25s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease 1.25s 1 normal backwards;
   }
   .uefn-button:nth-child(5) {
-    animation: slide-in-and-pop .75s ease 2.5s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease 1.35s 1 normal backwards;
   }
   .uefn-button:nth-child(6) {
-    animation: slide-in-and-pop .75s ease 2.75s 1 normal backwards;
+    animation: slide-in-and-pop .5s ease 1.45s 1 normal backwards;
   }
 
   @keyframes slide-in-and-pop {
     0% {
       opacity: 0;
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(250px) translateX(-30px);
+      transform: translateY(250px);
     }
     60% {
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-20px);
+      transform: scale(1.1);
     }
     80% {
-      transform: skew(.015turn, 7.5deg) scaleY(1.5) scaleX(1.5) translateX(-10px);
+      transform: scale(1.25);
     }
     100% {
       opacity: 1;
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(0px) translateX(0px);
+      transform: scale(1) translateY(0px);
     }
   }
 
   @keyframes h2-slide-and-pop {
     0% {
       opacity: 0;
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(250px) translateX(-30px);
+      transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) translateX(-24px) translateY(250px);
     }
     60% {
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateX(-30px);
+      transform: skew(0turn, 8deg) scaleY(1.35) scaleX(1.35) translateX(-24px);
     }
     80% {
-      transform: skew(.015turn, 7.5deg) scaleY(1.5) scaleX(1.5) translateX(-30px);
+      transform: skew(0turn, 8deg) scaleY(1.5) scaleX(1.5) translateX(-24px);
     }
     100% {
       opacity: 1;
-      transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25) translateY(0px) translateX(-30px);
+      transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) translateX(-24px) translateY(0px);
     }
   }
 
