@@ -10,6 +10,8 @@ const ShowProjectModal = (props) => {
 
     if (project) {
 
+        console.log('#################################')
+
         let technologies = project.builtWith.map((elem, i) => {
             return (
                 <span className="tech" key={i}>{elem}</span>
@@ -50,6 +52,22 @@ const ShowProjectModal = (props) => {
             </Modal>
         )
     } else if (uefn) {
+        let bulletPoints
+        console.log('***************************************')
+        console.log(uefn.description2.length)
+
+        if (uefn.description2.length > 1) {
+
+            bulletPoints = uefn.description2.map((elem, i) => {
+                return (
+                    <li key={i}>{elem}</li>
+                )
+            })
+
+        } else {
+            bulletPoints = null
+        }
+
         return (
             <Modal show={show} fullscreen={true} onHide={handleClose} id="project-modal">
                 <Modal.Header closeButton id="project-header">
@@ -67,7 +85,7 @@ const ShowProjectModal = (props) => {
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true}></video>
                     </div>
                     <div className="container" id="descript2-cont">
-                        <p id="descript2">{uefn.description2}</p>
+                        {bulletPoints ? <ul>{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
                     </div>
                     <div className="container" id="github-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="github-link">FORTNITE.COM</a>
