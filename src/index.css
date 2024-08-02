@@ -594,7 +594,7 @@ body {
     /* transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25); */
     /* transform: scaleY(1.25) scaleX(1.25); */
     text-shadow: 20px -20px 0px rgba(0,0,0,0.055);
-    transition: text-shadow .5s ease-out;
+    transition: text-shadow .5s ease-out, transform .5s ease-out;
     /* transition: color .25s ease-out; */
     /* transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) */
     z-index: 0;
@@ -839,7 +839,8 @@ body {
     z-index: 1;
     color: #feff00!important;
     text-shadow: 5px -5px 0px #ff0100;
-    transition: text-shadow .5s ease-out;
+    transform: translateX(-3px) translateY(3px);
+    transition: text-shadow .5s ease-out, transform .5s ease-out;
     /* animation: project-pulse 2s ease-out 0s infinite both; */
     /* transform: translateX(-5px); */
   }
