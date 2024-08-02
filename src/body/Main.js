@@ -49,7 +49,7 @@ const Main = (props) => {
         {
             name: 'MEGASENET_AI',
             islandCode: '5806-0064-4467',
-            description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the wrold's oldest board game, the ancient Egyptian game of Senet. Battle against MegaBot in this solo version!",
+            description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the world's oldest board game, the ancient Egyptian game of Senet. Battle against MegaBot in this solo version!",
             video: '/videos/megasenet_AI_Trailer.mp4',
             description2: ['Take turns rolling the die and moving your pawns around the board', 'Strategically trade spaces, move to safety, form blockades, and land on special spaces', 'Race to move your 5 pawns off the board to win'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/5806-0064-4467?lang=en-US'
@@ -57,7 +57,7 @@ const Main = (props) => {
         {
             name: 'MEGASENET_II',
             islandCode: '6917-8287-3493',
-            description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the wrold's oldest board game, the ancient Egyptian game of Senet. Battle against a friend in this 1v1 version!",
+            description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the world's oldest board game, the ancient Egyptian game of Senet. Battle against a friend in this 1v1 version!",
             video: '/videos/megasenet_II_Trailer.mp4',
             description2: ['Take turns rolling the die and moving your pawns around the board', 'Strategically trade spaces, move to safety, form blockades, and land on special spaces', 'Race to move your 5 pawns off the board to win'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/6917-8287-3493?lang=en-US'
@@ -91,7 +91,7 @@ const Main = (props) => {
             islandCode: '2524-8000-2895',
             description1: 'An escape map that takes 1-2 players (co-op) through a thrilling adventure, waking up in a remote research station overrun by zombies. Fight you way through the map and solve puzzles to escape the island!',
             video: '/videos/Flowers In December_Trailer.mp4',
-            description2: ['The Backstory: as elite military researchers, you and your team, if there are any survivors, have been recruited to respond to a distress signal received from a remote research station. Good luck!'],
+            description2: ['The Backstory: As elite military researchers, you and your team, if there are any survivors, have been recruited to respond to a distress signal received from a remote research station. Good luck!'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/2524-8000-2895?lang=en-US'
         }
     ]
