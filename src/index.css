@@ -365,43 +365,43 @@ body {
   }
 
   #project-name {
-    animation: slide-in-left 1s ease 0s 1 normal backwards;
+    animation: slide-in-left 1s ease-out 0s 1 normal backwards;
   }
 
   #deployed-link {
-    animation: fade-in-center 1s ease 0.25s 1 normal backwards;
+    animation: fade-in-center 1s ease-out 0.15s 1 normal backwards;
   }
 
   #deployed-cont {
-    animation: black-to-white 1s ease 0.5s 1 normal backwards;
+    animation: black-to-white 1s ease-out 0.3s 1 normal backwards;
   }
 
   #descript1 {
-    animation: slide-in-right 1s ease .75s 1 normal backwards;
+    animation: slide-in-right 1s ease-out .45s 1 normal backwards;
   }
 
   #project-video {
-    animation: slide-in-bottom 1s ease 1s 1 normal backwards;
+    animation: slide-in-bottom 1s ease-out .6s 1 normal backwards;
   }
 
   #descript2-cont {
-    animation: slide-in-left 1s ease 1.25s 1 normal backwards;
+    animation: slide-in-left 1s ease-out .75s 1 normal backwards;
   }
 
   #descript2 {
-    animation: slide-in-left 1s ease 1.5s 1 normal backwards;
+    animation: slide-in-left 1s ease-out .9s 1 normal backwards;
   }
 
   #built-cont {
-    animation: fade-in-center 1s ease 1.75s 1 normal backwards;
+    animation: fade-in-center 1s ease-out 1.05s 1 normal backwards;
   }
 
   #github-cont {
-    animation: slide-in-bottom 1s ease 2s 1 normal backwards;
+    animation: slide-in-bottom 1s ease-out 1.2s 1 normal backwards;
   }
 
   #github-link {
-    animation: slide-in-bottom 1s ease 2.25s 1 normal backwards;
+    animation: slide-in-bottom 1s ease-out 1.35s 1 normal backwards;
   }
 
   @keyframes fade-in-center {

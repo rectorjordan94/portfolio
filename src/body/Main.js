@@ -100,6 +100,7 @@ const Main = (props) => {
     const onClick = (e) => {
         e.preventDefault()
         // set the current project
+        setCurrentUEFN(null)
         setCurrentProject(e.target.dataset.project)
         // open the modal
         setModalShow(true)
@@ -107,6 +108,7 @@ const Main = (props) => {
 
     const onUEFNClick = (e) => {
         e.preventDefault()
+        setCurrentProject(null)
         setCurrentUEFN(e.target.dataset.uefn)
         setModalShow(true)
     }
