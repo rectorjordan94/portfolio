@@ -50,7 +50,7 @@ const Main = (props) => {
             name: 'MEGASENET_AI',
             islandCode: '5806-0064-4467',
             description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the wrold's oldest board game, the ancient Egyptian game of Senet. Battle against MegaBot in this solo version!",
-            video: '',
+            video: '/videos/megasenet_AI_Trailer.mp4',
             description2: ['Take turns rolling the die and moving your pawns around the board', 'Strategically trade spaces, move to safety, form blockades, and land on special spaces', 'Race to move your 5 pawns off the board to win'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/5806-0064-4467?lang=en-US'
         },
@@ -58,7 +58,7 @@ const Main = (props) => {
             name: 'MEGASENET_II',
             islandCode: '6917-8287-3493',
             description1: "Chess meets Mancala in this life-size, immersive, and interactive recreation of the wrold's oldest board game, the ancient Egyptian game of Senet. Battle against a friend in this 1v1 version!",
-            video: '',
+            video: '/videos/megasenet_II_Trailer.mp4',
             description2: ['Take turns rolling the die and moving your pawns around the board', 'Strategically trade spaces, move to safety, form blockades, and land on special spaces', 'Race to move your 5 pawns off the board to win'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/6917-8287-3493?lang=en-US'
         },
@@ -66,7 +66,7 @@ const Main = (props) => {
             name: 'CRESCENT COVE PROP HUNT',
             islandCode: '6405-8295-6847',
             description1: "Ahoy mateys! What is that I see in the distance? 'Tis a Pirate themed Prop Hunt!",
-            video: 'https://www.youtube.com/watch?v=1M1RjIGJ430',
+            video: '/videos/Crescent Cove Prop Hunt_Trailer.mp4',
             description2: ['2-16 players', 'Pirates vs. Landlubbers', 'Infection style', '5 minute rounds', 'Fun pirate theme!'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/6405-8295-6847?lang=en-US'
         },
@@ -74,7 +74,7 @@ const Main = (props) => {
             name: 'MEGASENET',
             islandCode: '1126-7559-9109',
             description1: 'The ancient Egyptian board game, Senet, travels through time and lands in the year 3050 where it enjoys crowds of supportive fans cheering you on as you battle an opponent in this engaging, futuristic, life-size recreation. Winner of the 2023 Epic MegaJam "Left to Your Own Devices" modifier category.',
-            video: 'https://www.youtube.com/watch?v=iFw4hevcQMw',
+            video: '/videos/MegaSenet_Trailer.mp4',
             description2: ['In this 1v1 experience, players take turns rolling the die and moving one of their pawns to an available space. Pawns can move ahead, trade places with their competitor, form blockades, fall into hazards, and more. Move all 5 pawns off the board to win!'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/1126-7559-9109?lang=en-US'
         },
@@ -82,7 +82,7 @@ const Main = (props) => {
             name: '1V1 FIGHT FOR THE AGES',
             islandCode: '4045-9417-6282',
             description1: 'Players travel and fight through the ages to defend the past or the future! Vote on weapons and try out different game modes. Battle your opponent and conquer all 5 ages to win, collect coins to get extras at vending machines, and most importantly, have fun!',
-            video: 'https://www.youtube.com/watch?v=2EgLZI3HGPM',
+            video: '/videos/1v1 Fight for the Ages_Trailer.mp4',
             description2: ['Multiple game mode options (including No-Build)', '12 Weapon classes to vote on', '5 ages to conquer, best of 5 rounds', 'Collect coins to use at vending machines'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/4045-9417-6282?lang=en-US'
         },
@@ -90,7 +90,7 @@ const Main = (props) => {
             name: 'FLOWERS IN DECEMBER',
             islandCode: '2524-8000-2895',
             description1: 'An escape map that takes 1-2 players (co-op) through a thrilling adventure, waking up in a remote research station overrun by zombies. Fight you way through the map and solve puzzles to escape the island!',
-            video: 'https://www.youtube.com/watch?v=gGNUemGxttQ',
+            video: '/videos/Flowers In December_Trailer.mp4',
             description2: ['The Backstory: as elite military researchers, you and your team, if there are any survivors, have been recruited to respond to a distress signal received from a remote research station. Good luck!'],
             fortnite: 'https://www.fortnite.com/@ghost.mouse/2524-8000-2895?lang=en-US'
         }

@@ -341,9 +341,9 @@ body {
   }
 
   .btn-close {
-    width: 35px;
-    height: 35px;
-    font-size: 35px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
     position: relative;
     /* top: -20px; */
     --bs-btn-close-opacity: 1;
@@ -735,13 +735,13 @@ body {
   }
 
   .uefn-bullets {
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   .uefn-bullets::marker {
-    content: "\00bb";
+    content: "\00ac";
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
   }
 

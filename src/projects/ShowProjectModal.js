@@ -32,7 +32,7 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="video-cont">
                         {/* still need to add video files and properly link to them */}
-                        <video src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true}></video>
+                        <video src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
                     <div className="container" id="descript2-cont">
                         <p id="descript2">{project.description2}</p>
@@ -82,7 +82,7 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="video-cont">
                         {/* still need to add video files and properly link to them */}
-                        <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true}></video>
+                        <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
                     <div className="container" id="descript2-cont">
                         {bulletPoints ? <ul id="uefn-list">{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
