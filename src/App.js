@@ -39,12 +39,12 @@ function App() {
               // console.log('hidden')
               // root.style.color = '#000000'
               projectButtons.forEach((button) => {
-                button.style.textShadow = '-20px 20px 0px rgba(0,0,0,0.055)'
+                button.style.textShadow = '20px -20px 0px rgba(0,0,0,0.055)'
                 button.classList.remove('noHover')
                 button.style.color = '#000000'
               });
               mainH2s.forEach(h2 => {
-                h2.style.textShadow = '-20px 20px 0px rgba(255,255,255,0.115)'
+                h2.style.textShadow = '20px -20px 0px rgba(255,255,255,0.115)'
                 h2.style.color = '#fff'
               });
             })

@@ -79,7 +79,7 @@ body {
   .navbar {
     background-color: #ff583300!important;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
   }
 
   .navbar-brand {
@@ -97,6 +97,21 @@ body {
   .arrow {
     background-image: url(/public/images/back-arrow.svg)!important;
     transition: background-image .25s ease-in-out;
+  }
+  .arrow:hover {
+    animation: button-pulse 1s ease-out 0s infinite backwards;
+  }
+
+  @keyframes button-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   .navbar-toggler-icon {
@@ -133,9 +148,11 @@ body {
     display: block;
     /* transform: rotateZ(10deg); */
     transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) translateX(-24px);
-    text-shadow: -20px 20px 0px rgba(255,255,255,0.115);
+    text-shadow: 20px -20px 0px rgba(255,255,255,0.115);
     transition: text-shadow .5s ease-in-out;
     transition: color .5s ease-in-out;
+    position: relative;
+    z-index: 1;
   }
 
   .main-h2:nth-child(1) {
@@ -159,7 +176,7 @@ body {
     display: block;
     /* transform: rotateZ(10deg); */
     transform: skew(.015turn, 7.5deg);
-    text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
+    text-shadow: 20px -20px 0px rgba(0,0,0,0.055);
     transition: text-shadow .3s ease-in-out;
   }
 
@@ -307,7 +324,7 @@ body {
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
     transform: scale(1.5) translateX(6px) translateY(5px);
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     padding: 1px;
     /* background-color: #ff6600; */
     /* border-radius: 50%; */
@@ -331,7 +348,7 @@ body {
     position: relative;
     top: 40px;
     left: 115px;
-    z-index: 3;
+    z-index: 4;
     color: #fff;
     /* color: #ff6600; */
     font-family: 'Archivo Black', sans-serif;
@@ -576,10 +593,11 @@ body {
     /* transform: matrix(1, 0.131652, 0.0945278, 1, 0, 0); */
     /* transform: skew(.015turn, 7.5deg) scaleY(1.25) scaleX(1.25); */
     /* transform: scaleY(1.25) scaleX(1.25); */
-    text-shadow: -20px 20px 0px rgba(0,0,0,0.055);
-    transition: text-shadow .5s ease-in-out;
-    transition: color .5s ease-in-out;
+    text-shadow: 20px -20px 0px rgba(0,0,0,0.055);
+    transition: text-shadow .5s ease-out;
+    /* transition: color .25s ease-out; */
     /* transform: skew(0turn, 8deg) scaleY(1.25) scaleX(1.25) */
+    z-index: 0;
   }
 
   .uefn-button {
@@ -654,10 +672,6 @@ body {
   /* .project-button:nth-child(3) {
     padding-bottom: 15px;
   } */
-
-  .project-button:hover {
-    color: #feff00;
-  }
 
   #project-modal {
     background-color: #fff;
@@ -819,6 +833,36 @@ body {
     margin: 0;
     /* padding-top: 10px; */
     font-family: 'Archivo Black', sans-serif;
+  }
+
+  .project-button:hover {
+    z-index: 1;
+    color: #feff00!important;
+    text-shadow: 5px -5px 0px #ff0100;
+    transition: text-shadow .5s ease-out;
+    /* animation: project-pulse 2s ease-out 0s infinite both; */
+    /* transform: translateX(-5px); */
+  }
+
+  @keyframes project-pulse {
+    0% {
+      transform: translateX(0px) translateY(0px);
+      text-shadow: 5px -5px 0px #ff0100;
+    }
+    /* 25% {
+      transform: translateX(5px);
+    } */
+    50% {
+      transform: translateX(-3px) translateY(3px);
+      text-shadow: 5px -5px 0px #ff0100;
+    }
+    /* 75% {
+      transform: translateX(-3px);
+    } */
+    100% {
+      transform: translateX(0px) translateY(0px);
+      text-shadow: 5px -5px 0px #ff0100;
+    }
   }
 
   /** This animations needs work, I don't hate it but would prefer it to be done when the element is visible in the viewport */
