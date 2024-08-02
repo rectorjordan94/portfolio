@@ -659,9 +659,22 @@ body {
     align-items: center;
   }
 
+  #uefn-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* padding-right: 15px; */
+  }
+
   #project-name {
     font-family: 'Archivo Black', sans-serif;
     font-size: 28px;
+  }
+
+  #uefn-name {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 26px;
+      line-height: .9;
   }
 
   #project-body {
@@ -685,6 +698,15 @@ body {
     font-weight: 400;
   }
 
+  #island-code {
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
   #descript1-cont, #descript2-cont {
     font-family: 'Archivo', sans-serif;
     font-size: 16px;
@@ -700,6 +722,23 @@ body {
 
   #descript1, #descript2 {
     margin-bottom: 0;
+  }
+
+  #uefn-list {
+    margin-bottom: 0;
+    padding-left: 10px;
+    /* list-style-type: arrows; */
+  }
+
+  .uefn-bullets {
+    padding-left: 10px;
+  }
+
+  .uefn-bullets::marker {
+    content: "\00bb";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
   }
 
   #project-video {

@@ -60,7 +60,7 @@ const ShowProjectModal = (props) => {
 
             bulletPoints = uefn.description2.map((elem, i) => {
                 return (
-                    <li key={i}>{elem}</li>
+                    <li key={i} className="uefn-bullets">{elem}</li>
                 )
             })
 
@@ -70,12 +70,12 @@ const ShowProjectModal = (props) => {
 
         return (
             <Modal show={show} fullscreen={true} onHide={handleClose} id="project-modal">
-                <Modal.Header closeButton id="project-header">
-                    <Modal.Title id="project-name">{uefn.name}</Modal.Title>
+                <Modal.Header closeButton id="uefn-header">
+                    <Modal.Title id="uefn-name">{uefn.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="project-body">
                     <div className="container" id="deployed-cont">
-                        <a href="#" target="_blank" rel="noreferrer" id="deployed-link">{uefn.islandCode}</a>
+                        <h3 id="island-code">{uefn.islandCode}</h3>
                     </div>
                     <div className="container" id="descript1-cont">
                         <p id="descript1">{uefn.description1}</p>
@@ -85,7 +85,7 @@ const ShowProjectModal = (props) => {
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true}></video>
                     </div>
                     <div className="container" id="descript2-cont">
-                        {bulletPoints ? <ul>{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
+                        {bulletPoints ? <ul id="uefn-list">{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
                     </div>
                     <div className="container" id="github-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="github-link">FORTNITE.COM</a>
