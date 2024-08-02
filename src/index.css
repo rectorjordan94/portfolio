@@ -299,14 +299,26 @@ body {
   #logo-bio {
     max-width: 60px;
     /* transform: perspective(120px) rotateX(30deg) rotateY(25deg) translateX(26px) translateY(2px) scale(2); */
-    transform: scale(2) translateX(6px) translateY(6px);
+    transform: scale(1.5) translateX(6px) translateY(5px);
     position: absolute;
     z-index: 2;
     padding: 1px;
     /* background-color: #ff6600; */
     /* border-radius: 50%; */
-    filter: drop-shadow(8px 8px 8px #ff6600) drop-shadow(-5px -5px 5px #000) brightness(125%) contrast(200%) saturate(200%);
-    
+    /* filter: drop-shadow(8px 8px 8px #ff6600) drop-shadow(-5px -5px 5px #000) brightness(125%) contrast(200%) saturate(200%); */
+    animation: logo-shadow 2s ease-in-out 0s infinite both;
+  }
+
+  @keyframes logo-shadow {
+    0% {
+      filter: drop-shadow(8px 8px 8px #ff6600) drop-shadow(-5px -5px 5px #000) brightness(125%) contrast(200%) saturate(200%);
+    }
+    50% {
+      filter: drop-shadow(2px 2px 2px #ff6600) drop-shadow(-1px -1px 1px #000) brightness(125%) contrast(200%) saturate(200%);
+    }
+    100% {
+      filter: drop-shadow(8px 8px 8px #ff6600) drop-shadow(-5px -5px 5px #000) brightness(125%) contrast(200%) saturate(200%);
+    }
   }
 
   #about-modal-title {
