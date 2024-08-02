@@ -102,6 +102,10 @@ body {
     animation: button-pulse 1s ease-out 0s infinite backwards;
   }
 
+  .btn-close:hover {
+    animation: button-pulse 1s ease-out 0s infinite backwards;
+  }
+
   @keyframes button-pulse {
     0% {
       transform: scale(1);
@@ -225,6 +229,12 @@ body {
 
   .modal-nav-button:hover {
     color: #feff00;
+    text-shadow: 5px -5px 0 #ff0100;
+  }
+
+  a.nav-link.active:hover {
+    color: #feff00!important;
+    text-shadow: 5px -5px 0 #ff0100;
   }
 
   .nav-symbols {
