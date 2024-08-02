@@ -447,6 +447,10 @@ body {
     animation: slide-in-bottom .5s ease-out 2.25s 1 normal backwards;
   }
 
+  #fortnite-link {
+    animation: slide-in-bottom .5s ease-out 2s 1 normal backwards;
+  }
+
   @keyframes fade-in-center {
     0% {
       opacity: 0;
@@ -758,6 +762,21 @@ body {
   #github-link {
     font-family: 'Archivo Black', sans-serif;
     color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #fortnite-cont {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #fortnite-link {
+    font-family: 'Archivo Black', sans-serif;
+    color: #000;
     text-decoration: none;
     font-size: 20px;
   }

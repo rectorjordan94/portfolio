@@ -87,8 +87,8 @@ const ShowProjectModal = (props) => {
                     <div className="container" id="descript2-cont">
                         {bulletPoints ? <ul id="uefn-list">{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
                     </div>
-                    <div className="container" id="github-cont">
-                        <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="github-link">FORTNITE.COM</a>
+                    <div className="container" id="fortnite-cont">
+                        <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="fortnite-link">FORTNITE.COM</a>
                         {/* maybe add button for next project here */}
                     </div>
                 </Modal.Body>
