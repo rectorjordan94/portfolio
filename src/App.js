@@ -21,6 +21,7 @@ function App() {
     const projectButtons = document.querySelectorAll('.project-button')
     const mainH2s = document.querySelectorAll('.main-h2')
     const navMenuContainer = document.querySelector('.navmenu-container')
+    const navIcon = document.querySelector('.navbar-toggler-icon')
   
     useEffect(() => {
       setNavBar(document.querySelector('.collapse'))
@@ -34,6 +35,7 @@ function App() {
           navBar.addEventListener('hidden.bs.collapse', (e) => {
               navMenuContainer.classList.remove('navOpenOnMobile')
               body.classList.remove('fixed-position')
+              navIcon.classList.remove('arrow')
               // console.log('hidden')
               // root.style.color = '#000000'
               projectButtons.forEach((button) => {
@@ -49,6 +51,7 @@ function App() {
           navBar.addEventListener('show.bs.collapse', (e) => {
               navMenuContainer.classList.add('navOpenOnMobile')
               body.classList.add('fixed-position')
+              navIcon.classList.add('arrow')
               // console.log('show')
               // setShowNavBar(true)
               // root.style.color = 'rgba(0,0,0,0.055)'
