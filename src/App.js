@@ -5,8 +5,6 @@ import Main from './body/Main';
 
 function App() {
 
-  const [background, setBackground] = useState('')
-
   const html = document.querySelector('html')
   const root = document.querySelector('#root')
   const body = document.body
@@ -73,15 +71,6 @@ function App() {
         }
     }, [navBar])
 
-  // useEffect(() => {
-  //     const root = document.querySelector('#root')
-  //       if (showNavBar) {
-  //         console.log('show nav bar ran')
-  //         root.style.color = '#0000001a'
-  //     } else {
-  //         root.style.color = '#000000'
-  //       }
-  //   }, [showNavBar])
 
 
   return (
@@ -89,7 +78,7 @@ function App() {
       <Header mainH2s={mainH2s} />
       {/* <Body /> */}
       {/* <About /> */}
-      <Main  />
+      <Main />
       {/* <Technologies /> */}
       {/* <Footer /> */}
     </div>

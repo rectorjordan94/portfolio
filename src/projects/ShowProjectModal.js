@@ -10,8 +10,6 @@ const ShowProjectModal = (props) => {
 
     if (project) {
 
-        console.log('#################################')
-
         let technologies = project.builtWith.map((elem, i) => {
             return (
                 <span className="tech" key={i}>{elem}</span>
@@ -53,8 +51,6 @@ const ShowProjectModal = (props) => {
         )
     } else if (uefn) {
         let bulletPoints
-        console.log('***************************************')
-        console.log(uefn.description2.length)
 
         if (uefn.description2.length > 1) {
 

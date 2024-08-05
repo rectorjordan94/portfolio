@@ -1,5 +1,5 @@
 import ShowProjectModal from "../projects/ShowProjectModal"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 const Main = (props) => {
 
     const [currentProject, setCurrentProject] = useState(null)
