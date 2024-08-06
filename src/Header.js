@@ -30,7 +30,7 @@ const Header = (props) => {
                             <a className="nav-link active" aria-current="page" href="https://www.fortnite.com/@ghost.mouse" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>fortnite creator</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>resume</a>
+                            <a className="nav-link active" aria-current="page" href="/Jordan_Rector_Resume.pdf" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>resume</a>
                         </li>
                     </ul>
                     <div className="nav-container">
