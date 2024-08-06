@@ -847,7 +847,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  #uefn-name {
+  #uefn-name, #project-name {
     font-size: 32px;
   }
   #deployed-cont {
@@ -874,6 +874,7 @@ body {
   #tech-cont {
     justify-content: space-between;
   }
+
 
 }
 
