@@ -833,8 +833,48 @@ body {
 
   /*? *********************************************************************************************************************************  */
 
-@media (min-width: 400px) {
-  
+@media (min-width: 360px) {
+  .main-h2 {
+    padding-right: 8px;
+  }
+  .project-button {
+    padding-right: 32px;
+  }
+  #about-modal-title {
+    left: 160px;
+  }
+  #project-body {
+    display: flex;
+    flex-direction: column;
+  }
+  #uefn-name {
+    font-size: 32px;
+  }
+  #deployed-cont {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0;
+  }
+  #island-code {
+    font-size: 20px;
+  }
+  #descript1-cont, #descript2-cont {
+    font-size: 17px;
+  }
+  #descript2-cont {
+    margin-bottom: 0;
+  }
+  .uefn-bullets {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  #fortnite-link {
+    font-size: 24px;
+  }
+  #tech-cont {
+    justify-content: space-between;
+  }
+
 }
 
   /*? *********************************************************************************************************************************  */

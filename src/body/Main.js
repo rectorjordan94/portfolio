@@ -13,7 +13,7 @@ const Main = (props) => {
             description1: "Slack clone where users can create and join different channels and chat with other users in real-time. ",
             video: '/videos/Blink_Walkthrough.mp4',
             description2: 'Utilizes socket.io for bidirectional event-based communication between clients and server for live chat functionality.',
-            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT', 'AXIOS'],
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT'],
             github: 'https://github.com/rectorjordan94/blink-client'
         },
         {
@@ -22,7 +22,7 @@ const Main = (props) => {
             description1: "Google Drive/Dropbox clone using AWS s3 cloud storage and multer middleware for file upload.",
             video: '/videos/Hoist_Walkthrough.mp4',
             description2: 'Collaborative project built with two fellow software engineers, in which I acted as frontend manager but also contributed significantly to the backend development.',
-            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT ', 'AXIOS'],
+            builtWith: ['HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'EXPRESS', 'MONGODB', 'MONGOOSE', 'BOOTSTRAP', 'REACT '],
             github: 'https://github.com/rectorjordan94/hoistm-client',
         },
         {
