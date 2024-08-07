@@ -584,6 +584,7 @@ body {
     text-shadow: 20px -20px 0px rgba(0,0,0,0.055);
     transition: text-shadow .5s ease-out, transform .5s ease-out;
     z-index: 0;
+    text-wrap: balance;
   }
 
   .uefn-button {
@@ -885,9 +886,91 @@ body {
     #uefn-header {
       padding-right: 15px;
     }
+    .main-h2:nth-child(1) {
+      margin-top: 40px;
+    }
   }
 
   /*? *********************************************************************************************************************************  */
+
+@media (min-width: 400px) {
+  #main-container {
+    padding-right: 20px;
+  }
+  .main-h2:nth-child(1) {
+    margin-top: 50px;
+  }
+  .project-button {
+    max-width: 96%;
+    font-size: 34px;
+  }
+  .project-button:nth-child(1) {
+    margin-top: 5px;
+  }
+  .main-h2 {
+    font-size: 39px;
+  }
+  .bio-img {
+    height: auto;
+  }
+  #project-name {
+    font-size: 36px;
+  }
+  #deployed-link {
+    font-size: 20px;
+  }
+  #descript1-cont, #descript2-cont {
+    font-size: 18px;
+  }
+  #descript1-cont {
+    margin-bottom: 0;
+  }
+  #descript2-cont {
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .tech {
+    font-size: 15px;
+  }
+  #github-cont {
+    margin: 0;
+  }
+  #github-link {
+    font-size: 22px;
+  }
+  #uefn-name {
+    text-wrap: balance;
+    font-size: 36px;
+  }
+  #island-code {
+    font-size: 22px;
+  }
+  .uefn-bullets {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .uefn-bullets:first-child {
+    margin-top: 20px;
+  }
+  .uefn-bullets:last-child {
+    margin-bottom: 20px;
+  }
+  .nav-symbols, .nav-link, .modal-nav-button{
+    font-size: 20px;
+  }
+  .nav-descript {
+    font-size: 18px;
+  }
+  .bio-paragraph {
+    font-size: 18px;
+  }
+  #about-modal-title {
+    left: 195px;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
 
 @media (min-width: 568px) {
 
