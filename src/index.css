@@ -726,6 +726,7 @@ body {
     padding: 10px 0;
     font-weight: 400;
     margin-bottom: 0;
+    text-decoration: none;
   }
 
   #descript1-cont, #descript2-cont {
@@ -750,7 +751,7 @@ body {
   }
 
   .uefn-bullets {
-    padding-left: 5px;
+    padding-left: 10px;
   }
 
   .uefn-bullets::marker {
@@ -936,6 +937,7 @@ body {
   }
   #descript1-cont, #descript2-cont {
     font-size: 18px;
+    padding: 15px;
   }
   #descript1-cont {
     margin-bottom: 0;
@@ -982,6 +984,16 @@ body {
   }
   #about-modal-title {
     left: 195px;
+  }
+  #uefn-list, .uefn-bullets {
+    padding-left: 15px;
+  }
+  #uefn-header, #project-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bio-paragraph {
+    padding: 15px;
   }
 }
 
