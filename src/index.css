@@ -1000,6 +1000,57 @@ body {
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 568px) {
+  .main-h2:nth-child(1) {
+    margin-top:0px;
+  }
+  .navbar-collapse {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .navbar-nav {
+    --bs-nav-link-padding-y: 5px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .modal-nav-button {
+    font-size: 18px;
+    padding: 5px 0px;
+  }
+  .nav-descript {
+    font-size: 16px;
+  }
+  #about-modal-title {
+    left: 190px;
+    top: -2px;
+  }
+  #about-modal-header {
+    max-height: 50px;
+  }
+  #logo-bio {
+    max-width: 45px;
+  }
+  .modal-header .btn-close {
+    padding: 5px;
+  }
+  .bio-paragraph {
+    padding: 5px 100px;
+    font-size: 16px;
+  }
+  .bio-container:nth-child(1) {
+    margin-top: 25px;
+  }
+  .bio-img {
+    padding: 10px 120px;
+  }
+  .carousel-control-prev {
+    left: 35px;
+    scale: 1.5;
+  }
+  .carousel-control-next {
+    right: 35px;
+    scale: 1.5;
+  }
 
 }
 
