@@ -23,26 +23,22 @@ function App() {
   
     useEffect(() => {
       setNavBar(document.querySelector('.collapse'))
-      
 
         if (navBar) {
             navBar.addEventListener('hide.bs.collapse', (e) => {
               console.log('hide')
-              // root.style.color = '#00000078'
             })
           navBar.addEventListener('hidden.bs.collapse', (e) => {
               navMenuContainer.classList.remove('navOpenOnMobile')
               body.classList.remove('fixed-position')
               navIcon.classList.remove('arrow')
-              // console.log('hidden')
-              // root.style.color = '#000000'
               projectButtons.forEach((button) => {
-                button.style.textShadow = '20px -20px 0px rgba(0,0,0,0.055)'
+                button.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C'
                 button.classList.remove('noHover')
-                button.style.color = '#000000'
+                button.style.color = '#000'
               });
               mainH2s.forEach(h2 => {
-                h2.style.textShadow = '20px -20px 0px rgba(255,255,255,0.115)'
+                h2.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C'
                 h2.style.color = '#fff'
               });
             })
@@ -50,17 +46,14 @@ function App() {
               navMenuContainer.classList.add('navOpenOnMobile')
               body.classList.add('fixed-position')
               navIcon.classList.add('arrow')
-              // console.log('show')
-              // setShowNavBar(true)
-              // root.style.color = 'rgba(0,0,0,0.055)'
               projectButtons.forEach((button) => {
                 button.style.textShadow = 'none'
                 button.classList.add('noHover')
-                button.style.color = 'rgba(0,0,0,0.055)'
+                button.style.color = '#ff01001C'
               });
               mainH2s.forEach(h2 => {
                 h2.style.textShadow = 'none'
-                h2.style.color = 'rgba(255,255,255,0.115)'
+                h2.style.color = '#ff01001C'
                 
               });
             })

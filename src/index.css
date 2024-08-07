@@ -159,6 +159,8 @@ body {
     /*! only need this below if the shadows from the buttons are overlapping  */
     position: relative;
     z-index: 1;
+    transition: color .5s linear;
+    transition: text-shadow .5s linear;
   }
 
   /* #ff010018 */
@@ -190,6 +192,8 @@ body {
     text-wrap: pretty;
     position: relative;
     z-index: 1;
+    transition: color .5s linear;
+    transition: text-shadow .5s linear;
   }
 
   .main-h2:nth-child(1) {
@@ -238,9 +242,6 @@ body {
       opacity: 0;
       transform: translateY(250px);
     }
-    /* 60% {
-      transform: scale(1.1);
-    } */
     80% {
       transform: scale(1.25);
     }
@@ -250,13 +251,39 @@ body {
     }
   }
 
-  .main-h2:nth-child(1) {
-    /* animation: h2-slide-and-pop .5s ease-out 0s 1 normal backwards; */
-  }
-  
-
   .noHover {
     pointer-events: none!important;
+  }
+
+  /*? ########################################################################################################################  */
+  /*? ########################################################################################################################  */
+  /*! NAVIGATION BAR & MENU  */
+  /*? ########################################################################################################################  */
+  /*? ########################################################################################################################  */
+
+  .navbar-collapse.collapse.show {
+    height: calc(100vh - 60.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  /* removes janky transition as the height adjusts to meet full screen size  */
+  .collapsing {
+    transition: none;
+  }
+
+  ul.navbar-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navmenu-header {
+    width: 100%;
+    height: 52.5px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav-link {
@@ -293,19 +320,21 @@ body {
     text-align: left;
   }
 
+  /*! NEED NEW HOVER EFECTS FOR NAV LINKS  */
+
   .modal-nav-button:hover {
     color: #feff00;
-    text-shadow: 5px -5px 0 #ff0100;
+    text-shadow: 1px -1px 0 #ff0100, 2px -2px 0 #ff0100;
   }
 
   a.nav-link.active:hover {
     color: #feff00!important;
-    text-shadow: 5px -5px 0 #ff0100;
+    text-shadow: 1px -1px 0 #ff0100, 2px -2px 0 #ff0100;
   }
 
   .nav-symbols {
     color: #000;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
     margin-right: 5px;
   }
@@ -324,6 +353,10 @@ body {
     font-size: 16px;
   }
 
+  .navbar-text.nav-descript.nav-email {
+    padding-bottom: 5px!important;
+  }
+
   .navbar-text {
     padding: 0!important;
     margin: 0!important;
@@ -333,44 +366,27 @@ body {
   }
 
   .navbar-text:nth-child(2) {
-    margin-bottom: 15px!important;
+    margin-bottom: 5px!important;
+    font-weight: 500;
     color: black;
   }
-  .navbar-text:nth-child(3) {
-    /* color: black; */
-  }
+
   .navbar-text:nth-child(4) {
+    font-weight: 500;
     color: black;
   }
 
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .navmenu-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-height: 65px;
-    position: relative;
-  }
-
+  /* class for disabling body scrolling while navbar is open */
   .navOpenOnMobile {
-    height: calc(100vh - 15px) !important;
-    overflow-y: hidden;
-    align-content: space-between;
+    overflow: hidden;
   }
-  
+  /* class for disabling navmenu scrolling when fullscreen */
   .fixed-position {
     overflow: hidden;
   }
 
   .modal-backdrop.show {
-    opacity: 0!important;
-    z-index: 0;
+    display: none!important;
   }
   
   .modal.fade .modal-dialog {
@@ -386,22 +402,30 @@ body {
     --bs-modal-zindex: 2;
     --bs-modal-header-border-color: none;
     --bs-modal-bg: none;
-    --bs-modal-footer-bg: #ff6600;
+    --bs-modal-footer-bg: none;
   }
 
   #about-modal-header {
-    padding-bottom: 8px;
+    width: 100%;
+    height: 62.5px;
+    display: flex;
     background-color: #000;
-    align-items: flex-start;
+    padding:10px;
+    align-items: center;
+  }
+
+  #about-close {
+    margin: 0;
   }
 
   #logo-bio {
-    max-width: 60px;
-    transform: scale(1.5) translateX(6px) translateY(5px);
+    width: 45px;
+    height: 45px;
+    transform: scale(1.5) translateX(5px) translateY(8px);
     position: absolute;
     z-index: 4;
     padding: 1px;
-    animation: logo-shadow 2s ease-in-out 0s infinite both;
+    animation: logo-shadow 2s ease-in-out 2s infinite both;
   }
 
   @keyframes logo-shadow {
@@ -418,23 +442,19 @@ body {
 
   #about-modal-title {
     position: relative;
-    top: 40px;
+    /* top: 40px;
     left: 115px;
-    z-index: 4;
+    z-index: 4; */
     color: #fff;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 45px;
-    animation: slide-in-right .5s ease-out 0s 1 normal forwards;
-  }
-
-  @keyframes identifier {
-    
+    font-size: 36px;
+    /* margin-left: 90px; */
+    margin-left: 86px;
+    animation: slide-in-top .5s ease-out 0s 1 normal forwards;
   }
 
   .btn-close {
-    width: 30px;
-    height: 30px;
-    font-size: 30px;
+    font-size: 36px;
     position: relative;
     --bs-btn-close-opacity: 1;
   }
