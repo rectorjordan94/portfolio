@@ -12,9 +12,24 @@ html {
 
 body {
   height: 100%;
-  background-color: var(--current-background);
+  /* background-color: var(--current-background); */
+  background: linear-gradient(300deg, rgba(255,128,0,1), rgba(255,128,0,1), rgba(255,1,0,1));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #root {
