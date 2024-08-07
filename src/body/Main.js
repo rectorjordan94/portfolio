@@ -127,7 +127,7 @@ const Main = (props) => {
     
     return (
         <section id="main-section">
-            <div className="container">
+            <div className="container" id="main-container">
                 <h2 className="main-h2">PROJECTS</h2>
                 <div className="container project-button-container">
                     {projectLis}
