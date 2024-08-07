@@ -76,7 +76,7 @@ const ShowProjectModal = (props) => {
                     <div className="container" id="descript1-cont">
                         <p id="descript1">{uefn.description1}</p>
                     </div>
-                    <div className="container" id="video-cont">
+                    <div className="container" id="video-cont" className="uefn-video-cont">
                         {/* still need to add video files and properly link to them */}
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>

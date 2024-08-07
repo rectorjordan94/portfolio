@@ -128,14 +128,15 @@ const Main = (props) => {
     return (
         <section id="main-section">
             <div className="container" id="main-container">
-                <h2 className="main-h2">PROJECTS</h2>
                 <div className="container project-button-container">
+                    <h2 className="main-h2">PROJECTS</h2>
                     {projectLis}
                 </div>
-                <h2 className="main-h2" id="uefn-h2">UEFN</h2>
                 <div className="container project-button-container">
+                    <h2 className="main-h2" id="uefn-h2">UEFN</h2>
                     {uefnLis}
                 </div>
+                {/* <img id="dots" src="/images/dots_yellow.png" alt="" /> */}
             </div>
             <ShowProjectModal
                 show={modalShow}
