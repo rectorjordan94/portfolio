@@ -520,49 +520,44 @@ body {
     margin-top: 20px;
   }
 
-  #project-name {
-    animation: slide-in-left .5s ease-out 0s 1 normal backwards;
+  #descript1-cont {
+    animation: slide-in-right .5s ease-out .25s 1 normal backwards;
   }
 
-  #deployed-link {
-    animation: fade-in-center .5s ease-out 0.25s 1 normal backwards;
-    transition: all .5s ease-in-out;
-  }
-
-  #deployed-cont {
-    animation: black-to-white .5s ease-out 0.5s 1 normal backwards;
+  #descript2-cont {
+    animation: slide-in-left .5s ease-out .5s 1 normal backwards;
   }
 
   #descript1 {
     animation: slide-in-right .5s ease-out .75s 1 normal backwards;
   }
 
-  #project-video {
-    animation: slide-in-bottom .5s ease-out 1s 1 normal backwards;
-  }
-
-  #descript2-cont {
-    animation: slide-in-left .5s ease-out 1.25s 1 normal backwards;
-  }
-
   #descript2 {
-    animation: slide-in-left .5s ease-out 1.5s 1 normal backwards;
+    animation: slide-in-left .5s ease-out 1s 1 normal backwards;
   }
 
-  #built-cont {
-    animation: fade-in-center .5s ease-out 1.75s 1 normal backwards;
+  #video-cont, #built-cont, #github-cont {
+    animation: slide-in-bottom .5s ease-out 1.5s 1 normal backwards;
   }
 
-  #github-cont {
+  #project-video {
     animation: slide-in-bottom .5s ease-out 2s 1 normal backwards;
+  }
+
+  #tech-cont {
+    animation: fade-in-center .5s ease-out 2.5s 1 normal backwards;
   }
 
   #github-link {
-    animation: slide-in-bottom .5s ease-out 2.25s 1 normal backwards;
+    animation: slide-in-right .5s ease-out 2.75s 1 normal backwards;
+  }
+
+  #deployed-link {
+    animation: slide-in-left .5s ease-out 2.75s 1 normal backwards;
   }
 
   #fortnite-link {
-    animation: slide-in-bottom .5s ease-out 2s 1 normal backwards;
+    animation: slide-in-top .5s ease-out 2.75s 1 normal backwards;
   }
 
   @keyframes fade-in-center {
@@ -583,7 +578,6 @@ body {
       background-color: #000;
     }
   }
-
 
     @keyframes slide-in-top {
       0% {
@@ -700,7 +694,7 @@ body {
   }
 
   #project-body {
-    background-color: #fff;
+    background-color: #000;
     padding: 0;
   }
 
@@ -709,6 +703,7 @@ body {
     font-size: 16px;
     padding: 10px;
     font-weight: 400;
+    background-color: #fff;
   }
 
   #descript2-cont {
@@ -730,6 +725,7 @@ body {
   #project-video {
     width: 100%;
     object-fit: cover;
+    background-color: #000;
   }
 
   #video-cont {
@@ -807,9 +803,13 @@ body {
   }
 
   #built-cont {
+    padding: 0;
+    background-color: #000;
+  }
+
+  #tech-cont {
     padding: 5px 10px 5px 10px;
     background-color: #000;
-    color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

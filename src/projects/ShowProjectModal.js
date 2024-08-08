@@ -33,7 +33,9 @@ const ShowProjectModal = (props) => {
                         <video src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
                     <div className="container" id="built-cont">
+                        <div id="tech-cont">
                             {technologies}
+                        </div>
                     </div>
                     <div className="container" id="github-cont">
                         <a href={project.deployed} target="_blank" rel="noreferrer" id="deployed-link">LIVE SITE</a>
