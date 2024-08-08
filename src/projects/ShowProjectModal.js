@@ -50,7 +50,7 @@ const ShowProjectModal = (props) => {
 
             bulletPoints = uefn.description2.map((elem, i) => {
                 return (
-                    <li key={i} className="uefn-bullets">{elem}</li>
+                    <p className="uefn-bullets"><span className="uefn-symbols">&#172;</span>{elem}</p>
                 )
             })
 
@@ -64,18 +64,18 @@ const ShowProjectModal = (props) => {
                     <Modal.Title id="uefn-name">{uefn.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="project-body">
-                    <div className="container" id="deployed-cont">
-                        <h3 id="island-code">{uefn.islandCode}</h3>
-                    </div>
                     <div className="container" id="descript1-cont">
                         <p id="descript1">{uefn.description1}</p>
+                    </div>
+                    <div className="container" id="descript2-cont">
+                        {bulletPoints ? <div className="bullet-cont">{bulletPoints}</div> : <p id="descript2">{uefn.description2}</p> }   
                     </div>
                     <div className="container" id="video-cont" className="uefn-video-cont">
                         {/* still need to add video files and properly link to them */}
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
-                    <div className="container" id="descript2-cont">
-                        {bulletPoints ? <ul id="uefn-list">{bulletPoints}</ul> : <p id="descript2">{uefn.description2}</p> }   
+                    <div className="container" id="code-cont">
+                        <h3 id="island-code">{uefn.islandCode}</h3>
                     </div>
                     <div className="container" id="fortnite-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="fortnite-link">FORTNITE.COM</a>

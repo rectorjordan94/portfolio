@@ -55,11 +55,6 @@ body {
     transition: all .25s ease-in-out;
   }
 
-  #logo:hover {
-    transition: all .25s ease-in-out;
-    filter: invert() blur(1px)
-  }
-
   .navbar {
     background-color: #ff583300!important;
     z-index: 2;
@@ -77,7 +72,7 @@ body {
 
   .arrow {
     background-image: url(/public/images/back-arrow.svg)!important;
-    transition: background-image .25s ease-in-out;
+    transition: background-image .35s ease-in-out;
   }
   .arrow:hover {
     animation: button-pulse 1s ease-out 0s infinite backwards;
@@ -101,7 +96,7 @@ body {
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    font-size: 35px!important;
+    font-size: 1.75em;
     pointer-events: none;
     transition: background-image .25s ease-in-out;
   }
@@ -155,7 +150,7 @@ body {
     margin-bottom: 0;
     letter-spacing: -3px;
     line-height: 1;
-    text-shadow: 4px -4px 0 #ff001a44, 3px -3px 0 #ff001a44, 2px -2px 0 #ff001a44, 1px -1px 0 #ff001a44;
+    text-shadow: 1px -1px 0 #ff001a44, 2px -2px 0 #ff001a44, 3px -3px 0 #ff001a44, 4px -4px 0 #ff001a44;
     /*! only need this below if the shadows from the buttons are overlapping  */
     position: relative;
     z-index: 1;
@@ -182,6 +177,10 @@ body {
     margin-top: 85px;
   }
 
+  .project-button-container:nth-child(2) {
+    padding-bottom: 30px;
+  }
+
   .project-button {
     text-decoration: none;
     color: #000;
@@ -189,13 +188,13 @@ body {
     font-size: 36px;
     line-height: 32px;
     letter-spacing: -4px;
-    text-shadow: 4px -4px 0 #ff001a44, 3px -3px 0 #ff001a44, 2px -2px 0 #ff001a44, 1px -1px 0 #ff001a44;
+    text-shadow: 1px -1px 0 #ff001a44, 2px -2px 0 #ff001a44, 3px -3px 0 #ff001a44, 4px -4px 0 #ff001a44;
     text-wrap: pretty;
     position: relative;
     z-index: 1;
     /* transition: color .5s linear;
     transition: text-shadow .5s linear; */
-    transition: all .5s linear;
+    transition: all .35s linear;
   }
 
   .main-h2:nth-child(1) {
@@ -318,20 +317,22 @@ body {
     padding: 8px 0px;
   }
 
+  .modal-nav-button, a.nav-link.active {
+    transition: color .35s linear, text-shadow .35 linear;
+  }
+
   li.nav-item {
     text-align: left;
   }
 
-  /*! NEED NEW HOVER EFECTS FOR NAV LINKS  */
-
   .modal-nav-button:hover {
-    color: #ffe500;
-    text-shadow: 1px -1px 0 #ff001a, 2px -2px 0 #ff001a;
+    color: #000;
+    text-shadow: 0px 1px 0 #fff;
   }
 
   a.nav-link.active:hover {
-    color: #ffe500!important;
-    text-shadow: 1px -1px 0 #ff001a, 2px -2px 0 #ff001a;
+    color: #000!important;
+    text-shadow: 0px 1px 0 #fff;
   }
 
   .nav-symbols {
@@ -457,7 +458,7 @@ body {
   }
 
   .btn-close {
-    font-size: 36px;
+    font-size: 1.75em;
     position: relative;
     --bs-btn-close-opacity: 1;
   }
@@ -703,26 +704,12 @@ body {
     padding: 0;
   }
 
-  #island-code {
-    font-family: 'Archivo', sans-serif;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 0;
-    font-weight: 400;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-
   #descript1-cont, #descript2-cont {
     font-family: 'Archivo', sans-serif;
     font-size: 16px;
     padding: 10px;
     font-weight: 400;
   }
-
-  /* #descript1-cont {
-    padding-top: 0px;
-  } */
 
   #descript2-cont {
     padding-top: 5px;
@@ -738,17 +725,6 @@ body {
   #uefn-list {
     margin-bottom: 0;
     padding-left: 10px;
-  }
-
-  .uefn-bullets {
-    padding-left: 10px;
-  }
-
-  .uefn-bullets::marker {
-    content: "\00ac";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1;
   }
 
   #project-video {
@@ -776,10 +752,28 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    transition: transform .5s linear, text-shadow .5s linear;
+  }
+
+  #code-cont {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
+  }
+
+  #island-code {
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-decoration: none;
+    animation: tech-text-colors 6s linear infinite both;
   }
 
   #fortnite-cont {
-    background-color: #fff;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -788,9 +782,28 @@ body {
 
   #fortnite-link {
     font-family: 'Archivo Black', sans-serif;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    transition: transform .35s linear, text-shadow .35s linear;
+  }
+
+  #fortnite-link:hover, #github-link:hover, #deployed-link:hover {
+    transform: translateY(2px) scale(1.1);
+    text-shadow: 0px -1px 0 #ff001a, 0px -2px 0 #ff001a;
+  }
+
+  .uefn-symbols {
+    margin-right: 5px;
+    font-weight: 700;
+  }
+
+  .uefn-bullets {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .uefn-bullets:last-child {
+    margin: 0;
   }
 
   #built-cont {
@@ -831,31 +844,12 @@ body {
     
   }
 
-  /*! need to redo hover state for project buttons  */
-  /*! might want to resize all menu/close buttons  */
-  /*! need to do hover states for live-site & github links */
-
   .project-button:hover {
     z-index: 1;
     color: #ffe500!important;
-    text-shadow: 5px -5px 0px #ff001a;
-    transform: translateX(-3px) translateY(3px);
-    transition: text-shadow .5s ease-out, transform .5s ease-out;
-  }
-
-  @keyframes project-pulse {
-    0% {
-      transform: translateX(0px) translateY(0px);
-      text-shadow: 5px -5px 0px #ff001a;
-    }
-    50% {
-      transform: translateX(-3px) translateY(3px);
-      text-shadow: 5px -5px 0px #ff001a;
-    }
-    100% {
-      transform: translateX(0px) translateY(0px);
-      text-shadow: 5px -5px 0px #ff001a;
-    }
+    text-shadow: 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 4px 0px 0px #000!important;
+    transform: translateX(-10px) translateY(0px);
+    transition: text-shadow .35s linear, transform .35s linear;
   }
 
   }
