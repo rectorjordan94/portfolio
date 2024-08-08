@@ -22,27 +22,21 @@ const ShowProjectModal = (props) => {
                     <Modal.Title id="project-name">{project.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="project-body">
-                    <div className="container" id="deployed-cont">
-                        <a href={project.deployed} target="_blank" rel="noreferrer" id="deployed-link">{project.deployed.slice(8)}</a>
-                    </div>
-                    <div className="container" id="descript1-cont">
+                <div className="container" id="descript1-cont">
                         <p id="descript1">{project.description1}</p>
+                    </div>
+                    <div className="container" id="descript2-cont">
+                        <p id="descript2">{project.description2}</p>
                     </div>
                     <div className="container" id="video-cont">
                         {/* still need to add video files and properly link to them */}
                         <video src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
-                    <div className="container" id="descript2-cont">
-                        <p id="descript2">{project.description2}</p>
-                    </div>
                     <div className="container" id="built-cont">
-                        <h3 id="built-title">BUILT WITH:</h3>
-                        <div id="tech-cont" className="container">
                             {technologies}
-                        </div>
-                            
                     </div>
                     <div className="container" id="github-cont">
+                        <a href={project.deployed} target="_blank" rel="noreferrer" id="deployed-link">LIVE SITE</a>
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
                         {/* maybe add button for next project here */}
                     </div>

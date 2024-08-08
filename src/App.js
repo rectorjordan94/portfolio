@@ -33,12 +33,12 @@ function App() {
               body.classList.remove('fixed-position')
               navIcon.classList.remove('arrow')
               projectButtons.forEach((button) => {
-                button.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C'
+                button.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff001a44'
                 button.classList.remove('noHover')
                 button.style.color = '#000'
               });
               mainH2s.forEach(h2 => {
-                h2.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C'
+                h2.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff001a44'
                 h2.style.color = '#fff'
               });
             })
@@ -49,11 +49,11 @@ function App() {
               projectButtons.forEach((button) => {
                 button.style.textShadow = 'none'
                 button.classList.add('noHover')
-                button.style.color = '#ff01001C'
+                button.style.color = '#ff001a44'
               });
               mainH2s.forEach(h2 => {
                 h2.style.textShadow = 'none'
-                h2.style.color = '#ff01001C'
+                h2.style.color = '#ff001a44'
                 
               });
             })
