@@ -35,6 +35,7 @@ function App() {
               projectButtons.forEach((button) => {
                 button.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff001a44'
                 button.classList.remove('noHover')
+                button.removeAttribute('disabled')
                 button.style.color = '#000'
               });
               mainH2s.forEach(h2 => {
@@ -49,6 +50,7 @@ function App() {
               projectButtons.forEach((button) => {
                 button.style.textShadow = 'none'
                 button.classList.add('noHover')
+                button.setAttribute('disabled', '')
                 button.style.color = '#ff001a44'
               });
               mainH2s.forEach(h2 => {

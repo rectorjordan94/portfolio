@@ -68,18 +68,38 @@ body {
     border: none;
     padding: 0!important;
     border-radius: none!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .arrow {
     background-image: url(/public/images/back-arrow.svg)!important;
-    transition: background-image .35s ease-in-out;
+    transition: background-image .35s linear;
   }
-  .arrow:hover {
-    animation: button-pulse 1s ease-out 0s infinite backwards;
+  .navbar-toggler:hover {
+    animation: button-pulse 1.5s linear 0s infinite backwards;
+  }
+
+  .navbar-toggler:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
+  }
+
+  .btn-close:focus {
+    box-shadow: none;
+    filter: invert() drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
+  }
+
+  div#project-header.modal-header > button.btn-close:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
+  }
+
+  .carousel-control-next-icon:focus, .carousel-control-prev-icon:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
   .btn-close:hover {
-    animation: button-pulse 1s ease-out 0s infinite backwards;
+    animation: button-pulse 1s linear 0s infinite backwards;
   }
 
   @keyframes button-pulse {
@@ -254,6 +274,7 @@ body {
 
   .noHover {
     pointer-events: none!important;
+    
   }
 
   /*? ########################################################################################################################  */
@@ -318,21 +339,19 @@ body {
   }
 
   .modal-nav-button, a.nav-link.active {
-    transition: color .35s linear, text-shadow .35 linear;
+    transition: color .35s linear, text-shadow .35s linear;
   }
 
   li.nav-item {
     text-align: left;
   }
 
-  .modal-nav-button:hover {
-    color: #000;
-    text-shadow: 0px 1px 0 #fff;
+  .modal-nav-button:hover, a.nav-link.active:hover {
+    animation: button-pulse 1.5s linear 0s infinite backwards;
   }
 
-  a.nav-link.active:hover {
-    color: #000!important;
-    text-shadow: 0px 1px 0 #fff;
+  .modal-nav-button:focus, a.nav-link.active:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
   .nav-symbols {
@@ -789,8 +808,11 @@ body {
   }
 
   #fortnite-link:hover, #github-link:hover, #deployed-link:hover {
-    transform: translateY(2px) scale(1.1);
-    text-shadow: 0px -1px 0 #ff001a, 0px -2px 0 #ff001a;
+    animation: button-pulse 1.5s linear 0s infinite backwards;
+  }
+
+  #fortnite-link:focus, #github-link:focus, #deployed-link:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
   .uefn-symbols {
@@ -854,6 +876,10 @@ body {
     text-shadow: 1px 0px 0px #000, 2px 0px 0px #000, 3px 0px 0px #000, 4px 0px 0px #000!important;
     transform: translateX(-10px) translateY(0px);
     transition: text-shadow .35s linear, transform .35s linear;
+  }
+
+  .project-button:focus {
+    filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(0px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
   }
