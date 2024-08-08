@@ -14,7 +14,7 @@ body {
   height: 100%;
   /* background-color: var(--current-background); */
   /*! replace first color in gradient with yellow??? */
-  background: linear-gradient(300deg, #ff8800, #ff8000, #ff0100);
+  background: linear-gradient(300deg, #ff001a, #ff6600, #ffe500);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
   max-width: 100%;
@@ -155,7 +155,7 @@ body {
     margin-bottom: 0;
     letter-spacing: -3px;
     line-height: 1;
-    text-shadow: 1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C; 
+    text-shadow: 4px -2px 0px #ff001a44, 3px -2px 0px #ff001a44, 2px -2px 0px #ff001a44, 2px -1px 0px #ff001a44, 1px -1px 0px #ff001a44; 
     /*! only need this below if the shadows from the buttons are overlapping  */
     position: relative;
     z-index: 1;
@@ -188,7 +188,7 @@ body {
     font-size: 36px;
     line-height: 32px;
     letter-spacing: -4px;
-    text-shadow: 1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff01001C;
+    text-shadow: 4px -2px 0px #ff001a44, 3px -2px 0px #ff001a44, 2px -2px 0px #ff001a44, 2px -1px 0px #ff001a44, 1px -1px 0px #ff001a44; 
     text-wrap: pretty;
     position: relative;
     z-index: 1;
@@ -323,13 +323,13 @@ body {
   /*! NEED NEW HOVER EFECTS FOR NAV LINKS  */
 
   .modal-nav-button:hover {
-    color: #feff00;
-    text-shadow: 1px -1px 0 #ff0100, 2px -2px 0 #ff0100;
+    color: #ffe500;
+    text-shadow: 1px -1px 0 #ff001a, 2px -2px 0 #ff001a;
   }
 
   a.nav-link.active:hover {
-    color: #feff00!important;
-    text-shadow: 1px -1px 0 #ff0100, 2px -2px 0 #ff0100;
+    color: #ffe500!important;
+    text-shadow: 1px -1px 0 #ff001a, 2px -2px 0 #ff001a;
   }
 
   .nav-symbols {
@@ -470,10 +470,6 @@ body {
     margin: 0;
   }
 
-  .bio-paragraph {
-    padding: 0 15px;
-  }
-
   .bio-container:nth-child(1) {
     animation: slide-in-left .5s ease-out .25s 1 normal backwards;
   }
@@ -494,10 +490,10 @@ body {
   }
 
   #bio-intro {
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     font-weight: 600;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     margin-bottom: 5px;
   }
 
@@ -521,6 +517,8 @@ body {
     animation: slide-in-left .5s ease-out 0s 1 normal backwards;
   }
 
+  /*! NEW HOVER STYLE FOR DEPLOYED LINK? */
+
   #deployed-link {
     animation: fade-in-center .5s ease-out 0.25s 1 normal backwards;
     transition: all .5s ease-in-out;
@@ -528,7 +526,7 @@ body {
 
   #deployed-link:hover {
     transition: all .5s ease-in-out;
-    color:#feff00;
+    color:#ffe500;
     font-weight: 600;
   }
 
@@ -564,6 +562,8 @@ body {
     animation: slide-in-bottom .5s ease-out 2.25s 1 normal backwards;
   }
 
+  /*! NEW HOVER STYLES FOR GITHUB/FORNITE LINKS  */
+
   #github-link:hover {
     transition: all .5s ease-in-out;
   }
@@ -576,14 +576,14 @@ body {
     transition: all .25s ease-in-out;
     transform: scale(1.1);
     letter-spacing: 1px;
-    color:#feff00;
+    color:#ffe500;
   }
 
   #fortnite-link:hover {
     transition: all .25s ease-in-out;
     transform: scale(1.1);
     letter-spacing: 1px;
-    color:#ff0100;
+    color:#ff001a;
   }
 
   @keyframes fade-in-center {
@@ -675,28 +675,29 @@ body {
     background-color: #fff;
   }
 
-  #project-header {
+  #project-header, #uefn-header {
+    width: 100%;
+    height: 52.5px;
     padding: 10px;
     display: flex;
     align-items: center;
-  }
-
-  #uefn-header {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    /* padding-right: 15px; */
+    perspective: 250px;
+    transform-style: preserve-3d;
+    position: relative;
   }
 
   #project-name {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 28px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -4px;
+    text-shadow: -4px -4px 0 #ff6600, -3px -3px 0 #ff6600, -2px -2px 0 #ff6600, -1px -1px 0 #ff6600;
   }
 
   #uefn-name {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 26px;
-      line-height: .9;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 26px;
+    line-height: .9;
   }
 
   #project-body {
@@ -826,8 +827,8 @@ body {
 
   .project-button:hover {
     z-index: 1;
-    color: #feff00!important;
-    text-shadow: 5px -5px 0px #ff0100;
+    color: #ffe500!important;
+    text-shadow: 5px -5px 0px #ff001a;
     transform: translateX(-3px) translateY(3px);
     transition: text-shadow .5s ease-out, transform .5s ease-out;
   }
@@ -835,15 +836,15 @@ body {
   @keyframes project-pulse {
     0% {
       transform: translateX(0px) translateY(0px);
-      text-shadow: 5px -5px 0px #ff0100;
+      text-shadow: 5px -5px 0px #ff001a;
     }
     50% {
       transform: translateX(-3px) translateY(3px);
-      text-shadow: 5px -5px 0px #ff0100;
+      text-shadow: 5px -5px 0px #ff001a;
     }
     100% {
       transform: translateX(0px) translateY(0px);
-      text-shadow: 5px -5px 0px #ff0100;
+      text-shadow: 5px -5px 0px #ff001a;
     }
   }
 
