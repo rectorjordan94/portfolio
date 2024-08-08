@@ -532,7 +532,7 @@ body {
     animation: slide-in-right .5s ease-out .75s 1 normal backwards;
   }
 
-  #descript2 {
+  #descript2, .uefn-bullets {
     animation: slide-in-left .5s ease-out 1s 1 normal backwards;
   }
 
@@ -544,7 +544,7 @@ body {
     animation: slide-in-bottom .5s ease-out 2s 1 normal backwards;
   }
 
-  #tech-cont {
+  #tech-cont, #island-cont {
     animation: fade-in-center .5s ease-out 2.5s 1 normal backwards;
   }
 
@@ -557,7 +557,7 @@ body {
   }
 
   #fortnite-link {
-    animation: slide-in-top .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-top .5s ease-out 3s 1 normal backwards;
   }
 
   @keyframes fade-in-center {
@@ -657,6 +657,10 @@ body {
     position: relative;
     z-index: 4;
     box-shadow: 0px 5px 5px #00000044;
+  }
+
+  #uefn-header {
+    min-height: 72.5px;
   }
 
   #project-name, #uefn-name {

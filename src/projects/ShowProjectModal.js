@@ -77,7 +77,10 @@ const ShowProjectModal = (props) => {
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                     </div>
                     <div className="container" id="code-cont">
-                        <h3 id="island-code">{uefn.islandCode}</h3>
+                        <div id="island-cont">
+                            <h3 id="island-code">{uefn.islandCode}</h3>
+                        </div>
+                        
                     </div>
                     <div className="container" id="fortnite-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="fortnite-link">FORTNITE.COM</a>
