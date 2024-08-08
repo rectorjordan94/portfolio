@@ -155,7 +155,7 @@ body {
     margin-bottom: 0;
     letter-spacing: -3px;
     line-height: 1;
-    text-shadow: 4px -2px 0px #ff001a44, 3px -2px 0px #ff001a44, 2px -2px 0px #ff001a44, 2px -1px 0px #ff001a44, 1px -1px 0px #ff001a44; 
+    text-shadow: 4px -4px 0 #ff001a44, 3px -3px 0 #ff001a44, 2px -2px 0 #ff001a44, 1px -1px 0 #ff001a44;
     /*! only need this below if the shadows from the buttons are overlapping  */
     position: relative;
     z-index: 1;
@@ -188,7 +188,7 @@ body {
     font-size: 36px;
     line-height: 32px;
     letter-spacing: -4px;
-    text-shadow: 4px -2px 0px #ff001a44, 3px -2px 0px #ff001a44, 2px -2px 0px #ff001a44, 2px -1px 0px #ff001a44, 1px -1px 0px #ff001a44; 
+    text-shadow: 4px -4px 0 #ff001a44, 3px -3px 0 #ff001a44, 2px -2px 0 #ff001a44, 1px -1px 0 #ff001a44;
     text-wrap: pretty;
     position: relative;
     z-index: 1;
@@ -691,7 +691,7 @@ body {
     font-size: 36px;
     line-height: 36px;
     letter-spacing: -4px;
-    text-shadow: -4px -4px 0 #ff6600, -3px -3px 0 #ff6600, -2px -2px 0 #ff6600, -1px -1px 0 #ff6600;
+    text-shadow: -1px -1px 0 #ffe500, -2px -2px 0 #ff6600, -3px -3px 0 #ff001a;
   }
 
   #uefn-name {
