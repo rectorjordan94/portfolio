@@ -562,7 +562,7 @@ body {
     box-shadow: 0px 5px 5px #00000044;
   }
 
-  #descript1-cont, #descript2-cont {
+  #descript1-cont {
     animation: slide-in-top .5s ease-out .25s 1 normal backwards;
   }
 
@@ -740,7 +740,7 @@ body {
     padding: 0;
   }
 
-  #descript1-cont, #descript2-cont {
+  #descript1-cont {
     font-family: 'Archivo', sans-serif;
     font-size: 1em;
     padding: 10px;
@@ -748,15 +748,16 @@ body {
     background-color: #fff;
   }
 
-  #descript2-cont {
-    padding-top: 5px;
-    position: relative;
-    z-index: 3;
-    box-shadow: 0px 5px 5px #00000044;
+  #descript1 {
+    margin-top: 5px;
   }
 
   #descript1, #descript2 {
     margin-bottom: 0;
+  }
+
+  #descript2 {
+    margin-top: 15px;
   }
 
   #uefn-list {
@@ -911,12 +912,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
-  #descript1-cont, #descript2-cont {
+  #descript1-cont {
     flex-grow: 0;
   }
-  #descript2-cont {
-    box-shadow: 0px 5px 5px #ffffff66;
-  }
+
   #video-cont {
     flex-grow: 1;
     display: flex;
