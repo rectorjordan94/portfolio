@@ -127,6 +127,7 @@ html, body {
     /* padding-top: 25%; */
     text-align: right;
     min-height: 100vh;
+    min-width: 100vw;
     /* padding-right: 55px; */
     /* padding-right: 17.5%; */
     padding-bottom: 50%;
