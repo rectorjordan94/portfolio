@@ -285,8 +285,12 @@ body {
   /*? ########################################################################################################################  */
   /*? ########################################################################################################################  */
 
-  .navbar-collapse {
-    margin-top: 50%;
+  div.navmenu-header {
+    margin-bottom: 10%;
+  }
+
+  li.nav-item {
+    width: fit-content;
   }
 
   /* removes janky transition as the height adjusts to meet full screen size  */
