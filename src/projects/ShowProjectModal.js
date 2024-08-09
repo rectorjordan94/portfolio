@@ -70,7 +70,7 @@ const ShowProjectModal = (props) => {
                     </div>
                     <div className="container" id="video-cont" className="uefn-video-cont">
                         {/* still need to add video files and properly link to them */}
-                        <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
+                        <video className="uefn-video" src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
                         <div className="container" id="code-cont">
                             <div id="island-cont">
                                 <h3 id="island-code">{uefn.islandCode}</h3>

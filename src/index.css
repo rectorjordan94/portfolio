@@ -968,15 +968,20 @@ html, body {
     margin-top: 10%;
   }
   .software-video {
+    /* change these to percentages?  */
     max-width: 320px;
     max-height: 320px;
+    padding-top: 15px;
   }
+
   #video-cont {
     align-items: center;
-    padding-top: 15px;
   }
   #built-cont {
     max-width: 360px;
+  }
+  .bio-img {
+    max-height: 320px;
   }
 }
 
