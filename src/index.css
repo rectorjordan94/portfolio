@@ -4,7 +4,7 @@
 
 html, body {
   min-height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   overflow-x: hidden;
   overscroll-behavior: contain;
@@ -16,7 +16,7 @@ html, body {
 .wrapper {
   position: relative;
   min-height: 100vh;
-  width: 100%;
+  /* width: 100%; */
 }
 
 @keyframes gradient-animation {
@@ -127,7 +127,8 @@ html, body {
     /* padding-top: 25%; */
     text-align: right;
     min-height: 100vh;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     /* padding-right: 55px; */
     /* padding-right: 17.5%; */
     padding-bottom: 50%;
