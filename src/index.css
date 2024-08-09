@@ -2,13 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* html {
-  height: 100%;
-  
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-
 html, body {
   min-height: 100vh;
   margin: 0;
@@ -913,6 +906,9 @@ html, body {
   /*? *********************************************************************************************************************************  */
 
 @media (min-width: 360px) {
+  #main-section {
+    top: 15%;
+  }
   #project-body {
     display: flex;
     flex-direction: column;
@@ -921,7 +917,6 @@ html, body {
   #descript1-cont {
     flex-grow: 0;
   }
-
   #video-cont {
     flex-grow: 1;
     display: flex;
@@ -941,21 +936,16 @@ html, body {
 
 @media (min-width: 400px) {
   #main-section {
-    padding-right: 20%;
-  }
-  .bio-img {
-    aspect-ratio: 4/4;
+    right: 20%;
   }
 }
-
-
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 568px) {
   #main-section {
-    padding-top: 18%;
-    padding-right: 22%;
+    top: 27.5%;
+    right: 22.5%;
   }
   .modal-nav-button {
     padding: 0;
@@ -976,6 +966,17 @@ html, body {
   }
   .project-button-container:nth-child(2) {
     margin-top: 10%;
+  }
+  .software-video {
+    max-width: 320px;
+    max-height: 320px;
+  }
+  #video-cont {
+    align-items: center;
+    padding-top: 15px;
+  }
+  #built-cont {
+    max-width: 360px;
   }
 }
 
