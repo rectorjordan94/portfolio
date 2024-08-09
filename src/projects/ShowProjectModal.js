@@ -24,8 +24,6 @@ const ShowProjectModal = (props) => {
                 <Modal.Body id="project-body">
                 <div className="container" id="descript1-cont">
                         <p id="descript1">{project.description1}</p>
-                    </div>
-                    <div className="container" id="descript2-cont">
                         <p id="descript2">{project.description2}</p>
                     </div>
                     <div className="container" id="video-cont">
@@ -68,9 +66,7 @@ const ShowProjectModal = (props) => {
                 <Modal.Body id="project-body">
                     <div className="container" id="descript1-cont">
                         <p id="descript1">{uefn.description1}</p>
-                    </div>
-                    <div className="container" id="descript2-cont">
-                        {bulletPoints ? <div className="bullet-cont">{bulletPoints}</div> : <p id="descript2">{uefn.description2}</p> }   
+                        {bulletPoints ? <div className="bullet-cont">{bulletPoints}</div> : <p id="descript2">{uefn.description2}</p> }  
                     </div>
                     <div className="container" id="video-cont" className="uefn-video-cont">
                         {/* still need to add video files and properly link to them */}
