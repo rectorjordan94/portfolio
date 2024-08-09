@@ -733,7 +733,7 @@ body {
 
   #uefn-name {
     line-height: .85;
-    text-wrap: pretty;
+    text-wrap: balance;
     font-size: 2em;
   }
 
