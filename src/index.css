@@ -937,14 +937,40 @@ body {
   #main-section {
     padding-right: 20%;
   }
+  .bio-img {
+    aspect-ratio: 4/4;
+  }
 }
 
 
 
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 580px) {
-  
+@media (min-width: 568px) {
+  #main-section {
+    padding-top: 18%;
+    padding-right: 22%;
+  }
+  .modal-nav-button {
+    padding: 0;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  div.navmenu-header {
+    margin-bottom: 0;
+  }
+  #logo {
+    width: 2em;
+    height: 2em;
+    transform: scale(1.25) translateX(0px) translateY(4px)
+  }
+  .navbar-text:nth-child(2) {
+    margin-bottom: 0px!important;
+  }
+  .project-button-container:nth-child(2) {
+    margin-top: 10%;
+  }
 }
 
 /*? *********************************************************************************************************************************  */
