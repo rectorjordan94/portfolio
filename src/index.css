@@ -522,6 +522,8 @@ body {
 
   #bio-img-container {
     animation: slide-in-bottom .5s ease-out .75s 1 normal backwards;
+    box-shadow: 0px 5px 5px #00000044, 0px -5px 5px #00000044;
+    position: relative;
   }
 
   .bio-container:nth-child(4) {
@@ -529,6 +531,7 @@ body {
   }
   .bio-container:nth-child(5) {
     animation: slide-in-right .5s ease-out 1.25s 1 normal backwards;
+    box-shadow: 0px -5px 5px #00000044;
   }
 
   #bio-intro {
@@ -551,7 +554,9 @@ body {
   }
 
   .bio-container:nth-child(1) {
+    position: relative;
     margin-top: 20px;
+    box-shadow: 0px 5px 5px #00000044;
   }
 
   #descript1-cont {
