@@ -126,16 +126,17 @@ body {
   }
 
   #main-section {
-    padding-top: 85px;
+    padding-top: 25%;
     text-align: right;
     height: 100%;
-    padding-right: 55px;
+    /* padding-right: 55px; */
+    padding-right: 17.5%;
   }
 
   #main-container {
     position: relative;
     z-index: 0;
-    perspective: 15.625em;
+    perspective: 250px;
     transform-style: preserve-3d;
     padding: 0;
     /* padding-right: 55px; */
@@ -182,7 +183,7 @@ body {
   /* #ff010018 */
 
   #uefn-h2 {
-    margin-top: 0.3125em;
+    margin-top: 10%;
     animation: h2-slide-and-pop .5s ease-out .8s 1 normal backwards;
   }
 
@@ -194,11 +195,11 @@ body {
     align-items: flex-end;
     padding: 0;
     transform: rotateY(-15deg) scaleX(1.15) scaleY(1.35);
-    margin-top: 5.3125em;
+    margin-top: 23.5%;
   }
 
   .project-button-container:nth-child(2) {
-    padding-bottom: 1.875em
+    padding-bottom: 5%;
   }
 
   .project-button {
@@ -584,15 +585,15 @@ body {
   }
 
   #tech-cont, #island-cont {
-    animation: fade-in-center .5s ease-out 2.5s 1 normal backwards;
+    animation: fade-in-center .5s ease-out 2.75s 1 normal backwards;
   }
 
   #github-link {
-    animation: slide-in-right .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-right .5s ease-out 3s 1 normal backwards;
   }
 
   #deployed-link {
-    animation: slide-in-left .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-left .5s ease-out 3s 1 normal backwards;
   }
 
   #fortnite-link {
@@ -671,7 +672,7 @@ body {
   }
 
   .bio-img {
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     background-color: #ff6600;
     padding: 10px 10px;
@@ -680,7 +681,7 @@ body {
   .carousel-control-prev, .carousel-control-next {
     opacity: 1;
     scale: 1.25;
-    margin: 5px;
+    margin: 2.5%;
   }
 
   #project-modal {
@@ -904,18 +905,9 @@ body {
 
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 340px) {
-  #main-section {
-    padding-right: 60px;
-  }
-}
-
   /*? *********************************************************************************************************************************  */
 
 @media (min-width: 360px) {
-  #main-section {
-    padding-right: 65px;
-  }
   #project-body {
     display: flex;
     flex-direction: column;
@@ -938,90 +930,36 @@ body {
   }
   .bio-img {
     object-fit: contain;
-    height: 360px;
-  }
-}
-
-  /*? *********************************************************************************************************************************  */
-
-  @media (min-width: 380px) {
-    #main-section {
-      padding-right: 75px;
-    }
-  }
-
-  /*? *********************************************************************************************************************************  */
-
-@media (min-width: 420px) {
-  #main-section {
-    padding-right: 85px;
+    height: 100%;
   }
 }
 
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 460px) {
+@media (min-width: 400px) {
   #main-section {
-    padding-right: 95px;
+    padding-right: 20%;
   }
 }
 
-  /*? *********************************************************************************************************************************  */
 
-@media (min-width: 480px) {
-  #main-section {
-    padding-top: 95px;
-    padding-right: 105px;
-  }
-  .bio-img {
-    height: 400px;
-    object-fit: contain;
-  }
-}
-
-  /*? *********************************************************************************************************************************  */
-
-@media (min-width: 500px) {
-  #main-section {
-    padding-top: 105px;
-    padding-right: 115px;
-  }
-}
-
-  /*? *********************************************************************************************************************************  */
-
-@media (min-width: 540px) {
-  #main-section {
-    padding-top: 115px;
-    padding-right: 125px;
-  }
-}
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 580px) {
-  #main-section {
-    padding-top: 125px;
-    padding-right: 135px;
-  }
+  
 }
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 610px) {
-  #main-section {
-    padding-top: 135px;
-    padding-right: 145px;
-  }
+  
 }
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 630px) {
-  #main-section {
-    padding-top: 145px;
-    padding-right: 155px;
-  }
+  
 }
 
   /*? *********************************************************************************************************************************  */
