@@ -286,7 +286,7 @@ body {
   /*? ########################################################################################################################  */
 
   .navbar-collapse {
-    margin-top: 100%;
+    margin-top: 50%;
   }
 
   /* removes janky transition as the height adjusts to meet full screen size  */
