@@ -28,9 +28,13 @@ const Bio = (props) => {
 			<div className="modal-dialog modal-fullscreen modal-dialog-scrollable">
     			<div className="modal-content">
 						<div className="modal-header" id="about-modal-header">
-						<img src="/images/Logo_Transparent.png" alt="logo" id="logo-bio" />
-        				<h5 className="modal-title" id="about-modal-title">ABOUT</h5>
-        				<button type="button" id="about-close" className="btn-close" data-bs-dismiss="modal" data-bs-theme="dark" aria-label="Close"></button>
+							<div id="about-logo-cont">
+								<img src="/images/Logo_Transparent.png" alt="logo" id="logo-bio" />
+							</div>
+							<div id="modal-title-cont">
+								<h5 className="modal-title" id="about-modal-title">ABOUT</h5>
+							</div>
+        					<button type="button" id="about-close" className="btn-close" data-bs-dismiss="modal" data-bs-theme="dark" aria-label="Close"></button>
       				</div>
 						<div className="modal-body text-dark" id="bio-modal-body">
 							<div className="bio-container">

@@ -44,8 +44,6 @@ body {
   transition: color .5s ease-in-out;
 }
 
-@media (min-width: 320px) {
-
   #logo {
     width: 2.8125em;
     height: 2.8125em;
@@ -128,9 +126,10 @@ body {
   }
 
   #main-section {
-    padding-top: 4.6875em;
+    padding-top: 85px;
     text-align: right;
     height: 100%;
+    padding-right: 55px;
   }
 
   #main-container {
@@ -140,7 +139,6 @@ body {
     transform-style: preserve-3d;
     padding: 0;
     /* padding-right: 55px; */
-    padding-right: 3.5em;
   }
 
   /* #dots {
@@ -448,8 +446,8 @@ body {
   #logo-bio {
     width: 45px;
     height: 45px;
-    transform: scale(1.5) translateX(5px) translateY(8px);
-    position: absolute;
+    transform: scale(1.5) translateX(5px) translateY(5px);
+    position: relative;
     z-index: 4;
     padding: 1px;
     animation: logo-shadow 2s ease-in-out 2s infinite both;
@@ -468,14 +466,29 @@ body {
   }
 
   #about-modal-title {
-    position: relative;
+    /* position: relative; */
     color: #fff;
     font-family: 'Archivo Black', sans-serif;
     font-size: 36px;
-    margin-left: 86px;
+    /* margin-left: 86px; */
     padding-top: 6px;
     animation: slide-in-top .5s ease-out 0s 1 normal forwards;
     text-shadow: 0px -1px #ff6600, 0px -2px #ff6600, 0px -3px #ff6600, 0px -4px #ff6600, 0px -5px #ff6600, 0px -6px #ff6600;
+  }
+
+  #about-logo-cont {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+  }
+
+  #modal-title-cont {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .btn-close {
@@ -846,7 +859,7 @@ body {
   .tech {
     display: block;
     font-family: 'Archivo Black', sans-serif;
-    font-size: .7em;
+    font-size: 12px;
     padding: 0px 2px;
     /* transition: all .5s ease-in-out; */
     color: #ffe500;
@@ -884,30 +897,90 @@ body {
     filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(1px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
-  }
-
   /*? *********************************************************************************************************************************  */
 
-@media (min-width: 360px) {
-  
+@media (min-width: 350px) {
+  #main-section {
+    padding-right: 65px;
+  }
 }
 
   /*? *********************************************************************************************************************************  */
 
-  @media (min-width: 375px) {
-    
+  @media (min-width: 380px) {
+    #main-section {
+      padding-right: 75px;
+    }
   }
 
   /*? *********************************************************************************************************************************  */
 
-@media (min-width: 400px) {
-  
+@media (min-width: 420px) {
+  #main-section {
+    padding-right: 85px;
+  }
 }
 
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 568px) {
-  
+@media (min-width: 460px) {
+  #main-section {
+    padding-right: 95px;
+  }
+}
+
+  /*? *********************************************************************************************************************************  */
+
+@media (min-width: 480px) {
+  #main-section {
+    padding-top: 95px;
+    padding-right: 105px;
+  }
+}
+
+  /*? *********************************************************************************************************************************  */
+
+@media (min-width: 500px) {
+  #main-section {
+    padding-top: 105px;
+    padding-right: 115px;
+  }
+}
+
+  /*? *********************************************************************************************************************************  */
+
+@media (min-width: 540px) {
+  #main-section {
+    padding-top: 115px;
+    padding-right: 125px;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
+
+@media (min-width: 580px) {
+  #main-section {
+    padding-top: 125px;
+    padding-right: 135px;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
+
+@media (min-width: 610px) {
+  #main-section {
+    padding-top: 135px;
+    padding-right: 145px;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
+
+@media (min-width: 630px) {
+  #main-section {
+    padding-top: 145px;
+    padding-right: 155px;
+  }
 }
 
   /*? *********************************************************************************************************************************  */
