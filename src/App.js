@@ -18,7 +18,7 @@ function App() {
     // const [showNavBar, setShowNavBar] = useState(false)
     const projectButtons = document.querySelectorAll('.project-button')
     const mainH2s = document.querySelectorAll('.main-h2')
-    const navMenuContainer = document.querySelector('.navmenu-container')
+    // const navMenuContainer = document.querySelector('.navmenu-container')
     const navIcon = document.querySelector('.navbar-toggler-icon')
   
     useEffect(() => {
@@ -29,7 +29,8 @@ function App() {
               console.log('hide')
             })
           navBar.addEventListener('hidden.bs.collapse', (e) => {
-              navMenuContainer.classList.remove('navOpenOnMobile')
+            // navMenuContainer.classList.remove('navOpenOnMobile')
+              html.classList.remove('fixed-position')
               body.classList.remove('fixed-position')
               navIcon.classList.remove('arrow')
               projectButtons.forEach((button) => {
@@ -44,7 +45,8 @@ function App() {
               });
             })
           navBar.addEventListener('show.bs.collapse', (e) => {
-              navMenuContainer.classList.add('navOpenOnMobile')
+            // navMenuContainer.classList.add('navOpenOnMobile')
+              html.classList.add('fixed-position')
               body.classList.add('fixed-position')
               navIcon.classList.add('arrow')
               projectButtons.forEach((button) => {
