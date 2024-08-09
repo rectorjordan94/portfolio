@@ -31,10 +31,10 @@ const ShowProjectModal = (props) => {
                     <div className="container" id="video-cont">
                         {/* still need to add video files and properly link to them */}
                         <video src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
-                    </div>
-                    <div className="container" id="built-cont">
-                        <div id="tech-cont">
-                            {technologies}
+                        <div className="container" id="built-cont">
+                            <div id="tech-cont">
+                                {technologies}
+                            </div>
                         </div>
                     </div>
                     <div className="container" id="github-cont">
@@ -75,12 +75,11 @@ const ShowProjectModal = (props) => {
                     <div className="container" id="video-cont" className="uefn-video-cont">
                         {/* still need to add video files and properly link to them */}
                         <video src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
+                        <div className="container" id="code-cont">
+                            <div id="island-cont">
+                                <h3 id="island-code">{uefn.islandCode}</h3>
+                            </div>
                     </div>
-                    <div className="container" id="code-cont">
-                        <div id="island-cont">
-                            <h3 id="island-code">{uefn.islandCode}</h3>
-                        </div>
-                        
                     </div>
                     <div className="container" id="fortnite-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="fortnite-link">FORTNITE.COM</a>
