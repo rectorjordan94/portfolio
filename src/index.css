@@ -73,7 +73,7 @@ body {
 
   .arrow {
     background-image: url(/public/images/back-arrow.svg)!important;
-    transition: background-image .35s linear;
+    /* transition: background-image .35s linear; */
   }
   .navbar-toggler:hover {
     animation: button-pulse 1.5s linear 0s infinite backwards;
