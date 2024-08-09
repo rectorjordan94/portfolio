@@ -949,10 +949,18 @@ html, body {
 @media (min-width: 568px) {
   #main-section {
     top: 27.5%;
-    right: 22.5%;
+    right: 25%;
   }
   .modal-nav-button {
     padding: 0;
+  }
+  ul.navbar-nav {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 0 20px 0;
+  }
+  .navbar-text {
+    font-size: 12px;
   }
   .nav-link {
     padding: 0;
@@ -977,7 +985,6 @@ html, body {
     max-height: 320px;
     padding-top: 15px;
   }
-
   #video-cont {
     align-items: center;
   }
@@ -986,6 +993,9 @@ html, body {
   }
   .bio-img {
     max-height: 320px;
+  }
+  #descript1-cont, #descript2-cont {
+    max-width: 100%;
   }
 }
 
