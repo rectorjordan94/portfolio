@@ -4,6 +4,7 @@
 
 html, body {
   min-height: 100vh;
+  min-width: 100vw;
   margin: 0;
   overflow-x: hidden;
   overscroll-behavior: contain;
@@ -15,6 +16,7 @@ html, body {
 .wrapper {
   position: relative;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 @keyframes gradient-animation {
