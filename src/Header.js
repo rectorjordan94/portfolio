@@ -35,10 +35,7 @@ const Header = (props) => {
                             <a className="nav-link active" aria-current="page" href="/Jordan_Rector_Resume.pdf" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>resume</a>
                         </li>
                     </ul>
-                    <span className="navbar-text">Jordan Rector</span>
-                    <span className="navbar-text">Software, Web, & Game Developer</span>
-                    <span className="navbar-text">Sacramento, CA</span>
-                    <span className="navbar-text">rectorjordan94@gmail.com</span>
+                    
                     {/* <div className="nav-container">
                         <p className="navbar-text nav-descript">
                         Jordan Rector

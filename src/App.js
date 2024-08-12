@@ -20,6 +20,7 @@ function App() {
     const mainH2s = document.querySelectorAll('.main-h2')
     // const navMenuContainer = document.querySelector('.navmenu-container')
     const navIcon = document.querySelector('.navbar-toggler-icon')
+    const footerText = document.querySelectorAll('.footer-text')
   
     useEffect(() => {
       setNavBar(document.querySelector('.collapse'))
@@ -43,6 +44,9 @@ function App() {
                 h2.style.textShadow = '1px -1px 0px #ff01001C, 2px -1px 0px #ff01001C, 2px -2px 0px #ff01001C, 3px -2px 0px #ff01001C, 4px -2px 0px #ff001a44'
                 h2.style.color = '#fff'
               });
+              footerText.forEach(text => {
+                text.classList.remove('footer-fade')
+              })
             })
           navBar.addEventListener('show.bs.collapse', (e) => {
             // navMenuContainer.classList.add('navOpenOnMobile')
@@ -60,6 +64,9 @@ function App() {
                 h2.style.color = '#ff001a44'
                 
               });
+              footerText.forEach(text => {
+                text.classList.add('footer-fade')
+              })
             })
             navBar.addEventListener('shown.bs.collapse', (e) => {
               // console.log('shown')
