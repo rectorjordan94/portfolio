@@ -437,7 +437,7 @@ html, body {
     --bs-modal-footer-bg: none;
   }
 
-  #about-modal-header {
+  /* #about-modal-header {
     width: 100%;
     height: 62.5px;
     display: flex;
@@ -447,10 +447,11 @@ html, body {
     box-shadow: 0px 5px 5px #00000044;
     position: relative;
     z-index: 3;
-  }
+  } */
 
-  #about-close {
-    margin: 0;
+  .offcanvas {
+    background-color: #000;
+    color: #fff;
   }
 
   #logo-bio {
@@ -475,31 +476,10 @@ html, body {
     }
   }
 
-  #about-modal-title {
-    /* position: relative; */
-    color: #fff;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 36px;
-    /* margin-left: 86px; */
-    padding-top: 6px;
-    animation: slide-in-top .5s ease-out 0s 1 normal forwards;
-    text-shadow: 0px -1px #ff6600, 0px -2px #ff6600, 0px -3px #ff6600, 0px -4px #ff6600, 0px -5px #ff6600, 0px -6px #ff6600;
+  .offcanvas-body {
+    padding: 20px 0px 0px 0px;
   }
 
-  #about-logo-cont {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-  }
-
-  #modal-title-cont {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
 
   .btn-close {
     font-size: 1.75em;
@@ -520,28 +500,48 @@ html, body {
     font-weight: 500;
     font-size: 16px;
     margin: 0;
+    padding: 10px 20px;
   }
 
-  .bio-container:nth-child(1) {
+  #bio-intro {
+    padding: 0px 20px;
+  }
+
+  .carousel {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #bio-intro {
     animation: slide-in-left .5s ease-out .25s 1 normal backwards;
+  }
+
+  .bio-paragraph:nth-child(2) {
+    animation: slide-in-left .5s ease-out .25s 1 normal backwards;
+  }
+
+  .bio-paragraph:nth-child(3) {
+    animation: slide-in-right .5s ease-out .5s 1 normal backwards;
   }
 
   .bio-container:nth-child(2) {
     animation: slide-in-right .5s ease-out .5s 1 normal backwards;
   }
 
-  #bio-img-container {
+  .carousel {
     animation: slide-in-bottom .5s ease-out .75s 1 normal backwards;
-    box-shadow: 0px 5px 5px #00000044, 0px -5px 5px #00000044;
-    position: relative;
   }
 
-  .bio-container:nth-child(4) {
+  .bio-paragraph:nth-child(5) {
+    background-color: #fff;
+    color: #000;
+    padding-top: 20px;
     animation: slide-in-left .5s ease-out 1s 1 normal backwards;
   }
-  .bio-container:nth-child(5) {
+  .bio-paragraph:nth-child(6) {
+    background-color: #fff;
+    color: #000;
+    padding-bottom: 20px;
     animation: slide-in-right .5s ease-out 1.25s 1 normal backwards;
-    box-shadow: 0px -5px 5px #00000044;
   }
 
   #bio-intro {
@@ -551,23 +551,6 @@ html, body {
     margin-bottom: 5px;
   }
 
-  .bio-container {
-    padding: 10px;
-  }
-
-  .bio-container:nth-child(even) {
-    background-color: #fff;
-  }
-
-  .bio-container:nth-child(odd) {
-    color: #fff;
-  }
-
-  .bio-container:nth-child(1) {
-    position: relative;
-    margin-top: 20px;
-    box-shadow: 0px 5px 5px #00000044;
-  }
 
   #descript1-cont {
     animation: slide-in-top .5s ease-out .25s 1 normal backwards;

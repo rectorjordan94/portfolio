@@ -58,13 +58,13 @@ const Bio = (props) => {
 
 	return (
 		<>
-			<Button variant="primary" onClick={handleShow}>
-				Launch
+			<Button variant="primary" onClick={handleShow} className="modal-nav-button">
+				<span className="nav-symbols">&#172;</span>about
 			</Button>
 
 			<Offcanvas show={show} onHide={handleClose}>
-				<Offcanvas.Header closeButton>
-					<Offcanvas.Title>ABOUT</Offcanvas.Title>
+				<Offcanvas.Header closeButton data-bs-theme="dark">
+					<img src="/images/Logo_Transparent.png" alt="logo" id="logo-bio"/>
 				</Offcanvas.Header>
 				<Offcanvas.Body>
 						<p id="bio-intro">Hey, I'm Jordan!</p>
