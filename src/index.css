@@ -337,6 +337,10 @@ html, body {
     --bs-btn-disabled-color: none;
   }
 
+  .modal {
+    --bs-modal-border-color: none;
+  }
+
   .modal-nav-button {
     font-family: 'Archivo', sans-serif;
     font-size: 1.125em;
@@ -1057,6 +1061,29 @@ html, body {
   #logo {
     width: 65px;
     height: 65px;
+  }
+  div.fade.modal.show {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+  }
+  div.fade.modal-backdrop.show {
+    display: block!important;
+    z-index: 2;
+  }
+  .software-video {
+    max-width: unset;
+    max-height: unset;
+    padding-top: unset;
+  }
+  #built-cont {
+    max-width: unset;
+  }
+  .modal-content {
+    z-index: 1000!important;
+  }
+  .modal-dialog {
+    z-index: 5;
   }
 }
 

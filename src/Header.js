@@ -5,6 +5,8 @@ const Header = (props) => {
 
     const { mainH2s } = props
 
+    
+
     return (
         <nav className="navbar position-absolute position-fixed navbar-expand-lg bg-body-tertiary container-fluid" id="navbar">
             <div className="container-fluid navmenu-container">
