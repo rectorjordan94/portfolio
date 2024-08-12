@@ -5,7 +5,7 @@ const Header = (props) => {
 
     const { mainH2s } = props
 
-    
+
 
     return (
         <nav className="navbar position-absolute position-fixed navbar-expand-lg bg-body-tertiary container-fluid" id="navbar">
@@ -16,7 +16,7 @@ const Header = (props) => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div className="collapse navbar-collapse navbar-nav-scroll" id="navbarTogglerDemo02">
                     <ul className="navbar-nav me-auto mb-lg-0">
                         <li className="nav-item">
                             {/* <a className="nav-link active" aria-current="page" href="#"><span className="nav-symbols">&#172;</span>about</a> */}
@@ -35,7 +35,11 @@ const Header = (props) => {
                             <a className="nav-link active" aria-current="page" href="/Jordan_Rector_Resume.pdf" target="_blank" rel="noreferrer"><span className="nav-symbols">&#172;</span>resume</a>
                         </li>
                     </ul>
-                    <div className="nav-container">
+                    <span className="navbar-text">Jordan Rector</span>
+                    <span className="navbar-text">Software, Web, & Game Developer</span>
+                    <span className="navbar-text">Sacramento, CA</span>
+                    <span className="navbar-text">rectorjordan94@gmail.com</span>
+                    {/* <div className="nav-container">
                         <p className="navbar-text nav-descript">
                         Jordan Rector
                         </p>
@@ -48,7 +52,7 @@ const Header = (props) => {
                         <p className="navbar-text nav-descript nav-email">
                             rectorjordan94@gmail.com
                         </p>
-                    </div>
+                    </div> */}
                     
                 </div>
             </div>
