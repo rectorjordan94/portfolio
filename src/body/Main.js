@@ -138,12 +138,6 @@ const Main = (props) => {
                 </div>
                 {/* <img id="dots" src="/images/dots_yellow.png" alt="" /> */}
             </div>
-            <div className="container footer-cont">
-                <p className="footer-text">Jordan Rector</p>
-                <p className="footer-text">Software, Web, & Game Developer</p>
-                <p className="footer-text">Sacramento, CA</p>
-                <p className="footer-text">rectorjordan94@gmail.com</p>
-            </div>
             <ShowProjectModal
                 show={modalShow}
                 currentProject={currentProject}
