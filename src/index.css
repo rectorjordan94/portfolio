@@ -468,7 +468,6 @@ html, body {
     padding: 20px 0px 0px 0px;
   }
 
-
   .btn-close {
     font-size: 1.75em;
     position: relative;
@@ -541,7 +540,7 @@ html, body {
 
 
   #descript1-cont {
-    animation: slide-in-top .5s ease-out .25s 1 normal backwards;
+    animation: slide-in-bottom .5s ease-out .25s 1 normal backwards;
   }
 
   #descript1 {
