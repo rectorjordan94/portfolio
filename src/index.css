@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --body-font-size: 16px;
+  --tech-code-font-size: 14px;
+  --title-font-size: 36px;
+  --project-button-font-size: 36px;
+  --link-font-size: 18px;
+  --project-link-font-size: 20px;
+}
+
 html, body {
   min-height: 100vh;
   /* width: 100%; */
@@ -11,18 +20,14 @@ html, body {
   background: linear-gradient(300deg, #ff001a, #ff6600, #ffe500);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-  --body-font-size: 16px;
-  --tech-code-font-size: 14px;
-  --title-font-size: 36px;
-  --project-button-font-size: 36px;
-  --link-font-size: 18px;
-  --project-link-font-size: 20px;
+  /* padding-bottom: 50%; */
 }
 
 .wrapper {
   position: relative;
   min-height: 100vh;
   /* width: 100%; */
+  /* padding-bottom: 25%; */
 }
 
 @keyframes gradient-animation {
@@ -137,10 +142,13 @@ html, body {
     max-width: 100%;
     /* padding-right: 55px; */
     /* padding-right: 17.5%; */
-    padding-bottom: 50%;
+    /* padding-bottom: 5%; */
     position: absolute;
     top: 17.5%;
     right: 17.5%;
+    /* top: calc(100vh * 0.175);
+    right: calc(100vw * .175); */
+    padding-bottom: 100px;
   }
 
   #main-container {
@@ -176,7 +184,7 @@ html, body {
     font-family: 'Archivo Black', sans-serif;
     color: #fff;
     /* font-size: 20px; */
-    font-size: 1.25em;
+    font-size: calc(var(--body-font-size) * 1.25);
     /* margin-top: 50px; */
     margin-bottom: 0;
     letter-spacing: -3px;
@@ -205,7 +213,7 @@ html, body {
     align-items: flex-end;
     padding: 0;
     transform: rotateY(-15deg) scaleX(1.15) scaleY(1.35);
-    padding-top: 20%;
+    margin-top: 20%;
   }
 
   .project-button-container:nth-child(2) {
@@ -217,8 +225,8 @@ html, body {
     color: #000;
     font-family: 'Archivo Black', sans-serif;
     font-size: var(--project-button-font-size);
-    line-height: 32px;
-    letter-spacing: -4px;
+    line-height: calc(var(--project-button-font-size) / 1.125);
+    letter-spacing: calc((var(--project-button-font-size) / 9) * -1);
     text-shadow: 1px -1px 0 #ff001a44, 2px -2px 0 #ff001a44, 3px -3px 0 #ff001a44, 4px -4px 0 #ff001a44;
     text-wrap: pretty;
     position: relative;
@@ -382,12 +390,13 @@ html, body {
     color: #fff;
     font-weight: 500;
     font-size: var(--tech-code-font-size);
-    padding: 10px;
-    margin: 0;
+    /* padding: 10px; */
+    margin: 0 0 10px 0;
     position: absolute;
     bottom: 0%;
     left: 0%;
     text-align: left;
+    /* width: 100vw; */
     z-index: 0;
   }
 
@@ -527,6 +536,7 @@ html, body {
     background-color: #fff;
     color: #000;
     padding-bottom: 20px;
+    margin-top: -1px;
     animation: slide-in-right .5s ease-out 1.25s 1 normal backwards;
   }
 
@@ -664,7 +674,7 @@ html, body {
 
   #project-header, #uefn-header {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -718,21 +728,17 @@ html, body {
   #descript1-cont {
     font-family: 'Archivo', sans-serif;
     font-size: var(--body-font-size);
-    padding: 10px;
+    padding: 15px;
     font-weight: 400;
     background-color: #fff;
   }
 
-  #descript1 {
-    margin-top: 5px;
-  }
-
   #descript1, #descript2 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
-  #descript2 {
-    margin-top: 15px;
+  #descript1 {
+    margin-bottom: 15px;
   }
 
   #uefn-list {
@@ -758,7 +764,7 @@ html, body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 15px 15px 15px;
   }
 
   #github-link, #deployed-link {
@@ -774,7 +780,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px 0px 10px;
+    padding: 15px;
   }
 
   #island-code {
@@ -829,7 +835,7 @@ html, body {
   }
 
   #tech-cont {
-    padding: 5px 10px 5px 10px;
+    padding: 15px;
     background-color: #000;
     display: flex;
     flex-wrap: wrap;
@@ -883,38 +889,56 @@ html, body {
 @media (min-width: 400px) {
   #main-section {
     right: 20%;
-    top: 10%;
+    top: 12.5%;
+    padding-bottom: 0;
   }
+
 }
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 500px) {
   #main-section {
-    right: 22.5%;
+    right: 25%;
+    top: 15%;
   }
 }
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 600px) {
-  body, html {
+  :root {
+    --body-font-size: 24px;
+    --tech-code-font-size: 22px;
     --title-font-size: 44px;
+    --project-button-font-size: 48px;
+    --link-font-size: 28px;
+    --project-link-font-size: 28px;
+    --max-width-screen: 899px;
+  }
+  .modal {
+    --bs-modal-width: calc(var(--max-width-screen) * 0.8);
+  }
+  .offcanvas {
+    --bs-offcanvas-width: calc(var(--max-width-screen) * 0.6);
   }
   #main-section {
-    top: 15%;
-    right: 27.5%;
+    top: 20%;
+    right: 29%;
   }
-
-
-
-
-
+  div.fade.modal.show {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    z-index: 0;
+  }
   .project-button-container:nth-child(2) {
     margin-top: 10%;
   }
-  .software-video {
-    /* change these to percentages?  */
+
+  /* .software-video {
     max-width: 320px;
     max-height: 320px;
     padding-top: 15px;
@@ -927,43 +951,76 @@ html, body {
   }
   #descript1-cont, #descript2-cont {
     max-width: 100%;
-  }
-}
-
-/*? *********************************************************************************************************************************  */
-
-@media (min-width: 768px) and (max-height: 480px){
-  #main-section {
-    /* top: 65%;
-    right: 27.5%; */
-  }
-  /* .project-button-container {
-    margin-top: 0;
-  }
-  .project-button {
-    font-size: 48px;
-    line-height: 42px;
-  }
-  .modal-nav-button, .nav-link.active {
-    font-size: 28px;
-  }
-  ul.navbar-nav {
-    align-items: unset;
-    padding: 0;
-  }
-  .nav-item {
-    padding: 3px 0px;
-  }
-  .navbar-text {
-    font-size: 20px;
-  }
-  .navbar-collapse.collapse.show {
-    overflow: scroll;
   } */
 }
+
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 768px) and (min-height: 481px) {
+@media (min-width: 680px) {
+  #main-section {
+    top: 23%;
+    right: 26%;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
+
+@media (min-width: 760px) {
+  #main-section {
+    top: 24%;
+    right: 28%;
+  }
+}
+
+/*? *********************************************************************************************************************************  */
+
+@media (min-width: 840px) {
+  #main-section {
+    top: 25%;
+    right: 29%;
+  }
+}
+
+@media (min-width: 900px){
+  :root {
+    --max-width-screen: 899px;
+    --link-font-size: 20px;
+    --tech-code-font-size: 14px;
+    --project-button-font-size: 40px;
+    --body-font-size: 18px;
+    --project-link-font-size: 22px;
+  }
+  #main-section {
+    top: 20%;
+    right: 25%;
+  }
+  .modal-nav-button {
+    padding: var(--bs-nav-link-padding-y) 5px;
+  }
+  div.container-fluid.navmenu-container {
+    align-items: flex-start;
+  }
+  a.nav-link.active {
+    text-wrap: nowrap;
+  }
+  div.fade.modal.show {
+    display: unset!important;
+  }
+}
+/*? *********************************************************************************************************************************  */
+
+
+
+@media (min-width: 1200px) {
+  :root {
+    --project-button-font-size: 44px;
+  }
+  #main-section {
+    top: 22.5%;
+    right: 22%;
+  }
+  
+
   /* #main-section {
   .project-button-container {
     margin-top: 0;
@@ -1013,21 +1070,9 @@ html, body {
 
   /*? *********************************************************************************************************************************  */
 
-@media (min-width: 768px) {
-  /* html, body {
-    --body-font-size: 18px;
-  } */
-}
-
-  /*? *********************************************************************************************************************************  */
-
-@media (min-width: 1024px) {
+@media (min-width: 1800px) {
 
 }
 
-  /*? *********************************************************************************************************************************  */
 
-@media (min-width: 1300px) {
-
-}
 

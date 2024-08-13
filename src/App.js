@@ -85,12 +85,6 @@ function App() {
       <Main />
       {/* <Technologies /> */}
       {/* <Footer /> */}
-      <div className="container footer-cont">
-        <p className="footer-text">Jordan Rector</p>
-        <p className="footer-text">Software, Web, & Game Developer</p>
-        <p className="footer-text">Sacramento, CA</p>
-        <p className="footer-text">rectorjordan94@gmail.com</p>
-      </div>
     </div>
   );
 }

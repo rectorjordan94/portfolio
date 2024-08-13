@@ -127,12 +127,12 @@ const Main = (props) => {
     
     return (
         <section id="main-section">
-            <div className="container" id="main-container">
-                <div className="container project-button-container">
+            <div id="main-container">
+                <div className="project-button-container">
                     <h2 className="main-h2">PROJECTS</h2>
                     {projectLis}
                 </div>
-                <div className="container project-button-container">
+                <div className="project-button-container">
                     <h2 className="main-h2" id="uefn-h2">UEFN</h2>
                     {uefnLis}
                 </div>
@@ -144,6 +144,12 @@ const Main = (props) => {
                 currentUEFN={currentUEFN}
                 handleClose={() => setModalShow(false)}
             />
+            {/* <div className="container footer-cont">
+                <p className="footer-text">Jordan Rector</p>
+                <p className="footer-text">Software, Web, & Game Developer</p>
+                <p className="footer-text">Sacramento, CA</p>
+                <p className="footer-text">rectorjordan94@gmail.com</p>
+            </div> */}
         </section>
     )
 }
