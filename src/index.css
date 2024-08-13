@@ -404,20 +404,24 @@ html, body {
     padding: 0;
     margin: 0;
     transition: all .35s linear;
-    pointer-events: none;
+    background-color: #fff;
+    color: #000;
+    padding: 0 20px;
+    font-weight: 600;
+    text-align: right;
   }
 
   .footer-fade {
     color: #ff001a44!important;
   }
 
-  .footer-text:nth-child(2) {
-    color: black;
+  .footer-text:nth-child(8) {
+    color: #ff6600;
   }
 
-  .footer-text:nth-child(4) {
-    pointer-events: unset;
-    color: black;
+  .footer-text:nth-child(10) {
+    color: #ff6600;
+    padding-bottom: 20px;
   }
 
   /* class for disabling body scrolling while navbar is open */

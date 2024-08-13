@@ -67,14 +67,18 @@ const Bio = (props) => {
 					<img src="/images/Logo_Transparent.png" alt="logo" id="logo-bio"/>
 				</Offcanvas.Header>
 				<Offcanvas.Body>
-						<p id="bio-intro">Hey, I'm Jordan!</p>
-						<p className="bio-paragraph"> I'm a software and game developer with a knack for creative problem-solving and a keen eye for design thanks to my diverse background and wide-ranging interests.</p>
-						<p className="bio-paragraph">I've had the chance to wear many hats over the years: developer, artist, manager, photographer, bartender, director, designer, you name it. That experience made me highly adaptable and gave me plenty of opportunities to be creative while tackling various challenges. This mix of creativity and problem-solving is what led me to software and game development. Now I'm using those skills to create fun and impactful projects.</p>
-						<Carousel fade>
-							{carouselImages}
-						</Carousel>
-						<p className="bio-paragraph">Outside of work, I'm a bit of a hobby hoarder. From cooking and reading, to hiking and gaming, I'm always diving into new activities. I love learning new things--whether it's a new recipe, picking up a coding language, or theorycrafting builds for the games I'm playing.</p>
-						<p className="bio-paragraph">I'm really passionate about games. I think you can learn a lot about someone by watching them play or playing alongside them. I'm fascinated by how people make decisions and what drives their choices, especially in games.</p>
+					<p id="bio-intro">Hey, I'm Jordan!</p>
+					<p className="bio-paragraph"> I'm a software and game developer with a knack for creative problem-solving and a keen eye for design thanks to my diverse background and wide-ranging interests.</p>
+					<p className="bio-paragraph">I've had the chance to wear many hats over the years: developer, artist, manager, photographer, bartender, director, designer, you name it. That experience made me highly adaptable and gave me plenty of opportunities to be creative while tackling various challenges. This mix of creativity and problem-solving is what led me to software and game development. Now I'm using those skills to create fun and impactful projects.</p>
+					<Carousel fade>
+						{carouselImages}
+					</Carousel>
+					<p className="bio-paragraph">Outside of work, I'm a bit of a hobby hoarder. From cooking and reading, to hiking and gaming, I'm always diving into new activities. I love learning new things--whether it's a new recipe, picking up a coding language, or theorycrafting builds for the games I'm playing.</p>
+					<p className="bio-paragraph">I'm really passionate about games. I think you can learn a lot about someone by watching them play or playing alongside them. I'm fascinated by how people make decisions and what drives their choices, especially in games.</p>
+					<p className="footer-text">Jordan Rector</p>
+					<p className="footer-text">Software, Web, & Game Developer</p>
+					<p className="footer-text">Sacramento, CA</p>
+					<p className="footer-text">rectorjordan94@gmail.com</p>
 				</Offcanvas.Body>
 			</Offcanvas>
 		</>
