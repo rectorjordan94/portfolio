@@ -813,7 +813,9 @@ html, body {
   }
 
   #fortnite-link:hover, #github-link:hover, #deployed-link:hover {
-    animation: button-pulse 1.5s linear 0s infinite backwards;
+    /* animation: button-pulse 1.5s linear 0s infinite backwards; */
+    transform: scale(1.15);
+    color: #ffe500;
   }
 
   #fortnite-link:focus, #github-link:focus, #deployed-link:focus {
