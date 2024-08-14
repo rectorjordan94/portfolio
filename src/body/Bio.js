@@ -69,7 +69,7 @@ const Bio = (props) => {
 				<Offcanvas.Body>
 					<p id="bio-intro">Hey, I'm Jordan!</p>
 					<p className="bio-paragraph"> I'm a software and game developer with a knack for creative problem-solving and a keen eye for design thanks to my diverse background and wide-ranging interests.</p>
-					<p className="bio-paragraph">I've had the chance to wear many hats over the years: developer, artist, manager, photographer, bartender, director, designer, you name it. That experience made me highly adaptable and gave me plenty of opportunities to be creative while tackling various challenges. This mix of creativity and problem-solving is what led me to software and game development. Now I'm using those skills to create fun and impactful projects.</p>
+					<p className="bio-paragraph">I've had the chance to wear many hats over the years: developer, artist, manager, photographer, bartender, director, designer, you name it. That experience made me highly adaptable and has provided me many opportunities to be creative while tackling various challenges. This mix of creativity and problem-solving is what led me to software and game development. Now I'm using those skills to create fun and impactful projects.</p>
 					<Carousel fade>
 						{carouselImages}
 					</Carousel>
