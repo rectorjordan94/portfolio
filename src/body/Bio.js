@@ -74,7 +74,7 @@ const Bio = (props) => {
 						{carouselImages}
 					</Carousel>
 					<p className="bio-paragraph">Outside of work, I'm a bit of a hobby hoarder. From cooking and reading, to hiking and gaming, I'm always diving into new activities. I love learning new things--whether it's a new recipe, picking up a coding language, or theorycrafting builds for the games I'm playing.</p>
-					<p className="bio-paragraph">I'm really passionate about games. I think you can learn a lot about someone by watching them play or playing alongside them. I'm fascinated by how people make decisions and what drives their choices, especially in games.</p>
+					<p className="bio-paragraph">I'm really passionate about games. I think you can learn a lot about someone by watching them play or playing alongside them. I'm fascinated by how people make decisions and what drives their choices, especially in gaming contexts.</p>
 					<p className="footer-text">Jordan Rector</p>
 					<p className="footer-text">Software, Web, & Game Developer</p>
 					<p className="footer-text">Sacramento, CA</p>
