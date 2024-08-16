@@ -772,8 +772,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px 10px rgb(35, 35, 35);
-    background-color: rgb(35, 35, 35);
+    box-shadow: 0px 0px 10px 10px rgb(0, 20, 40);
+    background-color: rgb(0, 20, 40);
     position: relative;
   }
 
@@ -950,14 +950,7 @@ html, body {
     --project-button-font-size: 48px;
     --link-font-size: 22px;
     --project-link-font-size: 22px;
-    /* --max-width-screen: 100%; */
   }
-/* 
-  div.fade.modal.show {
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .offcanvas {
     --bs-offcanvas-width: 60dvw;
@@ -975,6 +968,9 @@ html, body {
 
   #uefn-header, #project-header {
     max-height: 72.5px;
+  }
+  .footer-text {
+    margin-top: -2px;
   }
 
 }
@@ -1015,71 +1011,44 @@ html, body {
     --bs-modal-margin: 0;
   }
 }
+
 /*? *********************************************************************************************************************************  */
-
-
 
 @media (min-width: 1200px) {
   :root {
-    /* --project-button-font-size: 44px; */
+    --project-button-font-size: 64px;
+  }
+  .main-h2 {
+    font-size: 26px;
   }
   #main-section {
-    top: 28%;
-    right: 32%;
+    top: 37%;
+    right: 31%;
   }
-  
-
-  /* #main-section {
-  .project-button-container {
-    margin-top: 0;
+  #main-container {
+    perspective: 300px;
   }
-  .project-button {
-    font-size: 48px;
-    line-height: 42px;
+  #uefn-h2 {
+    margin-top: 75px;
   }
-  .modal-nav-button, .nav-link.active {
-    font-size: 28px;
+  .offcanvas {
+    --bs-offcanvas-width: 40dvw;
   }
-  ul.navbar-nav {
-    align-items: unset;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  #project-video {
+    max-height: calc(95dvh - 448.09px);
   }
-  .nav-item {
-    padding: 3px 0px;
-  }
-  .navbar-text {
+  #island-code {
     font-size: 20px;
   }
-  #logo {
-    width: 65px;
-    height: 65px;
-  }
-  div.fade.modal.show {
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-  }
-  .software-video {
-    max-width: unset;
-    max-height: unset;
-    padding-top: unset;
-  }
-  #built-cont {
-    max-width: unset;
-  }
-  .modal-content {
-    z-index: 1000!important;
-  }
-  .modal-dialog {
-    z-index: 5;
-  } */
 }
 
   /*? *********************************************************************************************************************************  */
 
-@media (min-width: 1800px) {
-
+@media (min-width: 1500px) {
+  #main-section {
+    top: 42%;
+    right: 32%;
+  }
 }
 
 
