@@ -772,7 +772,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px 10px rgb(0, 20, 40);
+    box-shadow: 0px 0px 15px 15px rgb(0, 20, 40);
     background-color: rgb(0, 20, 40);
     position: relative;
   }
@@ -981,7 +981,7 @@ html, body {
 
   #main-section {
     top: 30%;
-    right: 26%;
+    right: 30%;
   }
   .modal-nav-button {
     padding: var(--bs-nav-link-padding-y) 5px;
@@ -999,13 +999,16 @@ html, body {
   }
   .modal-dialog {
     max-width: 60%;
-    max-height: 90%;
+    max-height: 95%;
   }
-  #project-video {
-    max-height: calc(90dvh - 448.09px);
+  .uefn-video {
+    max-height: calc(95dvh - 473.09px);
+  }
+  .software-video {
+    max-height: calc(95dvh - 356.5px)!important;
   }
   #video-cont {
-    clip-path: inset(-10px 0px -10px 0px);
+    clip-path: inset(-15px 0px -15px 0px);
   }
   .modal {
     --bs-modal-margin: 0;
@@ -1022,8 +1025,8 @@ html, body {
     font-size: 26px;
   }
   #main-section {
-    top: 37%;
-    right: 31%;
+    top: 38%;
+    right: 34%;
   }
   #main-container {
     perspective: 300px;
@@ -1034,9 +1037,9 @@ html, body {
   .offcanvas {
     --bs-offcanvas-width: 40dvw;
   }
-  #project-video {
+  /* #project-video {
     max-height: calc(95dvh - 448.09px);
-  }
+  } */
   #island-code {
     font-size: 20px;
   }
