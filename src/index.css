@@ -577,28 +577,24 @@ html, body {
     animation: slide-in-left .5s ease-out 1s 1 normal backwards;
   }
 
-  #video-cont, #built-cont, #github-cont {
-    animation: slide-in-bottom .5s ease-out 1.5s 1 normal backwards;
+  #built-cont, #island-cont {
+    animation: slide-in-bottom .5s ease-out 1.25s 1 normal backwards;
   }
 
   #project-video {
     animation: slide-in-bottom .5s ease-out 1.75s 1 normal backwards;
   }
 
-  #tech-cont, #island-cont {
-    animation: fade-in-center .5s ease-out 2.5s 1 normal backwards;
-  }
-
   #github-link {
-    animation: slide-in-right .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-right .5s ease-out 2.25s 1 normal backwards;
   }
 
   #deployed-link {
-    animation: slide-in-left .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-left .5s ease-out 2.25s 1 normal backwards;
   }
 
   #fortnite-link {
-    animation: slide-in-top .5s ease-out 2.75s 1 normal backwards;
+    animation: slide-in-top .5s ease-out 2.25s 1 normal backwards;
   }
 
   @keyframes fade-in-center {
