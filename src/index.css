@@ -5,15 +5,17 @@
 :root {
   --body-font-size: 16px;
   --tech-code-font-size: 14px;
-  --title-font-size: 36px;
+  --title-font-size: 32px;
   --project-button-font-size: 36px;
   --link-font-size: 18px;
   --project-link-font-size: 20px;
+  --navbar-show-padding-top: 10%;
+  background-color: #000;
 }
 
 html, body {
-  min-height: 100vh;
-  /* width: 100%; */
+  min-height: 100dvh;
+  /* width: 100dvw; */
   margin: 0;
   overflow-x: hidden;
   overscroll-behavior: contain;
@@ -25,7 +27,7 @@ html, body {
 
 .wrapper {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   /* width: 100%; */
   /* padding-bottom: 25%; */
 }
@@ -137,7 +139,7 @@ html, body {
   #main-section {
     /* padding-top: 25%; */
     text-align: right;
-    min-height: 100vh;
+    min-height: 100dvh;
     /* width: 100%; */
     max-width: 100%;
     /* padding-right: 55px; */
@@ -201,7 +203,7 @@ html, body {
   /* #ff010018 */
 
   #uefn-h2 {
-    margin-top: 10%;
+    margin-top: 15%;
     animation: h2-slide-and-pop .5s ease-out .8s 1 normal backwards;
   }
 
@@ -217,7 +219,8 @@ html, body {
   }
 
   .project-button-container:nth-child(2) {
-    padding-bottom: 7.5%;
+    padding-bottom: 15%;
+    z-index: 0;
   } 
 
   .project-button {
@@ -302,9 +305,9 @@ html, body {
   /*? ########################################################################################################################  */
   /*? ########################################################################################################################  */
 
-  div.navmenu-header {
+  /* div.navmenu-header {
     margin-bottom: 10%;
-  }
+  } */
 
   li.nav-item {
     width: fit-content;
@@ -323,9 +326,13 @@ html, body {
 
   .navmenu-header {
     width: 100%;
-    height: 3.28125em;
+    /* height: 3.28125em; */
     display: flex;
     justify-content: space-between;
+  }
+
+  .navbar-nav-scroll.collapse.show {
+    padding-top: var(--navbar-show-padding-top);
   }
 
   .nav-link {
@@ -353,7 +360,9 @@ html, body {
 
   .modal {
     --bs-modal-border-color: none;
+    --bs-modal-width: 100%;
   }
+
 
   .modal-nav-button {
     font-family: 'Archivo', sans-serif;
@@ -380,7 +389,7 @@ html, body {
 
   .nav-symbols {
     color: #000;
-    font-weight: 500;
+    font-weight: 700;
     font-size: var(--link-font-size);
     margin-right: 0.3125em;
   }
@@ -751,16 +760,21 @@ html, body {
   }
 
   #project-video {
-    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 130px);
     object-fit: cover;
-    background-color: #000;
+    padding: 0;
   }
 
   #video-cont {
     padding: 0;
     background-color: #000;
-    /* padding: 10px 10px 5px 10px; */
-    /* padding-top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 10px rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
+    position: relative;
   }
 
   #github-cont { 
@@ -768,7 +782,7 @@ html, body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px 15px 15px 15px;
+    padding: 12.5px 15px 12.5px 15px;
   }
 
   #github-link, #deployed-link {
@@ -790,7 +804,7 @@ html, body {
   #island-code {
     font-family: 'Archivo Black', sans-serif;
     color: #fff;
-    font-size: var(--tech-code-font-size);
+    font-size: var(--body-font-size);
     margin-bottom: 0;
     text-decoration: none;
     animation: tech-text-colors 6s linear infinite both;
@@ -835,18 +849,22 @@ html, body {
     margin: 0;
   }
 
-  #built-cont {
-    padding: 0;
-    background-color: #000;
-  }
-
-  #tech-cont {
-    padding: 15px;
+  #built-cont, #island-cont {
+    /* was 0px padding before when the tech container was inside */
+    padding: 12.5px 15px 12.5px 15px;
     background-color: #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  /* #tech-cont {
+    padding: 15px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  } */
 
   .tech {
     display: block;
@@ -889,116 +907,85 @@ html, body {
     filter: drop-shadow(1px 0px 1px #0099ff) drop-shadow(-1px 0px 1px #0099ff) drop-shadow(0px 1px 1px #0099ff) drop-shadow(1px -1px 1px #0099ff) brightness(115%) contrast(200%)!important;
   }
 
+  
+
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 400px) {
   #main-section {
     right: 20%;
-    top: 12.5%;
-    padding-bottom: 0;
+    top: 15%;
+    /* padding-bottom: 0; */
   }
 
 }
 
 /*? *********************************************************************************************************************************  */
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   #main-section {
     right: 25%;
     top: 15%;
   }
-}
+} */
 
 /*? *********************************************************************************************************************************  */
 
 @media (min-width: 600px) {
+  #main-section {
+    top: 40%;
+    right: 22%;
+  }
+}
+
+
+
+/* increase font size at 600 only if height is greater than something (600?) */
+@media (min-width: 600px) and (min-height: 600px) {
   :root {
-    --body-font-size: 24px;
-    --tech-code-font-size: 22px;
-    --title-font-size: 44px;
+    --body-font-size: 18px;
+    --tech-code-font-size: 16px;
+    --title-font-size: 36px;
     --project-button-font-size: 48px;
-    --link-font-size: 28px;
-    --project-link-font-size: 28px;
-    --max-width-screen: 899px;
+    --link-font-size: 22px;
+    --project-link-font-size: 22px;
+    /* --max-width-screen: 100%; */
   }
-  .modal {
-    --bs-modal-width: calc(var(--max-width-screen) * 0.8);
-  }
+/* 
+  div.fade.modal.show {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+  } */
+
   .offcanvas {
-    --bs-offcanvas-width: calc(var(--max-width-screen) * 0.6);
+    --bs-offcanvas-width: 60dvw;
   }
   #main-section {
     top: 20%;
     right: 29%;
   }
-  div.fade.modal.show {
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-  }
   .navbar {
-    z-index: 0;
+    z-index: 1;
   }
   .project-button-container:nth-child(2) {
     margin-top: 10%;
   }
 
-  /* .software-video {
-    max-width: 320px;
-    max-height: 320px;
-    padding-top: 15px;
+  #uefn-header, #project-header {
+    max-height: 72.5px;
   }
-  #video-cont {
-    align-items: center;
-  }
-  #built-cont {
-    max-width: 360px;
-  }
-  #descript1-cont, #descript2-cont {
-    max-width: 100%;
-  } */
+
 }
 
 /*? *********************************************************************************************************************************  */
-
-@media (min-width: 680px) {
-  #main-section {
-    top: 23%;
-    right: 26%;
-  }
-}
-
-/*? *********************************************************************************************************************************  */
-
-@media (min-width: 760px) {
-  #main-section {
-    top: 24%;
-    right: 28%;
-  }
-}
-
-/*? *********************************************************************************************************************************  */
-
-@media (min-width: 840px) {
-  #main-section {
-    top: 25%;
-    right: 29%;
-  }
-}
 
 @media (min-width: 900px){
-  :root {
-    --max-width-screen: 899px;
-    --link-font-size: 20px;
-    --tech-code-font-size: 14px;
-    --project-button-font-size: 40px;
-    --body-font-size: 18px;
-    --project-link-font-size: 22px;
-  }
+
   #main-section {
-    top: 20%;
-    right: 25%;
+    top: 30%;
+    right: 26%;
   }
   .modal-nav-button {
     padding: var(--bs-nav-link-padding-y) 5px;
@@ -1010,7 +997,22 @@ html, body {
     text-wrap: nowrap;
   }
   div.fade.modal.show {
-    display: unset!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-dialog {
+    max-width: 60%;
+    max-height: 90%;
+  }
+  #project-video {
+    max-height: calc(90dvh - 448.09px);
+  }
+  #video-cont {
+    clip-path: inset(-10px 0px -10px 0px);
+  }
+  .modal {
+    --bs-modal-margin: 0;
   }
 }
 /*? *********************************************************************************************************************************  */
@@ -1019,11 +1021,11 @@ html, body {
 
 @media (min-width: 1200px) {
   :root {
-    --project-button-font-size: 44px;
+    /* --project-button-font-size: 44px; */
   }
   #main-section {
-    top: 22.5%;
-    right: 22%;
+    top: 28%;
+    right: 32%;
   }
   
 

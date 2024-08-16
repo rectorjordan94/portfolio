@@ -17,28 +17,24 @@ const ShowProjectModal = (props) => {
         })
 
         return (
-            <Modal show={show} fullscreen={'sm-down'} onHide={handleClose} id="project-modal">
+            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal">
                 <Modal.Header closeButton id="project-header">
                     <Modal.Title id="project-name">{project.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="project-body">
-                <div className="container" id="descript1-cont">
+                    <div id="descript1-cont">
                         <p id="descript1">{project.description1}</p>
                         <p id="descript2">{project.description2}</p>
                     </div>
-                    <div className="container" id="video-cont">
-                        {/* still need to add video files and properly link to them */}
-                        <video className="software-video" src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
-                        <div className="container" id="built-cont">
-                            <div id="tech-cont">
+                    <div id="built-cont">
                                 {technologies}
-                            </div>
-                        </div>
                     </div>
-                    <div className="container" id="github-cont">
+                    <div id="video-cont">
+                        <video className="software-video" src={project.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
+                    </div>
+                    <div id="github-cont">
                         <a href={project.deployed} target="_blank" rel="noreferrer" id="deployed-link">LIVE SITE</a>
                         <a href={project.github} target="_blank" rel="noreferrer" id="github-link">GITHUB</a>
-                        {/* maybe add button for next project here */}
                     </div>
                 </Modal.Body>
             </Modal>
@@ -59,27 +55,24 @@ const ShowProjectModal = (props) => {
         }
 
         return (
-            <Modal show={show} fullscreen={'sm-down'} onHide={handleClose} id="project-modal">
+            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal">
                 <Modal.Header closeButton id="uefn-header">
                     <Modal.Title id="uefn-name">{uefn.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id="project-body">
-                    <div className="container" id="descript1-cont">
+                    <div id="descript1-cont">
                         <p id="descript1">{uefn.description1}</p>
                         {bulletPoints ? <div className="bullet-cont">{bulletPoints}</div> : <p id="descript2">{uefn.description2}</p> }  
                     </div>
-                    <div id="video-cont" className="container uefn-video-cont">
-                        {/* still need to add video files and properly link to them */}
+                    <div id="island-cont">
+                        <h3 id="island-code">{uefn.islandCode}</h3>
+                    </div>
+                    <div id="video-cont" className="uefn-video-cont">
                         <video className="uefn-video" src={uefn.video} id="project-video" autoPlay={true} loop={true} playsInline={true} muted={true}></video>
-                        <div className="container" id="code-cont">
-                            <div id="island-cont">
-                                <h3 id="island-code">{uefn.islandCode}</h3>
-                            </div>
                     </div>
-                    </div>
-                    <div className="container" id="fortnite-cont">
+                    
+                    <div id="fortnite-cont">
                         <a href={uefn.fortnite} target="_blank" rel="noreferrer" id="fortnite-link">FORTNITE.COM</a>
-                        {/* maybe add button for next project here */}
                     </div>
                 </Modal.Body>
             </Modal>
