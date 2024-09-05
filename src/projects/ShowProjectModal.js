@@ -17,7 +17,7 @@ const ShowProjectModal = (props) => {
         })
 
         return (
-            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal">
+            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal" className="animate__animated animate__zoomIn">
                 <Modal.Header closeButton id="project-header">
                     <Modal.Title id="project-name">{project.name}</Modal.Title>
                 </Modal.Header>
@@ -55,7 +55,7 @@ const ShowProjectModal = (props) => {
         }
 
         return (
-            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal">
+            <Modal show={show} fullscreen={'lg-down'} onHide={handleClose} id="project-modal" className="animate__animated animate__zoomIn">
                 <Modal.Header closeButton id="uefn-header">
                     <Modal.Title id="uefn-name">{uefn.name}</Modal.Title>
                 </Modal.Header>
